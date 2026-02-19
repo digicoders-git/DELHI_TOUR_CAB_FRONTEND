@@ -784,6 +784,12 @@ const Home = () => {
               <div className="bg-red-50 p-4 rounded-lg text-center">
                 <span className="font-semibold block text-orange-500">Vasant Kunj</span>
               </div>
+              <div className="bg-red-50 p-4 rounded-lg text-center">
+                <span className="font-semibold block text-orange-500">Sarita Vihar</span>
+              </div>
+              <div className="bg-red-50 p-4 rounded-lg text-center">
+                <span className="font-semibold block text-orange-500">Mahipalpur</span>
+              </div>
             </div>
           </div>
         </div>

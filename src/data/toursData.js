@@ -167,7 +167,8 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
             { name: "Luxury SUV Kia carens (6+1)", price: "₹10,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7,500/", image: forcetempo }
+            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7,500/", image: forcetempo },
+            { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
         ]
     },
 
@@ -257,7 +258,8 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga },
             { name: "Luxury SUV Kia carens (6+1)", price: "₹12,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹13,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7500", image: forcetempo }
+            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7500", image: forcetempo },
+            { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
         ]
 
     },
@@ -419,11 +421,12 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga },
             { name: "Luxury SUV Kia carens (6+1)", price: "₹12,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹15,000", image: forcetempo }
+            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹15,000", image: forcetempo },
+            { name: "Force Urbania", price: "₹22,000/-", image: forceurbano }
         ]
     },
     'delhi-local-sightseeing': {
-        title: "Delhi Sightseeing Tour by car",
+        title: "Oneday Delhi Local sightseeing by Car",
         bannerImage: delhiBannerNew,
         description: `Explore India's capital in comfort with our Delhi Sightseeing Tour by car, the most convenient and flexible way to experience the city's rich history, iconic monuments, spiritual landmarks, and modern attractions in one well-planned trip. This private Delhi city tour is ideal for all tourists, families, couples, and corporate travelers who prefer a relaxed, hassle-free Delhi sightseeing experience.
         With Delhi Tour Cab, you travel in a clean, air-conditioned car driven by an experienced local chauffeur, allowing you to explore Delhi at your own pace. Unlike crowded public transport or fixed group tours, our customizable sightseeing itinerary gives you complete freedom to spend more time at the places you enjoy most, ensuring a smooth, comfortable, and memorable Delhi sightseeing experience. Our Delhi Sightseeing by car packages are designed to offer transparent pricing and excellent value for money. The tour cost depends on the type of vehicle selected, total tour duration (usually 8 hours), and the number of passengers. We provide flexible options to suit solo travelers, families, and groups looking for a comfortable Delhi city tour.`,
@@ -516,7 +519,7 @@ export const toursData = {
             "AC Private Cab with Professional Driver",
             "Fuel, Parking and Toll Charges",
             "Driver Allowance",
-            "8 Hours / 80 KM usage",
+            "8 Hours usage",
             "Pickup and Drop from Central Delhi"
         ],
         exclusions: [
@@ -531,7 +534,8 @@ export const toursData = {
             { name: "Ertiga (6+1)", price: "₹2900/-", image: ertiga },
             { name: "Kia Carens (6+1)", price: "₹3500/-", image: kiacerens },
             { name: "Innova Crysta (6+1)", price: "₹4500/-", image: innova },
-            { name: "Tempo Traveller (12+1)", price: "₹7500/-", image: forcetempo }
+            { name: "Tempo Traveller (12+1)", price: "₹7500/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹11,500/-", image: forceurbano }
         ],
         faqs: [
             {
@@ -575,6 +579,7 @@ export const toursData = {
             }
         ],
         importantNotes: [
+            "If the pickup is from Airport or Railway Station, parking charges will be applicable extra.",
             "The Delhi sightseeing itinerary is fully customizable.",
             "Total tour duration is 8 hours (pickup to drop); extra hours are charged additionally.",
             "Tour start time is flexible as per your convenience.",
@@ -665,7 +670,8 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹9,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens / Innova Crysta (6+1)", price: "₹11,500/-", image: kiacerens },
             { name: "Tempo Traveller (12+1)", price: "₹15,000/-", image: forcetempo },
-            { name: "Tempo Traveller (17+1)", price: "₹18,000/-", image: forcetempo }
+            { name: "Tempo Traveller (17+1)", price: "₹18,000/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹24,500/-", image: forceurbano }
         ]
     },
     'delhi-to-rishikesh-tour': {
@@ -752,7 +758,8 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹11,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens (6+1)", price: "₹13,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹14,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹12,500/", image: forcetempo }
+            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹12,500/", image: forcetempo },
+            { name: "Force Urbania", price: "₹18,500/-", image: forceurbano }
         ]
     },
     'delhi-mathura-vrindavan-agra-tour': {
@@ -977,8 +984,8 @@ export const toursData = {
             { name: "Kia Carens (6+1)", price: "₹9,500/-", image: kiacerens },
             { name: "Innova Crysta (6+1)", price: "₹11,500/-", image: innova },
             { name: "Tempo Traveller (12+1)", price: "₹13,500/-", image: forcetempo },
-            { name: "Tempo Traveller (17+1)", price: "₹15,00/-", image: forcetempo },
-            { name: "Force Urbania", price: "₹22,00/-", image: forceurbano }
+            { name: "Tempo Traveller (17+1)", price: "₹15,000/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹22,000/-", image: forceurbano }
         ]
     },
     'delhi-to-agra-fatehpur-sikri-tour': {
@@ -1693,7 +1700,7 @@ export const toursData = {
             "Private AC Cab with Professional Driver",
             "Door-to-door Pickup and Drop-off",
             "Fuel, Parking, and Toll Taxes",
-            "8 Hours / 80 KM Local Usage (Extendable)"
+            "8 Hours Local Usage (Extendable)"
         ],
         exclusions: [
             "Monument Entry Tickets",
@@ -1808,7 +1815,7 @@ export const toursData = {
         ],
         importantNotes: [
             "Monuments like Red Fort and Lotus Temple are closed on Mondays.",
-            "Normal tour duration is 8 hours / 80 KM.",
+            "Normal tour duration is 8 hours.",
             "Extra hours and kilometers are charged at standard rates.",
             "Carry a valid ID and comfortable walking shoes."
         ],
@@ -1913,7 +1920,7 @@ export const toursData = {
         ],
         importantNotes: [
             "Several monuments (Red Fort, Lotus Temple) are closed on Mondays.",
-            "Normal tour duration is 8 hours / 80 KM.",
+            "Normal tour duration is 8 hours.",
             "Suggested start time: 9:00 AM.",
             "Respect local traffic and security protocols."
         ],
@@ -2018,7 +2025,7 @@ export const toursData = {
         ],
         importantNotes: [
             "Certain monuments (Red Fort, Lotus Temple) are closed on Mondays.",
-            "Standard tour duration is 8 hours / 80 KM.",
+            "Standard tour duration is 8 hours.",
             "Extra charges apply for additional time or distance.",
             "Wear comfortable walking shoes for sightseeing."
         ],
@@ -2440,7 +2447,7 @@ export const toursData = {
         includes: [
             "AC car with professional driver",
             "Fuel, parking & toll charges",
-            "8 hours / 80 km usage",
+            "8 hours usage",
             "Pickup and drop within Agra city"
         ],
         exclusions: [
@@ -2462,7 +2469,7 @@ export const toursData = {
             },
             {
                 question: "What is included in the car rental price?",
-                answer: "The price includes the vehicle with driver, fuel charges, parking fees, and toll taxes for 8 hours / 80 km within Agra city."
+                answer: "The price includes the vehicle with driver, fuel charges, parking fees, and toll taxes for 8 hours within Agra city."
             },
             {
                 question: "Can I customize the itinerary?",
@@ -2812,7 +2819,7 @@ export const toursData = {
             "Private AC Car with Driver",
             "Fuel, Parking, and Driver Allowance",
             "Pickup and Drop within Jaipur City",
-            "8 Hours / 80 Km Usage (Standard)"
+            "8 Hours Usage (Standard)"
         ],
         exclusions: [
             "Monument Entry Tickets",
@@ -2821,7 +2828,7 @@ export const toursData = {
             "Camera Charges"
         ],
         importantNotes: [
-            "Standard tour duration is 8 hours / 80 km.",
+            "Standard tour duration is 8 hours.",
             "Extra km and hours will be charged additionally.",
             "Amber Fort is best visited early morning to avoid crowds.",
             "Entry tickets can be booked online to skip queues."
@@ -2833,7 +2840,7 @@ export const toursData = {
             },
             {
                 question: "Can we customize the places?",
-                answer: "Yes, within the 8 hours / 80 km limit, you can choose which places to visit."
+                answer: "Yes, within the 8 hours limit, you can choose which places to visit."
             },
             {
                 question: "Is pickup from Jaipur Airport included?",
@@ -2926,7 +2933,7 @@ export const toursData = {
             { title: "Flat Rates", description: "Affordable pricing with no hidden surcharges." }
         ],
         includes: [
-            "Private AC Car for 8 Hours / 80 Kms",
+            "Private AC Car for 8 Hours",
             "Driver Allowance and Fuel",
             "Pickup and Drop within Chandigarh",
             "Parking Charges"
@@ -2938,7 +2945,7 @@ export const toursData = {
             "Extra Km/Hour charges if limit exceeded"
         ],
         importantNotes: [
-            "Standard package is for 8 Hours / 80 Kms.",
+            "Standard package is for 8 Hours.",
             "Extra charges applicable for additional usage.",
             "Rock Garden involves some walking.",
             "Boating at Sukhna Lake is subject to weather conditions."

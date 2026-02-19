@@ -10,15 +10,15 @@ const Services = () => {
 
   const services = [
     {
-     
+
       title: 'Corporate Car Rental',
       description: 'Professional transportation for businesses',
       route: '/corporate-car-rental',
       color: 'from-blue-500 to-blue-600',
       image: slider1
     },
-     {
-      
+    {
+
       title: 'Outstation Car Rental',
       description: 'Long-distance comfortable travel',
       route: '/outstation-car-rental',
@@ -26,7 +26,7 @@ const Services = () => {
       image: slider2
     },
     {
-    
+
       title: 'Local Car Rental',
       description: 'City travel and daily commutes',
       route: '/local-car-rental',
@@ -34,7 +34,7 @@ const Services = () => {
       image: slider3
     },
     {
-      
+
       title: 'Airport & Railway Station Transfer',
       description: 'Long Distance Travel Made Easy',
       route: '/airport-railway-car-rental',
@@ -43,7 +43,7 @@ const Services = () => {
     },
 
     {
-       
+
       title: 'Wedding Car Rental',
       description: 'style, luxury, making memories, and smooth journeys',
       route: '/wedding-car-rental',
@@ -60,26 +60,40 @@ const Services = () => {
   };
 
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-br from-orange-50 via-white to-blue-50">
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-orange-600 via-orange-500 to-yellow-500 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+    <div className="pt-20 min-h-screen bg-white">
+      {/* Page Title Section below Navbar */}
+      <div className="bg-white border-b border-gray-100 py-8 md:py-12 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-orange-50 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-6xl font-bold mb-6"
+            className="text-left"
           >
-            Our <span className="text-yellow-300">Services</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-2xl mb-8"
-          >
-            Choose Your Perfect Transportation Solution
-          </motion.p>
+            <div className="flex items-center gap-2 text-orange-600 font-bold text-sm tracking-widest uppercase mb-3">
+              <span className="w-8 h-[2px] bg-orange-500"></span>
+              Our Premium Solutions
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">
+              Our <span className="text-orange-500">Services</span>
+            </h1>
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl font-medium">
+              Choose Your Perfect Transportation Solution in Delhi & Beyond
+            </p>
+          </motion.div>
         </div>
+      </div>
+
+      {/* Hero Banner Section */}
+      <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
+          style={{ backgroundImage: `url(${slider4})` }}
+        />
+        {/* Immersive Overlay */}
+        <div className="absolute inset-0 bg-black/20"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
       </section>
 
       {/* Services Dropdown Grid */}
@@ -109,7 +123,7 @@ const Services = () => {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  
+
                   {/* Icon Overlay */}
                   <motion.div
                     animate={{

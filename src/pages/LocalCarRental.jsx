@@ -140,7 +140,7 @@ const LocalCarRental = () => {
     },
     {
       name: 'Toyota Fortuner',
-      image:  fortuner ,
+      image: fortuner,
       capacity: '7 Seater',
       fuel: 'Diesel',
       basePrice: '₹7,500',
@@ -177,7 +177,7 @@ const LocalCarRental = () => {
       features: ['8hr & 80km', '4x4', 'Luxury', 'Premium'],
       examples: 'Ultra Luxury SUV'
     },
-  
+
     {
       name: 'Toyota Vellfire',
       image: toyotavellfire,
@@ -245,7 +245,7 @@ const LocalCarRental = () => {
     },
     {
       name: 'Bus (25-45 seats)',
-      image:volvo,
+      image: volvo,
       capacity: '(25-45)seats',
       fuel: 'Diesel',
       basePrice: 'On request',
@@ -366,7 +366,7 @@ const LocalCarRental = () => {
                   <div className="bg-gradient-to-br  from-orange-50 to-yellow-50 p-3 rounded-lg mb-4 border border-orange-100">
                     <div className="flex flex-col gap-1 text-lef text-xs">
                       <div className="flex gap-4">
-                        <span className="text-gray-600 font-medium">8 hr & 40 km</span>
+                        <span className="text-gray-600 font-medium">8 hr & 80 km</span>
                         <span className="text-orange-600 font-bold">{carss.basePrice}</span>
                       </div>
                       <div className="flex gap-4">

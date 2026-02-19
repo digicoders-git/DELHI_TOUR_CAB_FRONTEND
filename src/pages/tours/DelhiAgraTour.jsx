@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { agra, drizer, innova, ertiga, forcetempo, wagonr, kiacerens } from '../../utils/images';
+import { agra, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano } from '../../utils/images';
 import { FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie } from 'react-icons/fa';
 
 const DelhiAgraTour = () => {
@@ -140,7 +140,8 @@ const DelhiAgraTour = () => {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens (6+1)", price: "₹10,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7500/", image: forcetempo }
+            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7500/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
         ]
     };
 

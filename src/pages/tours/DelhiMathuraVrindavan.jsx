@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { mathura, drizer, innova, ertiga, scorpio, wagonr, kiacerens, forcetempo } from '../../utils/images';
+import { mathura, drizer, innova, ertiga, scorpio, wagonr, kiacerens, forcetempo, forceurbano } from '../../utils/images';
 import { FaPray, FaOm, FaHeart, FaStar, FaHistory, FaUserTie, FaCheckCircle, FaRupeeSign } from 'react-icons/fa';
 
 const DelhiMathuraVrindavan = () => {
@@ -87,7 +87,8 @@ const DelhiMathuraVrindavan = () => {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹9,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens / Innova Crysta (6+1)", price: "₹11,500/-", image: kiacerens },
             { name: "Tempo Traveller (12+1)", price: "₹15,000/-", image: forcetempo },
-            { name: "Tempo Traveller (17+1)", price: "₹18,000/-", image: forcetempo }
+            { name: "Tempo Traveller (17+1)", price: "₹18,000/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹24,500/-", image: forceurbano }
         ]
     };
 

@@ -131,59 +131,67 @@ const SelfDriveCars = () => {
 
   return (
     <div className="pt-20 relative overflow-hidden bg-white">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-brand-red via-red-600 to-brand-red text-white py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-black opacity-10"></div>
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4">
+      {/* Page Title Section below Navbar */}
+      <div className="bg-white border-b border-gray-100 py-8 md:py-12 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-orange-50 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-center"
+            className="text-left"
           >
-            <motion.h1
-              className="text-5xl md:text-6xl font-extrabold mb-6"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              transition={{ delay: 0.2 }}
-            >
-              Self Drive car
-            </motion.h1>
-            <motion.p
-              className="text-2xl mb-4 italic"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.4 }}
-            >
-              "Drive Your Way, Your Time, Your Freedom"
-            </motion.p>
-            <motion.p
-              className="text-lg mb-8 opacity-90"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.6 }}
-            >
-              Choose from 50+ well-maintained vehicles | Starting from ₹999/day | No Hidden Charges
-            </motion.p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => navigate('/book-now')}
-                className="bg-white text-brand-red px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-colors cursor-pointer shadow-lg relative z-10"
-              >
-                Book Now - Get 20% Off
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => handleWhatsApp()}
-                className="bg-green-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors cursor-pointer shadow-lg flex items-center gap-2 relative z-10"
-              >
-                <FaWhatsapp /> Quick Enquiry
-              </motion.button>
+            <div className="flex items-center gap-2 text-orange-600 font-bold text-sm tracking-widest uppercase mb-3">
+              <span className="w-8 h-[2px] bg-orange-500"></span>
+              Unlimited Freedom
             </div>
+            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">
+              Self Drive <span className="text-orange-500">Cars</span>
+            </h1>
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl font-medium">
+              "Drive Your Way, Your Time, Your Freedom"
+            </p>
           </motion.div>
+        </div>
+      </div>
+
+      {/* Hero Banner Section */}
+      <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
+          style={{ backgroundImage: `url(${slider2})` }}
+        />
+        {/* Immersive Overlay */}
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 h-full flex flex-col justify-center items-center">
+          <motion.p
+            className="text-lg md:text-xl text-white mb-8 opacity-90 font-medium text-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            Choose from 50+ well-maintained vehicles | Starting from ₹999/day | No Hidden Charges
+          </motion.p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => navigate('/book-now')}
+              className="bg-orange-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-orange-600 transition-colors cursor-pointer shadow-lg relative z-10"
+            >
+              Book Now - Get 20% Off
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => handleWhatsApp()}
+              className="bg-green-500 text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-green-600 transition-colors cursor-pointer shadow-lg flex items-center gap-2 relative z-10"
+            >
+              <FaWhatsapp /> Quick Enquiry
+            </motion.button>
+          </div>
         </div>
       </section>
 

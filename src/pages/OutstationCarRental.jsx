@@ -14,7 +14,7 @@ const OutstationCarRental = () => {
       capacity: '5 Seater',
       fuel: 'Petrol/CNG',
       perKm: '₹11/km',
-      driverAllow: '₹300/day',
+      driverAllow: '₹250/day',
       dayLimit: '250km',
       description: 'Budget-friendly hatchback perfect for short outstation trips.',
       features: ['Economical', 'Compact', 'Easy Drive']
@@ -317,7 +317,7 @@ const OutstationCarRental = () => {
                     <span className="flex items-center gap-1.5 bg-gray-50 px-2 py-1 rounded-md border border-gray-100"><FaGasPump className="text-orange-500" /> {carss.fuel}</span>
                   </div>
                   <p className="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed text-justify italic">"{carss.description}"</p>
-                  
+
                   {/* Pricing Details */}
                   <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-3 rounded-lg mb-4 border border-orange-100">
                     <div className="gap-4 flex flex-col text-xs">

@@ -198,7 +198,7 @@ const WeddingCarRental = () => {
             features: ['Large Capacity', 'AC', 'Comfortable', 'Spacious'],
             examples: 'Bus'
         },
-         
+
     ];
 
     const handleWhatsApp = (carssName = '') => {

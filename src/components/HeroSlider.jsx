@@ -27,7 +27,7 @@ const HeroSlider = () => {
       bgImage: agra, // Slider 1: Taj Mahal
       carssImageL: innovaSlider,
       carssImageR: breezaSlider,
-      title: 'Corporate car Rental',
+      title: 'Corporate Car Rental',
       subtitle: 'Professional Travel Solutions for Business',
       description: 'Reliable and punctual car rental services for corporate meetings, employee transport, and business events across Delhi NCR.'
     },
@@ -35,7 +35,7 @@ const HeroSlider = () => {
       bgImage: rumidarvaja, // Slider 2: Rummy Darwaza
       carssImageL: kiacarensSlider,
       carssImageR: forceurbanoSlider,
-      title: 'Outstation car Rental',
+      title: 'Outstation Car Rental',
       subtitle: 'Safe & Comfortable Long Distance Travel',
       description: 'Explore popular destinations across India with our experienced drivers and well-maintained fleet for your outstation journeys.'
     },
@@ -43,7 +43,7 @@ const HeroSlider = () => {
       bgImage: delhi, // Slider 3
       carssImageL: ertigaSlider,
       carssImageR: dzireSlider,
-      title: 'Local car Rental',
+      title: 'Local Car Rental',
       subtitle: 'Quick & Convenient City Transport',
       description: 'Half-day and full-day local rentals for city sightseeing, shopping, and daily commuting with professional chauffeurs.'
     },
@@ -51,7 +51,7 @@ const HeroSlider = () => {
       bgImage: indiagate, // Slider 4
       carssImageL: ertigaSlider,
       carssImageR: innovaSlider,
-      title: 'Airport and Railway Station car Rental',
+      title: 'Airport and Railway Station Car Rental',
       subtitle: 'Timely Pickups & Drops Guaranteed',
       description: 'Hassle-free transfers to IGIA Airport and major railway stations with flight delay tracking and 24/7 availability.'
     },
@@ -59,7 +59,7 @@ const HeroSlider = () => {
       bgImage: haridwar, // Slider 5
       carssImageL: vernaSlider,
       carssImageR: kiacarensSlider,
-      title: 'Wedding car Rental',
+      title: 'Wedding Car Rental',
       subtitle: 'Luxury car for Your Special Day',
       description: 'Make your wedding memory special with our premium fleet of luxury car, elegantly maintained and driven by professional chauffeurs.'
     }
@@ -107,12 +107,12 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full  aspect-[4/3] md:aspect-[16/9] lg:aspect-[21/9] min-h-[500px] md:min-h-[600px] overflow-hidden bg-[#242e3e]">
+    <div className="relative w-full h-[550px] sm:h-[650px] md:h-[750px] lg:h-[850px] overflow-hidden bg-[#242e3e]">
       <AnimatePresence initial={false} custom={direction}>
         <motion.div
           key={currentSlide}
           custom={direction}
-          variants={variants} 
+          variants={variants}
           initial="enter"
           animate="center"
           exit="exit"
@@ -132,16 +132,19 @@ const HeroSlider = () => {
           }}
           className="absolute inset-0 md:-mt-16 touch-pan-y"
         >
-          {/* Background with Opacity */}
+          {/* Background Image - Full Opacity */}
           <div
-            className="absolute inset-0 bg-no-repeat bg-cover  bg-center"
+            className="absolute inset-0 bg-no-repeat bg-cover bg-center"
             style={{
               backgroundImage: `url(${slides[currentSlide].bgImage})`,
-              opacity: 0.3, // Background image opacity
+              opacity: 1,
             }}
           />
 
-          {/* Subtle architectual overlay if needed, but the bg image is enough */}
+          {/* Color Tint Overlay - Keeping the color as requested */}
+          <div className="absolute inset-0 bg-[#242e3e]/50" />
+
+          {/* Subtle gradient for depth */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#242e3e]/80" />
 
           <div className="relative z-10 flex flex-col items-center justify-start h-full px-4 text-center pt-16 md:pt-32">
@@ -240,7 +243,7 @@ const HeroSlider = () => {
           />
         ))}
       </div>
-    </div>
+    </div >
   );
 };
 

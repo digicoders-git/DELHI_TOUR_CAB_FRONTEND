@@ -73,7 +73,7 @@ const AirportRailwayCarRental = () => {
         <div className="pt-20 min-h-screen bg-gray-50">
             {/* Hero Section */}
             <section className="relative w-full  h-[300px] sm:h-[500px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden text-white mt-0 sm:mt-0">
-        <div className="absolute inset-0 z-0">
+                <div className="absolute inset-0 z-0">
                     <img
                         src={slider4}
                         alt="Airport and Railway transfers"

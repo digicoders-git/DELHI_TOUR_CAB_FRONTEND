@@ -22,36 +22,44 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
 
     return (
         <div className="pt-20 bg-gray-50 min-h-screen">
-            {/* Hero Section */}
-            <section className="relative w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[850px] flex items-center justify-center text-white overflow-hidden">
-                {/* Background Image - Immersive Look */}
+            {/* New Title Section below Navbar */}
+            <div className="bg-white border-b border-gray-100 py-6 md:py-10 shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-full bg-orange-500/5 -skew-x-12 translate-x-20"></div>
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        className="flex flex-col gap-2"
+                    >
+                        <div className="flex items-center gap-2 text-orange-600 font-bold text-sm tracking-widest uppercase">
+                            <span className="w-8 h-[2px] bg-orange-500"></span>
+                            Premium Tour from Delhi
+                        </div>
+                        <h1 className="text-3xl md:text-5xl font-black text-gray-900 tracking-tight leading-tight">
+                            {title}
+                        </h1>
+                    </motion.div>
+                </div>
+            </div>
+
+            {/* Hero Banner Section (Full Visual Display) */}
+            <section className="relative w-full h-[400px] sm:h-[600px] md:h-[800px] lg:h-[900px] flex items-center justify-center text-white overflow-hidden">
+                {/* Background Image */}
                 <img
                     src={bannerImage}
                     alt={title}
-                    className="absolute inset-0 w-full h-full object-cover opacity-100 transition-transform duration-1000"
+                    className="absolute inset-0 w-full h-full object-cover object-center"
                 />
-                {/* Optimized Overlay for Mobile & Desktop Readability */}
-                <div className="absolute inset-0 bg-black/40"></div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/40"></div>
+                {/* Optimized Overlay (Removed to show original colors) */}
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div> */}
 
-                <div className="relative z-10 text-center mt-50 md:mt-120 px-4 max-w-4xl mx-auto drop-shadow-2xl">
+                <div className="relative z-10 text-center px-4">
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2 }}
-                        className="mt-6"
+                        initial={{ opacity: 0, scale: 0.9 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.3 }}
                     >
-                        <span className="bg-orange-500 text-white px-6 py-2.5 rounded-full font-bold shadow-lg text-sm md:text-base inline-block">
-                            Premium Tour from Delhi
-                        </span>
                     </motion.div>
-                    <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-3xl md:text-5xl lg:text-6xl font-extrabold drop-shadow-2xl leading-tight"
-                    >
-                        {title}
-                    </motion.h1>
                 </div>
             </section>
 

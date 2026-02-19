@@ -21,9 +21,9 @@ const TourPackages = () => {
   const packages = [
     {
       icon: <FaCamera />,
-      name: 'Delhi Local Sightseeing',
-      duration: '8 Hours / 80 KM',
-      price: '₹2,500',
+      name: 'Oneday Delhi Local sightseeing by Car',
+      duration: '8 Hours',
+      price: '₹2,200',
       originalPrice: '₹3,000',
       rating: 4.8,
       reviews: 245,
@@ -586,69 +586,52 @@ const TourPackages = () => {
         />
       </div>
 
-      {/* Hero Section */}
-      <section className="relative w-full h-[400px] sm:h-[500px] md:h-[700px] lg:h-[850px] mt-20 overflow-hidden bg-gradient-to-br from-orange-500 via-red-500 to-pink-500 flex items-center justify-center">
-        {/* Background Image - Immersive Look */}
+      {/* Page Title Section below Navbar */}
+      <div className="bg-white border-b border-gray-100 py-8 md:py-12 mt-20 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-orange-50 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-left"
+          >
+            <div className="flex items-center gap-2 text-orange-600 font-bold text-sm tracking-widest uppercase mb-3">
+              <span className="w-8 h-[2px] bg-orange-500"></span>
+              All Inclusive Deals
+            </div>
+            <h1 className="text-4xl md:text-6xl font-black text-gray-900 mb-4">
+              Tour <span className="text-orange-500">Packages</span>
+            </h1>
+            <p className="text-gray-600 text-lg md:text-xl max-w-2xl font-medium">
+              Discover India's Most Beautiful Destinations with Comfort & Style
+            </p>
+          </motion.div>
+        </div>
+      </div>
+
+      {/* Hero Banner Section */}
+      <section className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] overflow-hidden flex items-center justify-center">
+        {/* Background Image - Original Look */}
         <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30 transition-transform duration-1000"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000"
           style={{ backgroundImage: `url(${slider2})` }}
         />
-        {/* Animated Background Circles */}
+        {/* Animated Background Circles (Optional, kept for subtle detail if you like) */}
         <motion.div
-          className="absolute w-96 h-96 bg-yellow-300/30 rounded-full blur-3xl"
+          className="absolute w-96 h-96 bg-yellow-300/10 rounded-full blur-3xl"
           animate={{ x: [0, 100, 0], y: [0, -50, 0], scale: [1, 1.2, 1] }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
           style={{ top: '10%', left: '10%' }}
         />
         <motion.div
-          className="absolute w-80 h-80 bg-blue-300/20 rounded-full blur-3xl"
+          className="absolute w-80 h-80 bg-blue-300/10 rounded-full blur-3xl"
           animate={{ x: [0, -80, 0], y: [0, 60, 0], scale: [1, 0.8, 1] }}
           transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
           style={{ top: '60%', right: '15%' }}
         />
-        {/* Optimized Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-t from-orange-600/50 via-transparent to-pink-500/30"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center text-white drop-shadow-2xl">
-          <motion.h1
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-5xl md:text-7xl font-bold mb-6"
-          >
-            Tour <span className="text-yellow-300 drop-shadow-lg">Packages</span>
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-xl md:text-3xl mb-8 font-semibold text-yellow-100"
-          >
-            Discover India's Most Beautiful Destinations with Comfort & Style
-          </motion.p>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="flex flex-wrap justify-center gap-4 text-base md:text-lg"
-          >
-            <motion.span 
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="bg-white/30 backdrop-blur-md px-6 py-3 rounded-full font-bold shadow-lg border-2 border-white/50"
-            >
-              <FaPlane className="inline mr-2 text-yellow-300" /> All Inclusive
-            </motion.span>
-            <motion.span 
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="bg-white/30 backdrop-blur-md px-6 py-3 rounded-full font-bold shadow-lg border-2 border-white/50"
-            >
-              <FaHotel className="inline mr-2 text-yellow-300" /> Premium Hotels
-            </motion.span>
-            <motion.span 
-              whileHover={{ scale: 1.1, y: -5 }}
-              className="bg-white/30 backdrop-blur-md px-6 py-3 rounded-full font-bold shadow-lg border-2 border-white/50"
-            >
-              <FaCar className="inline mr-2 text-yellow-300" /> Comfortable Travel
-            </motion.span>
-          </motion.div>
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
+          {/* Content removed as requested */}
         </div>
       </section>
 

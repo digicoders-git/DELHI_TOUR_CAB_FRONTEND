@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { delhiBannerNew, drizer, innova, ertiga, forcetempo, wagonr, kiacerens } from '../../utils/images';
+import { delhiBannerNew, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano } from '../../utils/images';
 import { qutubMinar, lotustemple, humayuntomb, indiagate, parliamenthouse, rashtrapati, redfort, rajghat, akshardham } from '../../utils/images';
 
 const DelhiLocalSightseeing = () => {
@@ -97,7 +97,7 @@ const DelhiLocalSightseeing = () => {
             "AC Private Cab with Professional Driver",
             "Fuel, Parking and Toll Charges",
             "Driver Allowance",
-            "8 Hours / 80 KM usage",
+            "8 Hours usage",
             "Pickup and Drop from Central Delhi"
         ],
         exclusions: [
@@ -112,7 +112,8 @@ const DelhiLocalSightseeing = () => {
             { name: "Ertiga (6+1)", price: "₹2900/-", image: ertiga },
             { name: "Kia Carens (6+1)", price: "₹3500/-", image: kiacerens },
             { name: "Innova Crysta (6+1)", price: "₹4500/-", image: innova },
-            { name: "Tempo Traveller (12+1)", price: "₹7500/-", image: forcetempo }
+            { name: "Tempo Traveller (12+1)", price: "₹7500/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹11,500/-", image: forceurbano }
         ],
         faqs: [
             {

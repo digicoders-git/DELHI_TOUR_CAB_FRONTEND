@@ -329,7 +329,7 @@ const BookNow = () => {
                 {/* Adults Count */}
                 <div className="space-y-4">
                   <label className="text-sm font-bold text-gray-600 uppercase tracking-wider flex items-center gap-2">
-                    <FaUsers className="text-purple-500" /> Adults (12+ years)
+                    <FaUsers className="text-purple-500" /> Adults
                   </label>
                   <div className="flex items-center gap-4 bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-2xl border-2 border-purple-100">
                     <button
@@ -356,7 +356,7 @@ const BookNow = () => {
                 {/* Children Count */}
                 <div className="space-y-4">
                   <label className="text-sm font-bold text-gray-600 uppercase tracking-wider flex items-center gap-2">
-                    <FaChild className="text-pink-500" /> Children (Below 12)
+                    <FaChild className="text-pink-500" /> Children (Below 8)
                   </label>
                   <div className="flex items-center gap-4 bg-gradient-to-r from-pink-50 to-orange-50 p-4 rounded-2xl border-2 border-pink-100">
                     <button
