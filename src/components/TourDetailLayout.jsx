@@ -7,7 +7,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
     const navigate = useNavigate();
 
     const relatedTours = [
-        { name: 'Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing', image: delhi },
+        { name: 'Oneday Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing', image: delhi },
         { name: 'Delhi to Agra Tour', path: '/tour/delhi-to-agra-tour', image: agra },
         { name: 'Delhi to Jaipur Tour', path: '/tour/delhi-to-jaipur-tour', image: jaipur },
         { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: mathura },

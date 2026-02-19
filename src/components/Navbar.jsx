@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   const tourPackages = [
-    { label: 'Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing' },
+    { label: ' Oneday Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing' },
     { label: 'Delhi to Agra Tour', path: '/tour/delhi-to-agra-tour' },
     { label: 'Delhi to Jaipur Tour', path: '/tour/delhi-to-jaipur-tour' },
     { label: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan' },
