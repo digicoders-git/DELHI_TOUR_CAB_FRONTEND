@@ -55,7 +55,7 @@ import forceurbano from '../assets/Updated cars/forceurbano.png'
 const forceurbania = forceurbano; // Alias for compatibility
 import forcewinger from '../assets/Updated cars/force winger.png'
 import vellfire from '../assets/Updated cars/velfre.png'
-import fortuner from '../assets/Updated cars/fortuner.avif'
+import fortuner from '../assets/Updated cars/fortuner.png'
 const toyotavellfire = vellfire; // Alias for compatibility
 // const fortuner = fortuner; // Alias for compatibility
 

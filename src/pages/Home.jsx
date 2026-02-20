@@ -6,7 +6,7 @@ import ServiceCities from '../components/ServiceCities';
 import { NavLink, useNavigate } from 'react-router-dom';
 import {
   wagonr, breeza, dzire, hondacity,
-  innova, scorpio, verna, defender, thar,
+  innova, scorpio, verna, defender, thar, fortuner,
   kiacarnival, kiacarens, forcetempo, forceurbano, forcewinger, vellfire,
   volvo, ertiga2, agra, haridwar, jaipur, mathura, rishikesh, delhiBannerNew,
   qutubMinar, lotustemple, humayuntomb, indiagate, parliamenthouse, rashtrapati, redfort, rajghat, akshardham
@@ -139,6 +139,7 @@ const Home = () => {
     { name: 'Maruti Suzuki', model: 'Swift Dzire', image: dzire },
     { name: 'Maruti Suzuki', model: 'Ertiga', image: ertiga2 },
     { name: 'Toyota', model: 'Innova Crysta', image: innova },
+    { name: 'Toyota', model: 'Fortuner', image: fortuner },
     { name: 'Toyota', model: 'Vellfire', image: vellfire },
     { name: 'Honda', model: 'City', image: hondacity },
     { name: 'Hyundai', model: 'Verna', image: verna },
