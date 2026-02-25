@@ -74,6 +74,28 @@ const OutstationCarRental = () => {
       description: 'The ultimate choice for long family trips. Superior comfort and huge luggage space.',
       features: ['Long Route Comfort', 'Large Boot Space', 'Rear AC Vents']
     },
+       {
+      name: 'Hyundai Verna',
+      image: verna,
+      capacity: '5 Seater',
+      fuel: 'Petrol/Diesel',
+      perKm: '₹30/km',
+      driverAllow: '₹500/day',
+      dayLimit: '250km',
+      description: 'A stylish and comfortable sedan for smooth highway cruising and elite travel.',
+      features: ['Smart Trunk', 'Ventilated Seats', 'Premium Audio']
+    },
+    {
+      name: 'Honda City',
+      image: hondacity,
+      capacity: '5 Seater',
+      fuel: 'Petrol',
+      perKm: '₹30/km',
+      driverAllow: '₹500/day',
+      dayLimit: '250km',
+      description: 'Executive sedan for premium outstation business trips.',
+      features: ['Premium Sedan', 'Luxury', 'Smooth Drive']
+    },
     {
       name: 'Mahindra Scorpio',
       image: scorpio,
@@ -96,28 +118,7 @@ const OutstationCarRental = () => {
       description: 'Adventure-ready SUV perfect for mountain trips and off-road journeys.',
       features: ['4x4 Capability', 'Adventure Ready', 'Rugged']
     },
-    {
-      name: 'Honda City',
-      image: hondacity,
-      capacity: '5 Seater',
-      fuel: 'Petrol',
-      perKm: '₹30/km',
-      driverAllow: '₹500/day',
-      dayLimit: '250km',
-      description: 'Executive sedan for premium outstation business trips.',
-      features: ['Premium Sedan', 'Luxury', 'Smooth Drive']
-    },
-    {
-      name: 'Hyundai Verna',
-      image: verna,
-      capacity: '5 Seater',
-      fuel: 'Petrol/Diesel',
-      perKm: '₹30/km',
-      driverAllow: '₹500/day',
-      dayLimit: '250km',
-      description: 'A stylish and comfortable sedan for smooth highway cruising and elite travel.',
-      features: ['Smart Trunk', 'Ventilated Seats', 'Premium Audio']
-    },
+ 
     {
       name: 'Toyota Fortuner',
       image: fortuner,
@@ -196,6 +197,17 @@ const OutstationCarRental = () => {
       features: ['Large Group', 'Comfortable', 'Spacious']
     },
     {
+      name: 'Urbania',
+      image: forceurbano,
+      capacity: '17 Seater',
+      fuel: 'Diesel',
+      perKm: '₹40/km',
+      driverAllow: '₹800/day',
+      dayLimit: '250km',
+      description: 'Luxury sleeper bus for long-distance overnight journeys.',
+      features: ['Sleeper Berths', 'AC', 'Premium']
+    },
+    {
       name: 'Bus (25 to 45 Seats)',
       image: volvo,
       capacity: '25-45 Seater',
@@ -204,7 +216,7 @@ const OutstationCarRental = () => {
       driverAllow: '₹1,000/day',
       dayLimit: '250km',
       description: 'Large buses for corporate and group outstation travel.',
-      features: ['Large Capacity', 'AC', 'On Request']
+      features: ['Large Capacity', 'AC', 'Price On Request']
     },
     {
       name: 'Volvo Sleeper Bus',
@@ -212,17 +224,6 @@ const OutstationCarRental = () => {
       capacity: '40 Seater',
       fuel: 'Diesel',
       perKm: '₹90-125/km',
-      driverAllow: '₹800/day',
-      dayLimit: '250km',
-      description: 'Luxury sleeper bus for long-distance overnight journeys.',
-      features: ['Sleeper Berths', 'AC', 'Premium']
-    },
-    {
-      name: 'Urbania',
-      image: forceurbano,
-      capacity: '17 Seater',
-      fuel: 'Diesel',
-      perKm: '₹40/km',
       driverAllow: '₹800/day',
       dayLimit: '250km',
       description: 'Luxury sleeper bus for long-distance overnight journeys.',
@@ -331,7 +332,7 @@ const OutstationCarRental = () => {
                       </div>
                       <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
                         <span className="text-gray-600 font-medium">Toll/State Tax:</span>
-                        <span className="text-orange-600 font-bold">On Request</span>
+                        <span className="text-orange-600 font-bold">Price On Request</span>
                       </div>
                     </div>
                   </div>

@@ -8,7 +8,9 @@ import {
     ayodhya,
     prayagraj,
     rumidarvaja,
-    amritsar
+    amritsar,
+    InnovaCrysta,
+    innovaSlider
 } from '../utils/images';
 import {
     FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie,
@@ -119,7 +121,7 @@ export const toursData = {
         exclusions: [
             "Entry tickets (Taj Mahal / Agra Fort / other monuments)",
             "Meals & refreshments",
-            "Tour guide (available on request for extra charge)",
+            "Tour guide (available Price On Request for extra charge)",
             "Personal expenses"
         ],
         importantNotes: [
@@ -129,6 +131,13 @@ export const toursData = {
             "Because this is a Same Day Return trip, the itinerary is primarily fixed. Minor adjustments are possible for extra charges.",
             "Payment via GPay / PhonePe / UPI: +91-9278063535"
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the Taj Mahal open on Fridays?",
@@ -144,7 +153,7 @@ export const toursData = {
             },
             {
                 question: "Is a tour guide included?",
-                answer: "A professional tour guide is not included in the standard package but can be arranged on request for an additional charge."
+                answer: "A professional tour guide is not included in the standard package but can be arranged Price On Request for an additional charge."
             }
         ],
         tourTypes: [
@@ -167,7 +176,7 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
             { name: "Luxury SUV Kia carens (6+1)", price: "₹10,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7,500/", image: forcetempo },
+            { name: "Tempo Traveller (12+1)", price: "₹7,500/", image: forcetempo },
             { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
         ]
     },
@@ -238,6 +247,13 @@ export const toursData = {
             "Cable car (Ropeway) tickets are not included in the package.",
             "Payment via GPay / PhonePe / UPI: 9278063535"
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         tourTypes: [
             {
                 title: "Haridwar Holy Pilgrimage",
@@ -258,7 +274,7 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga },
             { name: "Luxury SUV Kia carens (6+1)", price: "₹12,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹13,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7500", image: forcetempo },
+            { name: "Tempo Traveller (12+1)", price: "₹7500", image: forcetempo },
             { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
         ]
 
@@ -374,7 +390,7 @@ export const toursData = {
         exclusions: [
             "Entry Tickets (Monuments, Forts, Palaces, Museums)",
             "Meals & Refreshments",
-            "Tour Guide (available on request with extra charges)",
+            "Tour Guide (available Price On Request with extra charges)",
             "Elephant / Jeep rides at Amber Fort"
         ],
         importantNotes: [
@@ -383,6 +399,13 @@ export const toursData = {
             "As this is a Same Day Return Trip, the itinerary is primarily fixed. Minor adjustments are possible with extra charges.",
             "Payment via GPay / PhonePe / UPI: 9278063535"
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How long is the drive from Delhi to Jaipur?",
@@ -398,7 +421,7 @@ export const toursData = {
             },
             {
                 question: "Is it possible to hire a guide in Jaipur?",
-                answer: "Yes, we can arrange a professional licensed guide for Jaipur sightseeing on request for an additional fee."
+                answer: "Yes, we can arrange a professional licensed guide for Jaipur sightseeing Price On Request for an additional fee."
             }
         ],
         tourTypes: [
@@ -421,7 +444,7 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga },
             { name: "Luxury SUV Kia carens (6+1)", price: "₹12,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹15,000", image: forcetempo },
+            { name: "Tempo Traveller (12+1 )", price: "₹15,000", image: forcetempo },
             { name: "Force Urbania", price: "₹22,000/-", image: forceurbano }
         ]
     },
@@ -579,12 +602,21 @@ export const toursData = {
             }
         ],
         importantNotes: [
+            "Tour Timings: Recommended Pickup: 9:00 AM | Drop-off: 5:00 PM",
+            "Duration: 8 Hours (Customizable)",
+            "Extra Time: Car ₹200/hour and Tempo Traveller ₹500/hour (After 8hrs)",
+            "Pickup available from Hotel, Airport, Railway Station, or anywhere in Central Delhi",
             "If the pickup is from Airport or Railway Station, parking charges will be applicable extra.",
             "The Delhi sightseeing itinerary is fully customizable.",
-            "Total tour duration is 8 hours (pickup to drop); extra hours are charged additionally.",
-            "Tour start time is flexible as per your convenience.",
             "Red Fort, Lotus Temple, and Akshardham Temple are closed on Mondays."
-        ]
+        ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/"
     },
     'delhi-to-mathura-vrindavan': {
         title: "Delhi to Mathura Vrindavan Tour",
@@ -650,6 +682,13 @@ export const toursData = {
             "As this is a Same Day Return Trip, the itinerary is primarily fixed. Minor adjustments possible.",
             "Payment via GPay / PhonePe / UPI: 9278063535"
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         tourTypes: [
             {
                 title: "Spiritual Family Package",
@@ -668,7 +707,8 @@ export const toursData = {
             { name: "Hatchback WagonR (4+1)", price: "₹7,500/-", image: wagonr },
             { name: "Sedan Swift Dzire (4+1)", price: "₹8,000/-", image: drizer },
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹9,000/-", image: ertiga },
-            { name: "Luxury SUV Kia Carens / Innova Crysta (6+1)", price: "₹11,500/-", image: kiacerens },
+            { name: "Luxury SUV Kia Carens (4+1)", price: "₹11,500/-", image: kiacerens },
+            { name: "Luxury SUV Innova Crysta (6+1)", price: "₹13,500/-", image: innovaSlider },
             { name: "Tempo Traveller (12+1)", price: "₹15,000/-", image: forcetempo },
             { name: "Tempo Traveller (17+1)", price: "₹18,000/-", image: forcetempo },
             { name: "Force Urbania", price: "₹24,500/-", image: forceurbano }
@@ -738,6 +778,13 @@ export const toursData = {
             "Rafting is subject to weather conditions and time availability.",
             "Payment via GPay / PhonePe / UPI: 9278063535"
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         tourTypes: [
             {
                 title: "Adventure Discovery Package",
@@ -758,7 +805,7 @@ export const toursData = {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹11,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens (6+1)", price: "₹13,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹14,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹12,500/", image: forcetempo },
+            { name: "Tempo Traveller (12+1 )", price: "₹12,500/", image: forcetempo },
             { name: "Force Urbania", price: "₹18,500/-", image: forceurbano }
         ]
     },
@@ -864,6 +911,13 @@ export const toursData = {
             "Total duration: 16-18 hours.",
             "Advance Booking: ₹1000 required."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is it possible to visit all three places in one day?",
@@ -880,7 +934,7 @@ export const toursData = {
                 description: "A perfect mix of India's royal history and divine spirituality for families and groups."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹7,500/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹8,000/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹9,000/-", image: ertiga },
@@ -961,6 +1015,13 @@ export const toursData = {
             "Advance Booking: ₹1000 required to confirm.",
             "Pricing is all-inclusive for the specified vehicle type."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the Taj Mahal open on Fridays?",
@@ -977,7 +1038,7 @@ export const toursData = {
                 description: "Relaxed and private tour from Faridabad focusing on the best of Agra's heritage."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹6,000/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹6,500/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹7,500/-", image: ertiga },
@@ -1080,6 +1141,13 @@ export const toursData = {
             "Total duration: 16-17 hours approx.",
             "Advance booking of ₹1000 is required."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How far is Fatehpur Sikri from Agra?",
@@ -1096,7 +1164,7 @@ export const toursData = {
                 description: "A comprehensive tour covering the best of Mughal architecture in Agra and its surroundings."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹7,500/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹8,000/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹9,000/-", image: ertiga },
@@ -1185,6 +1253,13 @@ export const toursData = {
             "Comfortable walking shoes are recommended.",
             "Tour duration: Approx 14-16 hours."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Can the pickup location be changed within Noida?",
@@ -1192,7 +1267,7 @@ export const toursData = {
             },
             {
                 question: "Do you provide guides in Agra?",
-                answer: "Yes, we can arrange a professional licensed guide on request at an additional cost."
+                answer: "Yes, we can arrange a professional licensed guide Price On Request at an additional cost."
             }
         ],
         tourTypes: [
@@ -1201,7 +1276,7 @@ export const toursData = {
                 description: "Focuses on the rich history and architecture of the Mughal era."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹6,500/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹7,000/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
@@ -1286,6 +1361,13 @@ export const toursData = {
             "Distance: Approx 200 km (one way).",
             "Carry a valid ID proof."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Indirapuram and Vaishali?",
@@ -1302,7 +1384,7 @@ export const toursData = {
                 description: "Perfect for those looking for a quick yet comprehensive visit to Agra."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹6,500/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹7,000/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
@@ -1382,7 +1464,7 @@ export const toursData = {
         exclusions: [
             "Monument Entrance Fees",
             "Personal Expenses and Meals",
-            "Guide Charges (Available on request)",
+            "Guide Charges (Available Price On Request)",
             "Driver Tips"
         ],
         importantNotes: [
@@ -1391,6 +1473,13 @@ export const toursData = {
             "Total tour duration: 15-16 hours.",
             "Please keep a photo ID ."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Manesar or Sohna Road?",
@@ -1407,7 +1496,7 @@ export const toursData = {
                 description: "A well-planned day trip to refresh yourself with a dose of Indian history."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹6,500/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹7,000/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
@@ -1500,6 +1589,13 @@ export const toursData = {
             "Comfortable footwear is recommended for temple visits.",
             "Carry a valid government ID."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you provide pickup from Gurgaon Sectors?",
@@ -1507,7 +1603,7 @@ export const toursData = {
             },
             {
                 question: "Can we visit Gokul along with Mathura?",
-                answer: "Yes, we can customize the itinerary to include Gokul or Barsana on request."
+                answer: "Yes, we can customize the itinerary to include Gokul or Barsana Price On Request."
             }
         ],
         tourTypes: [
@@ -1516,7 +1612,7 @@ export const toursData = {
                 description: "A tour designed for devotees wanting to visit all major temples in a single day."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹5,000/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹5,500/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹7,000/-", image: ertiga },
@@ -1609,6 +1705,13 @@ export const toursData = {
             "Total journey time: Approx 140 km from Noida (2.5 - 3 hours).",
             "Respect local temple dress codes and photography rules."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Greater Noida West/Gaur City?",
@@ -1625,7 +1728,7 @@ export const toursData = {
                 description: "A fast-paced yet fulfilling day trip covering all the major spiritual highlights of Mathura and Vrindavan."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹5,000/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹5,500/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹7,000/-", image: ertiga },
@@ -1714,6 +1817,13 @@ export const toursData = {
             "Plan for traffic during peak hours.",
             "Respect dress codes at religious sites."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Gurgaon corporate offices?",
@@ -1730,7 +1840,7 @@ export const toursData = {
                 description: "The ideal way to see Delhi's major highlights in a single day from Gurgaon."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹2,800/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹3,000/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹3,500/-", image: ertiga },
@@ -1819,6 +1929,13 @@ export const toursData = {
             "Extra hours and kilometers are charged at standard rates.",
             "Carry a valid ID and comfortable walking shoes."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Greater Noida sectors?",
@@ -1826,7 +1943,7 @@ export const toursData = {
             },
             {
                 question: "Can we visit Chandni Chowk during the tour?",
-                answer: "Yes, we can customize the itinerary to include Old Delhi areas on request."
+                answer: "Yes, we can customize the itinerary to include Old Delhi areas Price On Request."
             }
         ],
         tourTypes: [
@@ -1835,7 +1952,7 @@ export const toursData = {
                 description: "The perfect way to cover all major tourist icons of Delhi in a single day starting from Noida."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹3,000/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹3,400/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹3,900/-", image: ertiga },
@@ -1924,6 +2041,13 @@ export const toursData = {
             "Suggested start time: 9:00 AM.",
             "Respect local traffic and security protocols."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Indirapuram?",
@@ -1931,7 +2055,7 @@ export const toursData = {
             },
             {
                 question: "Can we visit Old Delhi Chandni Chowk?",
-                answer: "Yes, we can customize the tour to include Old Delhi on request."
+                answer: "Yes, we can customize the tour to include Old Delhi Price On Request."
             }
         ],
         tourTypes: [
@@ -1940,7 +2064,7 @@ export const toursData = {
                 description: "A perfectly organized day trip covering the best of Delhi's icons for Ghaziabad residents."
             }
         ],
-        cars: [
+        carss: [
             { name: "WagonR (4+1)", price: "₹3,200/-", image: wagonr },
             { name: "Swift Dzire (4+1)", price: "₹3,400/-", image: drizer },
             { name: "Maruti Ertiga (6+1)", price: "₹3,900/-", image: ertiga },
@@ -2029,6 +2153,13 @@ export const toursData = {
             "Extra charges apply for additional time or distance.",
             "Wear comfortable walking shoes for sightseeing."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do you pick up from Greater Faridabad (Neharpar)?",
@@ -2136,6 +2267,13 @@ export const toursData = {
             "Total duration: 18-20 hours.",
             "Carry a valid photo ID."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the temple closed during afternoon?",
@@ -2239,6 +2377,13 @@ export const toursData = {
             "Total duration: 16-18 hours.",
             "Keep a bottle of water and dry snacks."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "What is the best time to reach the temple?",
@@ -2350,6 +2495,13 @@ export const toursData = {
             "Total duration: 16-18 hours.",
             "Wear comfortable clothing and walking shoes."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How long does it take to reach Chandigarh?",
@@ -2462,6 +2614,13 @@ export const toursData = {
             "Entry tickets not included in the package.",
             "Advance booking recommended for better availability."
         ],
+        optionalAddOns: [
+            { category: "Historical Extensions", items: "Fatehpur Sikri, Sikandra (Tomb of Akbar), Itmad-ud-Daulah (Baby Taj)" },
+            { category: "Cultural Experiences", items: "Mohabbat-e-Taj Show (Kalakriti), Marble Inlay Workshop Visit" },
+            { category: "Nature & Views", items: "Mehtab Bagh (Sunset view of Taj Mahal), Taj Nature Walk" },
+            { category: "Food & Shopping", items: "Agra Petha Shopping, Local Street Food Tour at Sadar Bazaar" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the Taj Mahal open on Fridays?",
@@ -2591,6 +2750,13 @@ export const toursData = {
             "Guides available locally at Fatehpur Sikri (hire at own cost/discretion).",
             "Wear comfortable walking shoes."
         ],
+        optionalAddOns: [
+            { category: "Historical Extensions", items: "Taj Mahal, Agra Fort, Itmad-ud-Daulah (Baby Taj)" },
+            { category: "Cultural Experiences", items: "Mohabbat-e-Taj Show (Kalakriti), Marble Inlay Workshop Visit" },
+            { category: "Nature & Views", items: "Mehtab Bagh (Sunset view of Taj Mahal), Taj Nature Walk" },
+            { category: "Food & Shopping", items: "Agra Petha Shopping, Local Street Food Tour at Sadar Bazaar" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How far is Fatehpur Sikri from Agra?",
@@ -2712,6 +2878,13 @@ export const toursData = {
             "Beware of monkeys in Vrindavan (avoid carrying food/spectacles openly).",
             "Bankey Bihari Temple can be very crowded."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How far are Mathura & Vrindavan from Agra?",
@@ -2833,6 +3006,13 @@ export const toursData = {
             "Amber Fort is best visited early morning to avoid crowds.",
             "Entry tickets can be booked online to skip queues."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the guide fee included?",
@@ -2950,6 +3130,13 @@ export const toursData = {
             "Rock Garden involves some walking.",
             "Boating at Sukhna Lake is subject to weather conditions."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is boating included in the package?",
@@ -3071,6 +3258,13 @@ export const toursData = {
             "Dress modestly for temple visits.",
             "Ropeway waiting time can be long during peak hours."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Which Aarti should we attend?",
@@ -3192,6 +3386,13 @@ export const toursData = {
             "Carry light woolens even in summer for Mussoorie.",
             "Traffic on Mall Road can be restricted during peak hours."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the ropeway ticket included?",
@@ -3305,6 +3506,13 @@ export const toursData = {
             "Carry heavy woolens in winter and light woolens in summer.",
             "Prepaid SIM cards from other states do not work in Kashmir."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do outside cars go everywhere in Gulmarg/Sonmarg?",
@@ -3403,6 +3611,13 @@ export const toursData = {
             "Book accommodation in advance as it gets crowded on weekends.",
             "Carry woolens as evenings can be chilly."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is accommodation included in this price?",
@@ -3512,6 +3727,13 @@ export const toursData = {
             "Guide hiring is recommended at major monuments (authorized guides only).",
             "Hotel booking is not included in this cab fare."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the hotel included?",
@@ -3621,6 +3843,13 @@ export const toursData = {
             "Alcohol and non-veg food are strictly prohibited in Pushkar.",
             "Toll taxes are included in the package."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is accommodation included?",
@@ -3724,6 +3953,13 @@ export const toursData = {
             "Carry valid ID proof for safari entry.",
             "Don't wear bright colors in the jungle."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the Jeep Safari included?",
@@ -3839,6 +4075,13 @@ export const toursData = {
             "Book helicopter tickets well in advance from IRCTC portal.",
             "AC will be switched off in mountain areas for safety."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the trek very difficult?",
@@ -3954,6 +4197,13 @@ export const toursData = {
             "Carry heavy woolens for Manali and Solang valley.",
             "Expect long driving hours on Day 6 for return."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is Rohtang Pass included in this fare?",
@@ -4071,6 +4321,13 @@ export const toursData = {
             "Expect long driving days through narrow mountain roads.",
             "Health check-up is recommended before embarking on the trip."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How much trekking is involved?",
@@ -4196,6 +4453,13 @@ export const toursData = {
             "Taj Mahal is closed on Fridays.",
             "Varanasi boat rides are best during sunrise or for the evening Aarti."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is hotel booking included in this price?",
@@ -4321,6 +4585,13 @@ export const toursData = {
             "Heavy woolens required for Gulmarg/Sonmarg regardless of season.",
             "Prepare for long driving hours on Day 1 and Day 10."
         ],
+        optionalAddOns: [
+            { category: "Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is Katra to Vaishno Devi trek included?",

@@ -173,11 +173,21 @@ const DelhiLocalSightseeing = () => {
             }
         ],
         importantNotes: [
-            "The Delhi sightseeing itinerary is fully customizable.",
-            "Total tour duration is 8 hours (pickup to drop); extra hours are charged additionally.",
-            "Tour start time is flexible as per your convenience.",
-            "Red Fort, Lotus Temple, and Akshardham Temple are closed on Mondays."
-        ]
+            "🕙 Tour Timings: Recommended Pickup: 9:00 AM | Drop-off: 5:00 PM",
+            "⏱️ Duration: 8 Hours (Customizable)",
+            "💸 Extra Time: Car ₹200/hour and Tempo Traveller ₹500/hour (After 8hrs)",
+            "🚗 Pickup available from Hotel, Airport, Railway Station, or anywhere in Central Delhi",
+            "🅿️ If the pickup is from Airport or Railway Station, parking charges will be applicable extra.",
+            "🗺️ The Delhi sightseeing itinerary is fully customizable.",
+            "🚫 Red Fort, Lotus Temple, and Akshardham Temple are closed on Mondays."
+        ],
+        optionalAddOns: [
+            { category: "🛕 Spiritual & Religious", items: "Birla Mandir, Gurudwara Bangla Sahib, Jama Masjid, Dargah Hazrat Nizamuddin Auliya" },
+            { category: "🏛️ Historical", items: "Jantar Mantar, Agrasen ki Baoli, Purana Quila" },
+            { category: "🏤 Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
+            { category: "🌳 Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
+        ],
+        onlineTickets: "https://asi.payumoney.com/"
     };
 
     return <TourDetailLayout {...tourData} />;

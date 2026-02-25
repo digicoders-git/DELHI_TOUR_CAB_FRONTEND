@@ -92,7 +92,7 @@ const DelhiAgraTour = () => {
         exclusions: [
             "Entry tickets (Taj Mahal / Agra Fort / other monuments)",
             "Meals & refreshments",
-            "Tour guide (available on request for extra charge)",
+            "Tour guide (available Price On Request for extra charge)",
             "Personal expenses"
         ],
         importantNotes: [
@@ -117,7 +117,7 @@ const DelhiAgraTour = () => {
             },
             {
                 question: "Is a tour guide included?",
-                answer: "A professional tour guide is not included in the standard package but can be arranged on request for an additional charge."
+                answer: "A professional tour guide is not included in the standard package but can be arranged Price On Request for an additional charge."
             }
         ],
         tourTypes: [
@@ -134,13 +134,13 @@ const DelhiAgraTour = () => {
                 description: "Luxury Tempo Travellers (12-17 seats) with professional coordination for corporate groups or large extended families."
             }
         ],
-        cars: [
+        carss: [
             { name: "Hatchback WagonR (4+1)", price: "₹6,500/-", image: wagonr },
             { name: "Sedan Swift Dzire (4+1)", price: "₹7,000/-", image: drizer },
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹8,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens (6+1)", price: "₹10,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹7500/-", image: forcetempo },
+            { name: "Tempo Traveller (12+1 )", price: "₹7500/-", image: forcetempo },
             { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
         ]
     };

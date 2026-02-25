@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
-import { FaClock, FaUsers, FaCheckCircle, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaCar, FaInfoCircle, FaStar } from 'react-icons/fa';
+import { FaClock, FaUsers, FaCheckCircle, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaCar, FaInfoCircle, FaStar, FaFileInvoiceDollar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { agra, jaipur, delhi, haridwar, rishikesh, mathura } from '../utils/images';
 
-const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes }) => {
+const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets }) => {
     const navigate = useNavigate();
 
     const relatedTours = [
@@ -63,76 +63,192 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                 </div>
             </section>
 
-            {/* Mobile Only: Available Vehicles (Right after Hero) */}
-            {carss && carss.length > 0 && (
-                <section className="lg:hidden px-4 pt-8 bg-gray-50">
-                    <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
-                        <h4 className="font-bold text-gray-800 mb-6 border-b-2 border-orange-500 pb-2 w-fit text-xl">
-                            Available Vehicles:
-                        </h4>
-                        <div className="space-y-6">
-                            {carss.map((carss, index) => (
-                                <div key={index} className="flex flex-col p-4 bg-white rounded-2xl shadow-md border border-gray-100 group hover:shadow-xl transition-all duration-300">
-                                    <div className="h-40 mb-4 overflow-hidden rounded-xl bg-gray-50 flex items-center justify-center p-4">
-                                        <motion.img
-                                            whileHover={{ scale: 1.15, rotate: 2 }}
-                                            src={carss.image}
-                                            alt={carss.name}
-                                            className="max-w-full max-h-full object-contain transition-transform duration-300"
-                                        />
-                                    </div>
-                                    <div className="flex items-center justify-between mb-4 bg-gradient-to-r from-orange-600 to-orange-400 p-4 rounded-xl shadow-inner">
-                                        <span className="font-bold text-white text-base">{carss.name}</span>
-                                        <span className="text-white font-black bg-orange-700/30 px-3 py-1.5 rounded-md text-lg">{carss.price}</span>
-                                    </div>
-                                    <div className="grid grid-cols-3 gap-3">
-                                        <motion.a
-                                            animate={{ scale: [1, 1.05, 1] }}
-                                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-                                            whileHover={{ scale: 1.1, y: -2 }}
-                                            whileTap={{ scale: 0.95 }}
-                                            href="tel:+919278063535"
-                                            className="flex flex-col items-center justify-center py-3 bg-blue-50 text-blue-600 rounded-xl hover:bg-blue-600 hover:text-white transition-all border border-blue-100 shadow-sm"
-                                        >
-                                            <FaPhone className="text-sm mb-1" />
-                                            <span className="text-[10px] font-bold uppercase tracking-wider text-center">Call Now</span>
-                                        </motion.a>
-                                        <motion.button
-                                            animate={{ scale: [1, 1.05, 1] }}
-                                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
-                                            whileHover={{ scale: 1.1, y: -2 }}
-                                            whileTap={{ scale: 0.95 }}
-                                            onClick={() => {
-                                                const text = `Hello, I'm interested in booking the ${carss.name} for the ${title}. Price quoted: ${carss.price}`;
-                                                window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
-                                            }}
-                                            className="flex flex-col items-center justify-center py-3 bg-green-50 text-green-600 rounded-xl hover:bg-green-600 hover:text-white transition-all border border-green-100 shadow-sm"
-                                        >
-                                            <FaWhatsapp className="text-sm mb-1" />
-                                            <span className="text-[10px] font-bold uppercase tracking-wider text-center">Enquiry Now</span>
-                                        </motion.button>
-                                        <motion.button
-                                            animate={{ scale: [1, 1.05, 1] }}
-                                            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-                                            whileTap={{ scale: 0.95 }}
-                                            onClick={() => navigate('/book-now')}
-                                            className="flex flex-col items-center justify-center py-3 bg-orange-50 text-orange-600 rounded-xl hover:bg-orange-500 hover:text-white transition-all border border-orange-100 shadow-sm"
-                                        >
-                                            <FaCar className="text-sm mb-1" />
-                                            <span className="text-[10px] font-bold uppercase tracking-wider text-center">Book Now</span>
-                                        </motion.button>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section>
-            )}
-
             <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Content */}
                 <div className="lg:col-span-2 space-y-12">
-                    {/* Places Details First (As requested) */}
+                    {/* 1. Description Section */}
+                    <section >
+                        <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center justify-center gap-2 text-center uppercase">
+                            <FaInfoCircle className="text-orange-500 mr-3" />
+                            Explore {title} – A Professional Travel Experience
+                        </h2>
+                        <p className="text-gray-600 leading-relaxed text-lg text-justify italic">
+                            {description}
+                        </p>
+                    </section>
+
+                    {/* 2. Why Choose Us */}
+                    {whyChooseUs && (
+                        <section>
+                            <h2 className="text-2xl font-bold text-gray-800 mb-6">Why Choose Our {title}?</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {whyChooseUs.map((item, index) => (
+                                    <div key={index} className="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+                                        <FaCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
+                                        <div>
+                                            <h4 className="font-bold text-gray-800">{item.title}</h4>
+                                            <p className="text-gray-600 text-sm">{item.description}</p>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                    {/* 3. Available Vehicles (Mobile Only) */}
+                    {carss && carss.length > 0 && (
+                        <div className="lg:hidden">
+                            <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
+                                <h4 className="font-bold text-gray-800 mb-6 border-b-2 border-orange-500 pb-2 w-fit text-xl">
+                                    Available Vehicles:
+                                </h4>
+                                <div className="space-y-6">
+                                    {carss.map((carss, index) => (
+                                        <div key={index} className="flex flex-col p-4 bg-white rounded-2xl shadow-md border border-gray-100 group hover:shadow-xl transition-all duration-300">
+                                            <div className="h-40 mb-4 overflow-hidden rounded-xl bg-gray-50 flex items-center justify-center p-4">
+                                                <motion.img
+                                                    whileHover={{ scale: 1.15, rotate: 2 }}
+                                                    src={carss.image}
+                                                    alt={carss.name}
+                                                    className="max-w-full max-h-full object-contain transition-transform duration-300"
+                                                />
+                                            </div>
+                                            <div className="flex items-center justify-between mb-4 bg-gradient-to-r from-orange-600 to-orange-400 p-4 rounded-xl shadow-inner">
+                                                <span className="font-bold text-white text-base leading-tight uppercase tracking-wide">{carss.name}</span>
+                                                <div className="text-white font-black bg-orange-700/30 px-3 py-1.5 rounded-lg border border-orange-500/50 shadow-sm">{carss.price}</div>
+                                            </div>
+                                            <div className="grid grid-cols-3 gap-3">
+                                                <motion.a
+                                                    animate={{ scale: [1, 1.05, 1] }}
+                                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                                                    whileHover={{ scale: 1.1, y: -2 }}
+                                                    whileTap={{ scale: 0.95 }}
+                                                    href="tel:+919278063535"
+                                                    className="flex flex-col items-center justify-center py-3 bg-blue-50 text-blue-600 rounded-xl hover:bg-blue-600 hover:text-white transition-all border border-blue-100 shadow-sm"
+                                                >
+                                                    <FaPhone className="text-sm mb-1" />
+                                                    <span className="text-[10px] font-bold uppercase tracking-wider text-center">Call Now</span>
+                                                </motion.a>
+                                                <motion.button
+                                                    animate={{ scale: [1, 1.05, 1] }}
+                                                    transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                                                    whileHover={{ scale: 1.1, y: -2 }}
+                                                    whileTap={{ scale: 0.95 }}
+                                                    onClick={() => {
+                                                        const text = `Hello, I'm interested in booking the ${carss.name} for the ${title}. Price quoted: ${carss.price}`;
+                                                        window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
+                                                    }}
+                                                    className="flex flex-col items-center justify-center py-3 bg-green-50 text-green-600 rounded-xl hover:bg-green-600 hover:text-white transition-all border border-green-100 shadow-sm"
+                                                >
+                                                    <FaWhatsapp className="text-sm mb-1" />
+                                                    <span className="text-[10px] font-bold uppercase tracking-wider text-center">Enquiry Now</span>
+                                                </motion.button>
+                                                <motion.button
+                                                    whileTap={{ scale: 0.95 }}
+                                                    onClick={() => navigate('/book-now')}
+                                                    className="flex flex-col items-center justify-center py-3 bg-orange-50 text-orange-600 rounded-xl hover:bg-orange-500 hover:text-white transition-all border border-orange-100 shadow-sm"
+                                                >
+                                                    <FaCar className="text-sm mb-1" />
+                                                    <span className="text-[10px] font-bold uppercase tracking-wider text-center">Book Now</span>
+                                                </motion.button>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    )}
+
+                    {/* 4. Includes & Exclusions */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <section className="bg-green-50 p-6 rounded-2xl border border-green-100">
+                            <h3 className="text-xl font-bold text-green-800 mb-4">What's Included</h3>
+                            <ul className="space-y-3">
+                                {includes.map((item, index) => (
+                                    <li key={index} className="flex items-start gap-2 text-green-700 text-sm">
+                                        <FaCheckCircle className="mt-1 flex-shrink-0" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                        <section className="bg-red-50 p-6 rounded-2xl border border-red-100">
+                            <h3 className="text-xl font-bold text-red-800 mb-4">What's Excluded</h3>
+                            <ul className="space-y-3">
+                                {exclusions.map((item, index) => (
+                                    <li key={index} className="flex items-start gap-2 text-red-700 text-sm">
+                                        <span className="font-bold text-lg leading-none mt-[-2px]">×</span>
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    </div>
+
+                    {/* 5. Important Notes */}
+                    {importantNotes && (
+                        <section className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
+                            <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">
+                                <FaInfoCircle className="text-blue-500" /> Important Notes
+                            </h3>
+                            <ul className="space-y-2">
+                                {importantNotes.map((note, index) => (
+                                    <li key={index} className="flex items-start gap-2 text-blue-700 text-sm">
+                                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
+                                        {note}
+                                    </li>
+                                ))}
+                            </ul>
+                        </section>
+                    )}
+
+                    {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
+                    {(optionalAddOns || onlineTickets) && (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {optionalAddOns && (
+                                <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                                        Optional Add-On Attractions
+                                    </h3>
+                                    <div className="space-y-4">
+                                        {optionalAddOns.map((addon, index) => (
+                                            <div key={index} className="flex flex-col gap-1">
+                                                <h4 className="font-bold text-orange-600 flex items-center gap-2 text-base">
+                                                    {addon.category}:
+                                                </h4>
+                                                <p className="text-gray-700 leading-relaxed text-sm pl-2">
+                                                    {addon.items}
+                                                </p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+
+                            {onlineTickets && (
+                                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 shadow-sm flex flex-col justify-center items-center text-center">
+                                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                        <FaFileInvoiceDollar className="text-2xl text-blue-600" />
+                                    </div>
+                                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                        Online Monument Tickets
+                                    </h3>
+                                    <motion.a
+                                        whileHover={{ scale: 1.05 }}
+                                        whileTap={{ scale: 0.95 }}
+                                        href={onlineTickets}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-blue-600 text-white px-4 py-2 rounded-xl font-bold flex items-center gap-2 shadow-md shadow-blue-200 hover:bg-blue-700 transition-all text-sm"
+                                    >
+                                        Book Now
+                                    </motion.a>
+                                </div>
+                            )}
+                        </div>
+                    )}
+
+                    {/* 6. Places Details */}
                     {placesWithDetails ? (
                         <section>
                             <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-2">
@@ -172,65 +288,39 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                         </section>
                     )}
 
-                    {/* Description Section */}
-                    <section >
-                        <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center justify-center gap-2 text-center">
-                            <FaInfoCircle className="text-orange-500 mr-3" />
-                            Explore {title} – A Professional Travel Experience
-                        </h2>
-                        <p className="text-gray-600 leading-relaxed text-lg text-justify">
-                            {description}
-                        </p>
-                    </section>
+                    {highlights && (
+                        <section className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 overflow-hidden relative">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-bl-full -z-10 opacity-50"></div>
+                            <h2 className="text-3xl font-extrabold text-gray-900 mb-8 flex items-center gap-3">
+                                <span className="w-1.5 h-8 bg-orange-500 rounded-full"></span>
+                                Tour <span className="text-orange-500">Highlights</span>
+                            </h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {highlights.map((item, index) => {
+                                    const isObject = typeof item === 'object' && item !== null;
+                                    const title = isObject ? item.title : item;
+                                    const Icon = isObject ? item.icon : FaCheckCircle;
 
-                    {whyChooseUs && (
-                        <section>
-                            <h2 className="text-2xl font-bold text-gray-800 mb-6">Why Choose Our {title}?</h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                {whyChooseUs.map((item, index) => (
-                                    <div key={index} className="flex gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
-                                        <FaCheckCircle className="text-orange-500 mt-1 flex-shrink-0" />
-                                        <div>
-                                            <h4 className="font-bold text-gray-800">{item.title}</h4>
-                                            <p className="text-gray-600 text-sm">{item.description}</p>
-                                        </div>
-                                    </div>
-                                ))}
+                                    return (
+                                        <motion.div
+                                            key={index}
+                                            whileHover={{ scale: 1.02, x: 5 }}
+                                            className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 transition-all hover:bg-orange-50 group"
+                                        >
+                                            <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
+                                                {isObject ? <Icon className="text-xl" /> : <FaCheckCircle className="text-xl" />}
+                                            </div>
+                                            <div className="flex-1">
+                                                <p className="text-gray-800 font-bold group-hover:text-orange-700 transition-colors leading-snug">
+                                                    {title}
+                                                </p>
+                                            </div>
+                                        </motion.div>
+                                    );
+                                })}
                             </div>
                         </section>
                     )}
-
-                    <section className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 overflow-hidden relative">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-orange-50 rounded-bl-full -z-10 opacity-50"></div>
-                        <h2 className="text-3xl font-extrabold text-gray-900 mb-8 flex items-center gap-3">
-                            <span className="w-1.5 h-8 bg-orange-500 rounded-full"></span>
-                            Tour <span className="text-orange-500">Highlights</span>
-                        </h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            {highlights.map((item, index) => {
-                                const isObject = typeof item === 'object' && item !== null;
-                                const title = isObject ? item.title : item;
-                                const Icon = isObject ? item.icon : FaCheckCircle;
-
-                                return (
-                                    <motion.div
-                                        key={index}
-                                        whileHover={{ scale: 1.02, x: 5 }}
-                                        className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 transition-all hover:bg-orange-50 group"
-                                    >
-                                        <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
-                                            {isObject ? <Icon className="text-xl" /> : <FaCheckCircle className="text-xl" />}
-                                        </div>
-                                        <div className="flex-1">
-                                            <p className="text-gray-800 font-bold group-hover:text-orange-700 transition-colors leading-snug">
-                                                {title}
-                                            </p>
-                                        </div>
-                                    </motion.div>
-                                );
-                            })}
-                        </div>
-                    </section>
 
                     {itinerary && (
                         <section>
@@ -276,47 +366,6 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                     </div>
                                 ))}
                             </div>
-                        </section>
-                    )}
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <section className="bg-green-50 p-6 rounded-2xl border border-green-100">
-                            <h3 className="text-xl font-bold text-green-800 mb-4">What's Included</h3>
-                            <ul className="space-y-3">
-                                {includes.map((item, index) => (
-                                    <li key={index} className="flex items-start gap-2 text-green-700 text-sm">
-                                        <FaCheckCircle className="mt-1 flex-shrink-0" />
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </section>
-                        <section className="bg-red-50 p-6 rounded-2xl border border-red-100">
-                            <h3 className="text-xl font-bold text-red-800 mb-4">What's Excluded</h3>
-                            <ul className="space-y-3">
-                                {exclusions.map((item, index) => (
-                                    <li key={index} className="flex items-start gap-2 text-red-700 text-sm">
-                                        <span className="font-bold text-lg leading-none mt-[-2px]">×</span>
-                                        {item}
-                                    </li>
-                                ))}
-                            </ul>
-                        </section>
-                    </div>
-
-                    {importantNotes && (
-                        <section className="bg-blue-50 p-6 rounded-2xl border border-blue-100">
-                            <h3 className="text-xl font-bold text-blue-800 mb-4 flex items-center gap-2">
-                                <FaInfoCircle className="text-blue-500" /> Important Notes
-                            </h3>
-                            <ul className="space-y-2">
-                                {importantNotes.map((note, index) => (
-                                    <li key={index} className="flex items-start gap-2 text-blue-700 text-sm">
-                                        <div className="w-1.5 h-1.5 bg-blue-400 rounded-full mt-1.5 flex-shrink-0"></div>
-                                        {note}
-                                    </li>
-                                ))}
-                            </ul>
                         </section>
                     )}
                 </div>
@@ -414,7 +463,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
             </div>
 
             {/* Related Tours Section */}
-            <section className="py-16 bg-white border-t border-gray-100">
+            <section className="py-16 bg-white border-t border-gray-100 pb-0">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
                         Explore <span className="text-orange-500">Other Tour Packages</span>

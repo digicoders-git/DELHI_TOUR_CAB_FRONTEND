@@ -33,6 +33,17 @@ import jalMahal from '../assets/delhijaipurtour/jal-mahal.jpg';
 import jantarMantar from '../assets/delhijaipurtour/jantar-mantar.jpg';
 import nahargarhFort from '../assets/delhijaipurtour/nahargarh-fort.jpg';
 
+
+// wedding car rental images
+import auddi from '../assets/wedding-car-rental/auddi.jpeg';
+import ToyotaFortuner from '../assets/wedding-car-rental/fortuner.jpeg';
+import hondaCity from '../assets/wedding-car-rental/honda-city.jpeg';
+import InnovaCrysta from '../assets/wedding-car-rental/innova.jpeg';
+import mahindraThar from '../assets/wedding-car-rental/thar.jpeg';
+import hundaiVerna from '../assets/wedding-car-rental/verna.jpeg';
+import marcdess from '../assets/wedding-car-rental/marcdees.jpeg';
+import kiaCarens from '../assets/wedding-car-rental/kia-carens.jpeg';
+
 // All cars folder images from Updated cars
 import volvo from '../assets/Updated cars/volvo.png'
 import wagonr from '../assets/Updated cars/wagnor.png'
@@ -192,5 +203,14 @@ export {
   cityPalace,
   jalMahal,
   jantarMantar,
-  nahargarhFort
+  nahargarhFort,
+  // wedding-car-rental
+  auddi,
+  ToyotaFortuner,
+  hondaCity,
+  InnovaCrysta,
+  mahindraThar,
+  hundaiVerna,
+  marcdess,
+  kiaCarens,
 };

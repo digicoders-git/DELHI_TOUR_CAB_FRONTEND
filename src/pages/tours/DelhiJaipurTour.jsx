@@ -114,7 +114,7 @@ const DelhiJaipurTour = () => {
         exclusions: [
             "Entry Tickets (Monuments, Forts, Palaces, Museums)",
             "Meals & Refreshments",
-            "Tour Guide (available on request with extra charges)",
+            "Tour Guide (available Price On Request with extra charges)",
             "Elephant / Jeep rides at Amber Fort"
         ],
         importantNotes: [
@@ -138,7 +138,7 @@ const DelhiJaipurTour = () => {
             },
             {
                 question: "Is it possible to hire a guide in Jaipur?",
-                answer: "Yes, we can arrange a professional licensed guide for Jaipur sightseeing on request for an additional fee."
+                answer: "Yes, we can arrange a professional licensed guide for Jaipur sightseeing Price On Request for an additional fee."
             }
         ],
         tourTypes: [
@@ -161,7 +161,7 @@ const DelhiJaipurTour = () => {
             { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga },
             { name: "Luxury SUV Kia Carens (6+1)", price: "₹12,500/-", image: kiacerens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
-            { name: "Tempo Traveller (12+1 / 17+1)", price: "₹15,000", image: forcetempo },
+            { name: "Tempo Traveller (12+1 )", price: "₹15,000", image: forcetempo },
             { name: "Force Urbania", price: "₹22,000/-", image: forceurbano }
         ]
     };

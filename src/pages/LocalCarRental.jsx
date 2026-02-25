@@ -18,7 +18,7 @@ const LocalCarRental = () => {
       extraHr: '₹200/hr',
       nightCharge: '₹300',
       description: 'Budget-friendly hatchback with surprisingly spacious interiors for short city hops.',
-      features: ['8hr & 80km', 'AC', 'Music System', 'Spacious'],
+      features: ['8hr & 40km', 'AC', 'Music System', 'Spacious'],
       examples: 'Hatchback'
     },
     {
@@ -31,7 +31,7 @@ const LocalCarRental = () => {
       extraHr: '₹200/hr',
       nightCharge: '₹300',
       description: 'The most popular choice for city commuters. Highly fuel-efficient and comfortable.',
-      features: ['8hr & 80km', 'AC', 'Music System', 'Fuel Efficient'],
+      features: ['8hr & 40km', 'AC', 'Music System', 'Fuel Efficient'],
       examples: 'Compact Sedan'
     },
     {
@@ -44,7 +44,7 @@ const LocalCarRental = () => {
       extraHr: '₹200/hr',
       nightCharge: '₹300',
       description: 'Sporty and compact SUV, perfect for navigating city traffic with ease.',
-      features: ['8hr & 80km', 'AC', 'Music System', 'SUV'],
+      features: ['8hr & 40km', 'AC', 'Music System', 'SUV'],
       examples: 'Compact SUV'
     },
     {
@@ -57,7 +57,7 @@ const LocalCarRental = () => {
       extraHr: '₹200/hr',
       nightCharge: '₹300',
       description: 'Budget-friendly 7-seater, perfect for family reunions or group city travel.',
-      features: ['8hr & 80km', 'AC Vents', 'Flexible Seats', 'Economy'],
+      features: ['8hr & 40km', 'AC Vents', 'Flexible Seats', 'Economy'],
       examples: 'MUV'
     },
     {
@@ -70,7 +70,7 @@ const LocalCarRental = () => {
       extraHr: '₹300/hr',
       nightCharge: '₹300',
       description: 'Modern MUV with premium features for comfortable family travel.',
-      features: ['8hr & 80km', 'Captain Seats', 'Dual AC', 'Premium'],
+      features: ['8hr & 40km', 'Captain Seats', 'Dual AC', 'Premium'],
       examples: 'Premium MUV'
     },
     {
@@ -83,7 +83,7 @@ const LocalCarRental = () => {
       extraHr: '₹400/hr',
       nightCharge: '₹400',
       description: 'Solid and powerful SUV for group travel or making a statement in the city.',
-      features: ['8hr & 80km', 'AC', 'Music System', 'Rugged'],
+      features: ['8hr & 40km', 'AC', 'Music System', 'Rugged'],
       examples: 'SUV'
     },
     {
@@ -96,7 +96,7 @@ const LocalCarRental = () => {
       extraHr: '₹200/hr',
       nightCharge: '₹300',
       description: 'The benchmark of comfort and reliability for family outings or corporate needs.',
-      features: ['8hr & 80km', 'Rear AC', 'Large Boot', 'Spacious'],
+      features: ['8hr & 40km', 'Rear AC', 'Large Boot', 'Spacious'],
       examples: 'MUV'
     },
     {
@@ -109,7 +109,7 @@ const LocalCarRental = () => {
       extraHr: '₹400/hr',
       nightCharge: '₹400',
       description: 'Adventure-ready SUV with rugged styling and powerful performance.',
-      features: ['8hr & 80km', '4x4', 'Off-Road', 'Adventure'],
+      features: ['8hr & 40km', '4x4', 'Off-Road', 'Adventure'],
       examples: 'Adventure SUV'
     },
     {
@@ -122,7 +122,7 @@ const LocalCarRental = () => {
       extraHr: '₹400/hr',
       nightCharge: '₹500',
       description: 'Executive sedan for those who prioritize luxury and a smooth driving experience.',
-      features: ['8hr & 80km', 'AC', 'Music System', 'Premium'],
+      features: ['8hr & 40km', 'AC', 'Music System', 'Premium'],
       examples: 'Premium Sedan'
     },
     {
@@ -135,7 +135,7 @@ const LocalCarRental = () => {
       extraHr: '₹400/hr',
       nightCharge: '₹500',
       description: 'Sleek design with advanced features for a premium city tour experience.',
-      features: ['8hr & 80km', 'AC', 'Music System', 'Premium'],
+      features: ['8hr & 40km', 'AC', 'Music System', 'Premium'],
       examples: 'Premium Sedan'
     },
     {
@@ -148,7 +148,7 @@ const LocalCarRental = () => {
       extraHr: '₹500/hr',
       nightCharge: '₹500',
       description: 'The ultimate luxury SUV for a powerful presence and unmatched comfort.',
-      features: ['8hr & 80km', '4x4', 'Leather Seats', 'Status'],
+      features: ['8hr & 40km', '4x4', 'Leather Seats', 'Status'],
       examples: 'Luxury SUV'
     },
     {
@@ -161,7 +161,7 @@ const LocalCarRental = () => {
       extraHr: '₹600/hr',
       nightCharge: '₹600',
       description: 'Ultra-luxurious MUV with advanced features for premium executive travel.',
-      features: ['8hr & 80km', 'Captain Seats', 'Dual Sunroof', 'VIP Look'],
+      features: ['8hr & 40km', 'Captain Seats', 'Dual Sunroof', 'VIP Look'],
       examples: 'Luxury MUV'
     },
     {
@@ -174,7 +174,7 @@ const LocalCarRental = () => {
       extraHr: '₹800/hr',
       nightCharge: '₹700',
       description: 'Iconic luxury SUV with unmatched off-road capability and premium features.',
-      features: ['8hr & 80km', '4x4', 'Luxury', 'Premium'],
+      features: ['8hr & 40km', '4x4', 'Luxury', 'Premium'],
       examples: 'Ultra Luxury SUV'
     },
 
@@ -188,7 +188,7 @@ const LocalCarRental = () => {
       extraHr: '₹1,000/hr',
       nightCharge: '₹800',
       description: 'Ultimate luxury MPV with executive lounge seating and cutting-edge technology.',
-      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
+      features: ['8hr & 40km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
       examples: 'Ultra Luxury MPV'
     },
     {
@@ -201,7 +201,7 @@ const LocalCarRental = () => {
       extraHr: '₹500/hr',
       nightCharge: '₹500',
       description: 'Spacious van for group outstation trips.',
-      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
+      features: ['8hr & 40km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
       examples: 'Ultra Luxury MPV'
     },
     {
@@ -214,7 +214,7 @@ const LocalCarRental = () => {
       extraHr: '₹500/hr',
       nightCharge: '₹500',
       description: 'Perfect for group tours and family outings.',
-      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
+      features: ['8hr & 40km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
       examples: 'Ultra Luxury MPV'
     },
     {
@@ -227,7 +227,7 @@ const LocalCarRental = () => {
       extraHr: '₹500/hr',
       nightCharge: '₹500',
       description: 'Large group travel solution for outstation tours.',
-      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
+      features: ['8hr & 40km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
       examples: 'Ultra Luxury MPV'
     },
     {
@@ -240,7 +240,7 @@ const LocalCarRental = () => {
       extraHr: '₹800/hr',
       nightCharge: '₹800',
       description: 'Large group travel solution for outstation tours.',
-      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
+      features: ['8hr & 40km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
       examples: 'Ultra Luxury MPV'
     },
     {
@@ -248,12 +248,12 @@ const LocalCarRental = () => {
       image: volvo,
       capacity: '(25-45)seats',
       fuel: 'Diesel',
-      basePrice: 'On request',
-      extraKm: 'On request/km',
-      extraHr: 'On request/hr',
-      nightCharge: 'On request',
+      basePrice: 'Price On Request',
+      extraKm: 'Price On Request/km',
+      extraHr: 'Price On Request/hr',
+      nightCharge: 'Price On Request',
       description: 'Large group travel solution for outstation tours.',
-      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
+      features: ['8hr & 40km', 'Executive Seats', 'Hybrid', 'Ultra Luxury'],
       examples: 'Ultra Luxury MPV'
     },
   ];
@@ -366,7 +366,7 @@ const LocalCarRental = () => {
                   <div className="bg-gradient-to-br  from-orange-50 to-yellow-50 p-3 rounded-lg mb-4 border border-orange-100">
                     <div className="flex flex-col gap-1 text-lef text-xs">
                       <div className="flex gap-4">
-                        <span className="text-gray-600 font-medium">8 hr & 80 km</span>
+                        <span className="text-gray-600 font-medium">8 hr & 40 km</span>
                         <span className="text-orange-600 font-bold">{carss.basePrice}</span>
                       </div>
                       <div className="flex gap-4">
@@ -383,7 +383,7 @@ const LocalCarRental = () => {
                       </div>
                       <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
                         <span className="text-gray-600 font-medium">Toll/Parking:</span>
-                        <span className="text-orange-600 font-bold">On Request</span>
+                        <span className="text-orange-600 font-bold">Price On Request</span>
                       </div>
                     </div>
                   </div>

@@ -76,7 +76,7 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-start justify-center h-full"
             >
-              <img src={logo}
+              <img src={logo }
                 onClick={() => navigate('/')}
                 alt="Delhi Tour Cab Logo" className="h-10 md:h-16 cursor-pointer w-auto rounded-lg object-contain" />
               <div className="bg-slate-800 text-white text-[8px] md:text-xs px-2 py-0.5 rounded-md mt-0.5 font-bold whitespace-nowrap overflow-hidden w-full max-w-[100px] md:max-w-none shadow-sm">

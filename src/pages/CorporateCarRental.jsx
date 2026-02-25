@@ -15,7 +15,7 @@ const CorporateCarRental = () => {
       fuel: 'Diesel',
       description: 'The gold standard for corporate travel. Spacious, comfortable, and highly reliable.',
       features: ['Automatic AC', 'Leather Seats', 'Ample Legroom'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Honda City / Verna',
@@ -24,7 +24,7 @@ const CorporateCarRental = () => {
       fuel: 'Petrol',
       description: 'Perfect executive sedans for business meetings and city commutes.',
       features: ['Plush Interiors', 'Smooth Ride', 'Sunroof Options'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Kia Carnival',
@@ -33,7 +33,7 @@ const CorporateCarRental = () => {
       fuel: 'Diesel',
       description: 'Ultra-luxurious MUV with advanced features for premium executive travel and comfort.',
       features: ['Captain Seats', 'Dual Sunroof', 'VIP Style'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Toyota Vellfire',
@@ -42,7 +42,7 @@ const CorporateCarRental = () => {
       fuel: 'Hybrid',
       description: 'The pinnacle of luxury corporate mobility with ottoman seats and lounge experience.',
       features: ['Lounge Seating', 'Electric Doors', 'Hybrid Silent'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Land Rover Defender',
@@ -51,7 +51,7 @@ const CorporateCarRental = () => {
       fuel: 'Diesel/Petrol',
       description: 'Assertive and capable. Perfect for high-profile executive site visits and off-road mobility.',
       features: ['Rugged Luxury', 'Smart Mirror', 'Elite Safety'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Maruti Suzuki Swift Dzire',
@@ -60,7 +60,7 @@ const CorporateCarRental = () => {
       fuel: 'Petrol/CNG',
       description: 'Ideal for cost-effective daily employee commutes and airport transfers.',
       features: ['Fuel Efficient', 'Effective AC', 'Compact Design'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Toyota Fortuner',
@@ -69,7 +69,7 @@ const CorporateCarRental = () => {
       fuel: 'Diesel',
       description: 'Make a powerful impression. Premium luxury SUV for senior executives.',
       features: ['Majestic Presence', '4x4 Capability', 'VIP Safety'],
-      price: 'On Request'
+      price: 'Price On Request'
     },
     {
       name: 'Maruti Suzuki Brezza',
@@ -78,7 +78,7 @@ const CorporateCarRental = () => {
       fuel: 'Diesel',
       description: 'Make a powerful impression. Premium luxury SUV for senior executives.',
       features: ['Majestic Presence', '4x4 Capability', 'VIP Safety'],
-      price: 'On Request'
+      price: 'Price On Request'
     }
   ];
 

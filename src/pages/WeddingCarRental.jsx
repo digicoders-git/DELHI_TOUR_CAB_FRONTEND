@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaCar, FaUsers, FaGasPump, FaShieldAlt, FaPhone, FaWhatsapp, FaHeart, FaStar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import { fortuner, innova, verna, hondacity, defender, thar, toyotavellfire, slider5, kiacarnival, kiacarens, wagonr, dzire, breeza, ertiga, scorpio, forcewinger, forcetempo, forceurbano, volvo } from '../utils/images';
+import { auddi, ToyotaFortuner, hondaCity, InnovaCrysta, mahindraThar, hundaiVerna, marcdess, kiaCarens, slider5 } from '../utils/images';
 import PopularTours from '../components/PopularTours';
 
 const WeddingCarRental = () => {
@@ -9,196 +9,85 @@ const WeddingCarRental = () => {
 
     const luxurycarss = [
         {
-            name: 'Maruti Suzuki WagonR',
-            image: wagonr,
-            capacity: '5 Seater',
-            fuel: 'Petrol/CNG',
-            price: 'On Request',
-            description: 'Compact and economical choice for wedding guest transportation.',
-            features: ['Economical', 'Compact', 'AC', 'Comfortable'],
-            examples: 'Hatchback'
-        },
-        {
-            name: 'Maruti Suzuki Swift Dzire',
-            image: dzire,
-            capacity: '5 Seater',
-            fuel: 'Petrol/CNG',
-            price: 'On Request',
-            description: 'Popular sedan for wedding guest mobility and family transport.',
-            features: ['Elegant', 'Comfortable', 'AC', 'Spacious'],
-            examples: 'Compact Sedan'
-        },
-        {
-            name: 'Maruti Suzuki Vitara Brezza',
-            image: breeza,
+            name: 'Audi Luxury Sedan',
+            image: auddi,
             capacity: '5 Seater',
             fuel: 'Petrol',
-            price: 'On Request',
-            description: 'Stylish compact SUV perfect for wedding ceremonies.',
-            features: ['Sporty', 'Modern', 'AC', 'SUV'],
-            examples: 'Compact SUV'
+            price: 'Price On Request',
+            description: 'Experience the ultimate luxury and style with our premium Audi sedan, perfect for grand wedding entries.',
+            features: ['Premium Audio', 'Sunroof', 'Leather Seats', 'Automatic'],
+            examples: 'Luxury Sedan'
         },
         {
-            name: 'Maruti Suzuki Ertiga',
-            image: ertiga,
-            capacity: '7 Seater',
-            fuel: 'Petrol/CNG',
-            price: 'On Request',
-            description: 'Spacious 7-seater for family and guest transportation.',
-            features: ['Spacious', '7 Seater', 'AC', 'Comfortable'],
-            examples: 'MUV'
-        },
-        {
-            name: 'Kia Carens',
-            image: kiacarens,
-            capacity: '7 Seater',
-            fuel: 'Petrol/Diesel',
-            price: 'On Request',
-            description: 'Premium MUV with modern features for wedding events.',
-            features: ['Premium', 'Spacious', 'Modern', 'AC'],
-            examples: 'Premium MUV'
-        },
-        {
-            name: 'Toyota Innova Crysta',
-            image: innova,
-            capacity: '7 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Spacious and reliable, excellent for transporting family members and guests.',
-            features: ['Spacious', 'Comfortable', 'Reliable', 'AC'],
-            examples: 'Premium MUV'
-        },
-        {
-            name: 'Mahindra Scorpio',
-            image: scorpio,
-            capacity: '7 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Powerful SUV making a strong statement at wedding ceremonies.',
-            features: ['Powerful', 'Rugged', 'Spacious', 'AC'],
-            examples: 'SUV'
-        },
-        {
-            name: 'Mahindra Thar',
-            image: thar,
-            capacity: '4 Seater',
-            fuel: 'Diesel/Petrol',
-            price: 'On Request',
-            description: 'Add a touch of style and adventure to your wedding entry with this iconic SUV.',
-            features: ['Stylish', 'Convertible Option', 'Swag', 'Modern'],
-            examples: 'Lifestyle SUV'
-        },
-        {
-            name: 'Honda City',
-            image: hondacity,
-            capacity: '5 Seater',
-            fuel: 'Petrol',
-            price: 'On Request',
-            description: 'Elegant and sophisticated sedan. Perfect for the groom or guest mobility.',
-            features: ['Sleek Look', 'Premium Interiors', 'Smooth Drive', 'AC'],
-            examples: 'Executive Sedan'
-        },
-        {
-            name: 'Hyundai Verna',
-            image: verna,
+            name: 'Mercedes-Benz',
+            image: marcdess,
             capacity: '5 Seater',
             fuel: 'Petrol/Diesel',
-            price: 'On Request',
-            description: 'Modern and stylish sedan with advanced features, ideal for wedding guest transport.',
-            features: ['Futuristic Design', 'Comfortable', 'High Tech', 'AC'],
-            examples: 'Premium Sedan'
+            price: 'Price On Request',
+            description: 'The epitome of elegance and class. Make your special day unforgettable with a Mercedes-Benz.',
+            features: ['Iconic Style', 'Ultra Comfort', 'Climate Control', 'Premium'],
+            examples: 'Premium Luxury'
         },
         {
             name: 'Toyota Fortuner',
-            image: fortuner,
+            image: ToyotaFortuner,
             capacity: '7 Seater',
             fuel: 'Diesel',
-            price: 'On Request',
-            description: 'A majestic presence on the road. Highly popular choice for wedding processions.',
-            features: ['Majestic Presence', 'Leather Interiors', 'Powerful', 'Premium'],
-            examples: 'Full-size SUV'
-        },
-        {
-            name: 'Kia Carnival',
-            image: kiacarnival,
-            capacity: '7 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'The ultimate luxury MUV for grand entries. Features dual sunroof and VIP captain seats.',
-            features: ['VIP Seating', 'Dual Sunroof', 'Dual AC', 'Electric Doors'],
-            examples: 'Grand MUV'
-        },
-        {
-            name: 'Land Rover Defender',
-            image: defender,
-            capacity: '5+2 Seater',
-            fuel: 'Diesel/Petrol',
-            price: 'On Request',
-            description: 'Rugged yet sophisticated luxury SUV, making a bold statement for wedding arrivals.',
-            features: ['Rugged Luxury', 'Premium Sound', 'Panoramic Roof', 'Iconic Design'],
+            price: 'Price On Request',
+            description: 'A majestic presence on the road. Highly popular choice for wedding processions and groom entries.',
+            features: ['Majestic Presence', 'Powerful SUV', 'Spacious', 'Premium Interior'],
             examples: 'Luxury SUV'
         },
         {
-            name: 'Toyota Vellfire',
-            image: toyotavellfire,
+            name: 'Toyota Innova Crysta',
+            image: InnovaCrysta,
             capacity: '7 Seater',
-            fuel: 'Hybrid',
-            price: 'On Request',
-            description: 'The epitome of luxury MPVs, offering unmatched comfort for the bride and groom.',
-            features: ['Ultra Luxury', 'Lounge Seating', 'Sunroof', 'Privacy'],
-            examples: 'Premium MPV'
+            fuel: 'Diesel',
+            price: 'Price On Request',
+            description: 'Combining comfort and reliability, the Innova Crysta is the ideal choice for family and guest transport.',
+            features: ['Maximum Comfort', 'Spacious Cabin', 'Reliable', 'Dual AC'],
+            examples: 'Premium MUV'
         },
         {
-            name: 'Force Winger',
-            image: forcewinger,
-            capacity: '13 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Spacious van for large wedding guest groups.',
-            features: ['Group Transport', 'Spacious', 'AC', 'Comfortable'],
-            examples: 'Van'
+            name: 'Mahindra Thar',
+            image: mahindraThar,
+            capacity: '4 Seater',
+            fuel: 'Diesel/Petrol',
+            price: 'Price On Request',
+            description: 'Add a touch of swag and adventure to your wedding entry with our stylish and iconic Mahindra Thar.',
+            features: ['Iconic Design', '4x4 Capability', 'Convertible Option', 'Sporty'],
+            examples: 'Lifestyle SUV'
         },
         {
-            name: 'Tempo Traveller (12+1)',
-            image: forcetempo,
-            capacity: '13 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Perfect for wedding guest transportation and family groups.',
-            features: ['Push Back Seats', 'AC', 'Music System', 'Spacious'],
-            examples: 'Tempo Traveller'
+            name: 'Hyundai Verna',
+            image: hundaiVerna,
+            capacity: '5 Seater',
+            fuel: 'Petrol/Diesel',
+            price: 'Price On Request',
+            description: 'Modern and sophisticated sedan with advanced features, perfect for elegant wedding guest mobility.',
+            features: ['Futuristic Design', 'Comfortable', 'Smart Features', 'Sleek Look'],
+            examples: 'Executive Sedan'
         },
         {
-            name: 'Tempo Traveller (17+1)',
-            image: forcetempo,
-            capacity: '18 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Large capacity tempo for wedding guest transportation.',
-            features: ['Large Group', 'AC', 'Comfortable', 'Spacious'],
-            examples: 'Tempo Traveller'
+            name: 'Honda City',
+            image: hondaCity,
+            capacity: '5 Seater',
+            fuel: 'Petrol',
+            price: 'Price On Request',
+            description: 'An elegant and refined choice for your wedding, offering a smooth ride and premium feel.',
+            features: ['Smooth Drive', 'Premium Interiors', 'Sophisticated', 'Efficient'],
+            examples: 'Premium Sedan'
         },
         {
-            name: 'Force Urbania',
-            image: forceurbano,
-            capacity: '17 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Luxury tempo traveller for premium wedding guest transport.',
-            features: ['Luxury', 'Premium Seats', 'AC', 'Modern'],
-            examples: 'Luxury Tempo'
-        },
-        {
-            name: 'Bus (25 to 45 Seats)',
-            image: volvo,
-            capacity: '25-45 Seater',
-            fuel: 'Diesel',
-            price: 'On Request',
-            description: 'Large buses for wedding guest transportation and baarat.',
-            features: ['Large Capacity', 'AC', 'Comfortable', 'Spacious'],
-            examples: 'Bus'
-        },
-
+            name: 'Kia Carens',
+            image: kiaCarens,
+            capacity: '7 Seater',
+            fuel: 'Petrol/Diesel',
+            price: 'Price On Request',
+            description: 'Luxury MUV with modern aesthetics and versatile seating, ideal for transporting large wedding groups.',
+            features: ['6 Airbags', 'Modern Features', 'Spacious', 'Stylish'],
+            examples: 'Premium MUV'
+        }
     ];
 
     const handleWhatsApp = (carssName = '') => {
