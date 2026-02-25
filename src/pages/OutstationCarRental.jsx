@@ -14,7 +14,8 @@ const OutstationCarRental = () => {
       capacity: '5 Seater',
       fuel: 'Petrol/CNG',
       perKm: '₹11/km',
-      driverAllow: '₹250/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
+      driverAllow: '₹300/day',
       dayLimit: '250km',
       description: 'Budget-friendly hatchback perfect for short outstation trips.',
       features: ['Economical', 'Compact', 'Easy Drive']
@@ -26,6 +27,7 @@ const OutstationCarRental = () => {
       fuel: 'Petrol/CNG',
       perKm: '₹12/km',
       driverAllow: '₹300/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       dayLimit: '250km',
       description: 'Compact sedan, ideal for small families or solo business trips out of town.',
       features: ['Comfortable Sedan', 'Efficient', 'Proven Reliability']
@@ -38,6 +40,7 @@ const OutstationCarRental = () => {
       perKm: '₹13/km',
       driverAllow: '₹300/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'Compact SUV for safe and comfortable highway trips with a sporty feel.',
       features: ['High Ground Clearance', 'Tough Build', 'Easy Driving']
     },
@@ -49,6 +52,7 @@ const OutstationCarRental = () => {
       perKm: '₹15/km',
       driverAllow: '₹300/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'Economical 7-seater for group travels. Perfect balance of price and space.',
       features: ['Value for Money', 'Smooth Ride', 'Flexible Seating']
     },
@@ -60,6 +64,7 @@ const OutstationCarRental = () => {
       perKm: '₹17/km',
       driverAllow: '₹300/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'Modern MUV with premium features for comfortable family outstation travel.',
       features: ['Premium Comfort', 'Spacious', 'Modern Design']
     },
@@ -71,6 +76,7 @@ const OutstationCarRental = () => {
       perKm: '₹20/km',
       driverAllow: '₹400/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'The ultimate choice for long family trips. Superior comfort and huge luggage space.',
       features: ['Long Route Comfort', 'Large Boot Space', 'Rear AC Vents']
     },
@@ -82,6 +88,7 @@ const OutstationCarRental = () => {
       perKm: '₹30/km',
       driverAllow: '₹500/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'A stylish and comfortable sedan for smooth highway cruising and elite travel.',
       features: ['Smart Trunk', 'Ventilated Seats', 'Premium Audio']
     },
@@ -93,6 +100,7 @@ const OutstationCarRental = () => {
       perKm: '₹30/km',
       driverAllow: '₹500/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'Executive sedan for premium outstation business trips.',
       features: ['Premium Sedan', 'Luxury', 'Smooth Drive']
     },
@@ -104,6 +112,7 @@ const OutstationCarRental = () => {
       perKm: '₹20/km',
       driverAllow: '₹400/day',
       dayLimit: '250km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       description: 'Rugged SUV for hilly areas and tough terrains. Strong presence on the highway.',
       features: ['Rugged SUV', 'Powerful Engine', 'High Ground Clearance']
     },
@@ -113,6 +122,7 @@ const OutstationCarRental = () => {
       capacity: '5 Seater',
       fuel: 'Diesel',
       perKm: '₹22/km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       driverAllow: '₹400/day',
       dayLimit: '250km',
       description: 'Adventure-ready SUV perfect for mountain trips and off-road journeys.',
@@ -126,6 +136,7 @@ const OutstationCarRental = () => {
       fuel: 'Diesel',
       perKm: '₹40/km',
       driverAllow: '₹500/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       dayLimit: '250km',
       description: 'The king of highways. Powerful, safe, and prestigious for long-distance travel.',
       features: ['Premium Comfort', 'All Terrain', 'VIP Presence']
@@ -135,6 +146,7 @@ const OutstationCarRental = () => {
       image: kiacarnival,
       capacity: '7 Seater',
       fuel: 'Diesel',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       perKm: '₹60/km',
       driverAllow: '₹800/day',
       dayLimit: '250km',
@@ -148,6 +160,7 @@ const OutstationCarRental = () => {
       fuel: 'Diesel',
       perKm: '₹80/km',
       driverAllow: '₹800/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       dayLimit: '250km',
       description: 'Iconic luxury SUV for premium outstation adventures.',
       features: ['Ultra Luxury', '4x4', 'Premium']
@@ -159,6 +172,7 @@ const OutstationCarRental = () => {
       fuel: 'Petrol Hybrid',
       perKm: '₹95/km',
       driverAllow: '₹1,000/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       dayLimit: '250km',
       description: 'Ultimate luxury MPV for VIP outstation travel.',
       features: ['Executive Lounge', 'Hybrid', 'Ultra Luxury']
@@ -169,6 +183,7 @@ const OutstationCarRental = () => {
       capacity: '13 Seater',
       fuel: 'Diesel',
       perKm: '₹22/km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       driverAllow: '₹400/day',
       dayLimit: '250km',
       description: 'Spacious van for group outstation trips.',
@@ -180,6 +195,7 @@ const OutstationCarRental = () => {
       capacity: '13 Seater',
       fuel: 'Diesel',
       perKm: '₹25/km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       driverAllow: '₹500/day',
       dayLimit: '250km',
       description: 'Perfect for group tours and family outings.',
@@ -191,6 +207,7 @@ const OutstationCarRental = () => {
       capacity: '18 Seater',
       fuel: 'Diesel',
       perKm: '₹30/km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       driverAllow: '₹500/day',
       dayLimit: '250km',
       description: 'Large group travel solution for outstation tours.',
@@ -203,6 +220,7 @@ const OutstationCarRental = () => {
       fuel: 'Diesel',
       perKm: '₹40/km',
       driverAllow: '₹800/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       dayLimit: '250km',
       description: 'Luxury sleeper bus for long-distance overnight journeys.',
       features: ['Sleeper Berths', 'AC', 'Premium']
@@ -213,6 +231,7 @@ const OutstationCarRental = () => {
       capacity: '25-45 Seater',
       fuel: 'Diesel',
       perKm: '₹35-75/km',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       driverAllow: '₹1,000/day',
       dayLimit: '250km',
       description: 'Large buses for corporate and group outstation travel.',
@@ -225,6 +244,7 @@ const OutstationCarRental = () => {
       fuel: 'Diesel',
       perKm: '₹90-125/km',
       driverAllow: '₹800/day',
+      garagePrice:'KM and Time Calculate from Garage to Garage',
       dayLimit: '250km',
       description: 'Luxury sleeper bus for long-distance overnight journeys.',
       features: ['Sleeper Berths', 'AC', 'Premium']
@@ -323,16 +343,20 @@ const OutstationCarRental = () => {
                   <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-3 rounded-lg mb-4 border border-orange-100">
                     <div className="gap-4 flex flex-col text-xs">
                       <div className="flex gap-4">
-                        <span className="text-gray-600 font-medium">Driver Allow:</span>
+                        <span className="text-gray-600 font-medium">Driver Allowance:</span>
                         <span className="text-orange-600 font-bold">{carss.driverAllow}</span>
                       </div>
                       <div className="flex gap-4">
-                        <span className="text-gray-600 font-medium">Day Limit:</span>
-                        <span className="text-orange-600 font-bold">{carss.dayLimit}</span>
+                        <span className="text-gray-600 font-medium">Minimum KM Limit:</span>
+                        <span className="text-orange-600 font-bold">{carss.dayLimit}/day</span>
                       </div>
                       <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
-                        <span className="text-gray-600 font-medium">Toll/State Tax:</span>
+                        <span className="text-gray-600 font-medium">Toll tax,State tax & Parking Extra as per applicable:</span>
                         <span className="text-orange-600 font-bold">Price On Request</span>
+                      </div>
+                      <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
+                        <span className="text-gray-600 font-medium">{carss.garagePrice}</span>
+                        {/* <span className="text-orange-600 font-bold">Price On Request</span> */}
                       </div>
                     </div>
                   </div>

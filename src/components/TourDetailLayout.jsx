@@ -202,7 +202,48 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                         </section>
                     )}
 
-                    {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
+                   
+                    {/* 6. Places Details */}
+                    {placesWithDetails ? (
+                        <section>
+                            <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-2">
+                                <FaMapMarkerAlt className="text-orange-500" /> Top Places to Visit
+                            </h2>
+                            <div className="space-y-8">
+                                {placesWithDetails.map((place, index) => (
+                                    <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                                        <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
+                                            <span className="text-orange-500">{index + 1}.</span> {place.name}
+                                        </h3>
+                                        <div className='w-full flex justify-center h-69'>
+                                            <img src={place.image} alt={place.name} className="w-800
+                                             h-64 object-contain rounded-lg mb-4" />
+                                        </div>
+                                        <p className="text-gray-600 mb-4 leading-relaxed">{place.description}</p>
+                                        <div className="flex items-center gap-2 text-sm font-semibold text-orange-600 bg-orange-50 px-3 py-1.5 rounded-lg w-fit">
+
+                                            <FaClock className="text-xs" /> {place.timings}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    ) : placesCovered && (
+                        <section className="bg-orange-50 p-8 rounded-2xl border border-orange-100">
+                            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
+                                <FaMapMarkerAlt className="text-orange-500" /> Places Covered
+                            </h2>
+                            <div className="flex flex-wrap gap-3">
+                                {placesCovered.map((place, index) => (
+                                    <span key={index} className="bg-white px-4 py-2 rounded-lg shadow-sm border border-orange-100 text-gray-700 font-medium hover:bg-orange-500 hover:text-white transition-colors cursor-default">
+                                        {place}
+                                    </span>
+                                ))}
+                            </div>
+                        </section>
+                    )}
+
+                     {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
                     {(optionalAddOns || onlineTickets) && (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {optionalAddOns && (
@@ -248,45 +289,6 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                         </div>
                     )}
 
-                    {/* 6. Places Details */}
-                    {placesWithDetails ? (
-                        <section>
-                            <h2 className="text-3xl font-bold text-gray-800 mb-8 flex items-center gap-2">
-                                <FaMapMarkerAlt className="text-orange-500" /> Top Places to Visit
-                            </h2>
-                            <div className="space-y-8">
-                                {placesWithDetails.map((place, index) => (
-                                    <div key={index} className="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-                                        <h3 className="text-xl font-bold text-gray-800 mb-3 flex items-center gap-2">
-                                            <span className="text-orange-500">{index + 1}.</span> {place.name}
-                                        </h3>
-                                        <div className='w-full flex justify-center h-69'>
-                                            <img src={place.image} alt={place.name} className="w-800
-                                             h-64 object-contain rounded-lg mb-4" />
-                                        </div>
-                                        <p className="text-gray-600 mb-4 leading-relaxed">{place.description}</p>
-                                        <div className="flex items-center gap-2 text-sm font-semibold text-orange-600 bg-orange-50 px-3 py-1.5 rounded-lg w-fit">
-
-                                            <FaClock className="text-xs" /> {place.timings}
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
-                    ) : placesCovered && (
-                        <section className="bg-orange-50 p-8 rounded-2xl border border-orange-100">
-                            <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center gap-2">
-                                <FaMapMarkerAlt className="text-orange-500" /> Places Covered
-                            </h2>
-                            <div className="flex flex-wrap gap-3">
-                                {placesCovered.map((place, index) => (
-                                    <span key={index} className="bg-white px-4 py-2 rounded-lg shadow-sm border border-orange-100 text-gray-700 font-medium hover:bg-orange-500 hover:text-white transition-colors cursor-default">
-                                        {place}
-                                    </span>
-                                ))}
-                            </div>
-                        </section>
-                    )}
 
                     {highlights && (
                         <section className="bg-white p-8 rounded-3xl shadow-xl border border-gray-100 overflow-hidden relative">
