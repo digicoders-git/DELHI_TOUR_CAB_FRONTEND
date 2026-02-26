@@ -352,7 +352,7 @@ const OutstationCarRental = () => {
                       </div>
                       <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
                         <span className="text-gray-600 font-medium">Toll tax,State tax & Parking Extra as per applicable:</span>
-                        <span className="text-orange-600 font-bold">Price On Request</span>
+                        {/* <span className="text-orange-600 font-bold">Price On Request</span> */}
                       </div>
                       <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
                         <span className="text-gray-600 font-medium">{carss.garagePrice}</span>
