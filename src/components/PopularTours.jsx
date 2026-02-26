@@ -7,9 +7,9 @@ const PopularTours = () => {
     const navigate = useNavigate();
 
     const tours = [
-        { name: 'Delhi to Agra Tour', path: '/tour/delhi-to-agra-tour', image: agra },
+        { name: 'Delhi to Haridwar Same Day Tour', path: '/tour/delhi-to-haridwar-tour', image: haridwar },
 
-        { name: 'Oneday Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing', image: delhi },
+        { name: 'Delhi to Jaipur Same Day Return Tour', path: '/tour/delhi-to-jaipur-tour', image: jaipur },
 
         { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: mathura },
 
