@@ -51,9 +51,17 @@ export const sendWhatsAppConfirmation = (carName, tourTitle, userDetails, paymen
 👤 Name: ${userDetails.name}
 📞 Phone: ${userDetails.phone}
 📧 Email: ${userDetails.email || 'N/A'}
+
+*Trip Details:*
 📅 Pickup Date: ${userDetails.pickupDate}
+🕐 Pickup Time: ${userDetails.pickupTime}
 📍 Pickup: ${userDetails.pickupLocation}
 📍 Drop: ${userDetails.dropLocation || 'N/A'}
+
+*Passenger Details:*
+👥 Adults: ${userDetails.adults}
+👶 Children: ${userDetails.children}
+${userDetails.specialRequests ? `📝 Special Requests: ${userDetails.specialRequests}` : ''}
 
 *Payment Details:*
 ✅ Payment ID: ${paymentId}
