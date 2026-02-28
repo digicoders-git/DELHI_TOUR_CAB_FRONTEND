@@ -3,11 +3,14 @@ import { FaCar, FaUsers, FaGasPump, FaShieldAlt, FaPhone, FaWhatsapp, FaHeart, F
 import { useNavigate } from 'react-router-dom';
 import { auddi, ToyotaFortuner, hondaCity, InnovaCrysta, mahindraThar, hundaiVerna, marcdess, kiaCarens, slider5 } from '../utils/images';
 import PopularTours from '../components/PopularTours';
-import { useEffect } from 'react';
-import { initiatePayment } from '../utils/razorpay';
+import { useEffect, useState } from 'react';
+import { initiatePayment, getBookingAmount, sendWhatsAppConfirmation } from '../utils/razorpay';
+import BookingModal from '../components/BookingModal';
 
 const WeddingCarRental = () => {
     const navigate = useNavigate();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCar, setSelectedCar] = useState(null);
 
     useEffect(() => {
         const script = document.createElement('script');
@@ -110,13 +113,20 @@ const WeddingCarRental = () => {
     };
 
     const handlePayment = (carName) => {
+        setSelectedCar(carName);
+        setIsModalOpen(true);
+    };
+
+    const handleBookingConfirm = (userDetails) => {
+        setIsModalOpen(false);
         initiatePayment(
-            carName,
+            selectedCar,
             'Wedding Car Rental',
-            (response) => {
+            userDetails,
+            (response, userData) => {
+                const bookingAmount = getBookingAmount(selectedCar);
+                sendWhatsAppConfirmation(selectedCar, 'Wedding Car Rental', userData, response.razorpay_payment_id, bookingAmount);
                 alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
-                const text = `Payment Successful! Booking confirmed for ${carName} - Wedding Car Rental. Payment ID: ${response.razorpay_payment_id}`;
-                window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
             },
             (error) => {
                 console.error('Payment failed:', error);
@@ -126,6 +136,16 @@ const WeddingCarRental = () => {
 
     return (
         <div className="pt-20 min-h-screen bg-gray-50">
+            <BookingModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                carDetails={{
+                    carName: selectedCar,
+                    tourTitle: 'Wedding Car Rental',
+                    bookingAmount: selectedCar ? getBookingAmount(selectedCar) : 0
+                }}
+                onBookingConfirm={handleBookingConfirm}
+            />
             {/* Hero Section */}
             <section className="relative w-full h-[300px] sm:h-[500px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden text-white mt-0 sm:mt-0">
                 <div className="absolute inset-0 z-0">

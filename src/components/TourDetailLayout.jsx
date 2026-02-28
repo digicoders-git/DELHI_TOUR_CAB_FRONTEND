@@ -2,11 +2,14 @@ import { motion } from 'framer-motion';
 import { FaClock, FaUsers, FaCheckCircle, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaCar, FaInfoCircle, FaStar, FaFileInvoiceDollar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { agra, jaipur, delhi, haridwar, rishikesh, mathura } from '../utils/images';
-import { useEffect } from 'react';
-import { initiatePayment } from '../utils/razorpay';
+import { useEffect, useState } from 'react';
+import { initiatePayment, getBookingAmount, sendWhatsAppConfirmation } from '../utils/razorpay';
+import BookingModal from './BookingModal';
 
 const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets }) => {
     const navigate = useNavigate();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCar, setSelectedCar] = useState(null);
 
     useEffect(() => {
         const script = document.createElement('script');
@@ -31,13 +34,20 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
     };
 
     const handlePayment = (carName) => {
+        setSelectedCar(carName);
+        setIsModalOpen(true);
+    };
+
+    const handleBookingConfirm = (userDetails) => {
+        setIsModalOpen(false);
         initiatePayment(
-            carName,
+            selectedCar,
             title,
-            (response) => {
+            userDetails,
+            (response, userData) => {
+                const bookingAmount = getBookingAmount(selectedCar);
+                sendWhatsAppConfirmation(selectedCar, title, userData, response.razorpay_payment_id, bookingAmount);
                 alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
-                const text = `Payment Successful! Booking confirmed for ${carName} - ${title}. Payment ID: ${response.razorpay_payment_id}`;
-                window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
             },
             (error) => {
                 console.error('Payment failed:', error);
@@ -47,6 +57,16 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
 
     return (
         <div className="pt-20 bg-gray-50 min-h-screen">
+            <BookingModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                carDetails={{
+                    carName: selectedCar,
+                    tourTitle: title,
+                    bookingAmount: selectedCar ? getBookingAmount(selectedCar) : 0
+                }}
+                onBookingConfirm={handleBookingConfirm}
+            />
             {/* New Title Section below Navbar */}
             <div className="bg-white border-b border-gray-100 py-6 md:py-10 shadow-sm relative overflow-hidden">
                 <div className="absolute top-0 right-0 w-64 h-full bg-orange-500/5 -skew-x-12 translate-x-20"></div>

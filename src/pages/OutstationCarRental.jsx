@@ -3,11 +3,14 @@ import { FaRoute, FaMapMarkedAlt, FaCar, FaShieldAlt, FaClock, FaUsers, FaCheckC
 import { useNavigate } from 'react-router-dom';
 import { slider2, drizer, innova, verna, scorpio, ertiga, breeza, fortuner, kiacarnival, wagonr, kiacarens, hondacity, thar, defender, vellfire, forcewinger, forcetempo, forceurbano, volvo } from '../utils/images';
 import PopularTours from '../components/PopularTours';
-import { useEffect } from 'react';
-import { initiatePayment } from '../utils/razorpay';
+import { useEffect, useState } from 'react';
+import { initiatePayment, getBookingAmount, sendWhatsAppConfirmation } from '../utils/razorpay';
+import BookingModal from '../components/BookingModal';
 
 const OutstationCarRental = () => {
   const navigate = useNavigate();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedCar, setSelectedCar] = useState(null);
 
   useEffect(() => {
     const script = document.createElement('script');
@@ -271,13 +274,20 @@ const OutstationCarRental = () => {
   };
 
   const handlePayment = (carName) => {
+    setSelectedCar(carName);
+    setIsModalOpen(true);
+  };
+
+  const handleBookingConfirm = (userDetails) => {
+    setIsModalOpen(false);
     initiatePayment(
-      carName,
+      selectedCar,
       'Outstation Car Rental',
-      (response) => {
+      userDetails,
+      (response, userData) => {
+        const bookingAmount = getBookingAmount(selectedCar);
+        sendWhatsAppConfirmation(selectedCar, 'Outstation Car Rental', userData, response.razorpay_payment_id, bookingAmount);
         alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
-        const text = `Payment Successful! Booking confirmed for ${carName} - Outstation Car Rental. Payment ID: ${response.razorpay_payment_id}`;
-        window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
       },
       (error) => {
         console.error('Payment failed:', error);
@@ -287,6 +297,16 @@ const OutstationCarRental = () => {
 
   return (
     <div className="pt-20 relative overflow-hidden bg-gray-50 min-h-screen">
+      <BookingModal
+        isOpen={isModalOpen}
+        onClose={() => setIsModalOpen(false)}
+        carDetails={{
+          carName: selectedCar,
+          tourTitle: 'Outstation Car Rental',
+          bookingAmount: selectedCar ? getBookingAmount(selectedCar) : 0
+        }}
+        onBookingConfirm={handleBookingConfirm}
+      />
       {/* Hero Section */}
       <section className="relative w-screen h-[300px] sm:h-[500px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden text-white mt-0 sm:mt-0">
         <div className="absolute inset-0 z-0">

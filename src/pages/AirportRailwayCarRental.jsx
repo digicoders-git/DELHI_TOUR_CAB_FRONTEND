@@ -3,11 +3,14 @@ import { FaCar, FaUsers, FaGasPump, FaShieldAlt, FaPhone, FaWhatsapp, FaPlane, F
 import { useNavigate } from 'react-router-dom';
 import { innova, fortuner, slider4, breeza, drizer, hondacity, scorpio, verna, wagonr, defender } from '../utils/images';
 import PopularTours from '../components/PopularTours';
-import { useEffect } from 'react';
-import { initiatePayment } from '../utils/razorpay';
+import { useEffect, useState } from 'react';
+import { initiatePayment, getBookingAmount, sendWhatsAppConfirmation } from '../utils/razorpay';
+import BookingModal from '../components/BookingModal';
 
 const AirportRailwayCarRental = () => {
     const navigate = useNavigate();
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCar, setSelectedCar] = useState(null);
 
     useEffect(() => {
         const script = document.createElement('script');
@@ -80,13 +83,20 @@ const AirportRailwayCarRental = () => {
     };
 
     const handlePayment = (carName) => {
+        setSelectedCar(carName);
+        setIsModalOpen(true);
+    };
+
+    const handleBookingConfirm = (userDetails) => {
+        setIsModalOpen(false);
         initiatePayment(
-            carName,
+            selectedCar,
             'Airport & Railway Car Rental',
-            (response) => {
+            userDetails,
+            (response, userData) => {
+                const bookingAmount = getBookingAmount(selectedCar);
+                sendWhatsAppConfirmation(selectedCar, 'Airport & Railway Car Rental', userData, response.razorpay_payment_id, bookingAmount);
                 alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
-                const text = `Payment Successful! Booking confirmed for ${carName} - Airport & Railway Car Rental. Payment ID: ${response.razorpay_payment_id}`;
-                window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
             },
             (error) => {
                 console.error('Payment failed:', error);
@@ -96,6 +106,16 @@ const AirportRailwayCarRental = () => {
 
     return (
         <div className="pt-20 min-h-screen bg-gray-50">
+            <BookingModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                carDetails={{
+                    carName: selectedCar,
+                    tourTitle: 'Airport & Railway Car Rental',
+                    bookingAmount: selectedCar ? getBookingAmount(selectedCar) : 0
+                }}
+                onBookingConfirm={handleBookingConfirm}
+            />
             {/* Hero Section */}
             <section className="relative w-full  h-[300px] sm:h-[500px] md:h-[700px] lg:h-[800px] flex items-center justify-center overflow-hidden text-white mt-0 sm:mt-0">
                 <div className="absolute inset-0 z-0">
