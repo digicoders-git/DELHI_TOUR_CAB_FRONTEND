@@ -111,6 +111,22 @@ import kolkata from '../assets/cities-Places/kolkata.jpg';
 import bangoluru from '../assets/cities-Places/bangoluru.jpg';
 import hydrabad from '../assets/cities-Places/hydrabad.webp';
 
+// Popular Tour Destinations
+import delhiAgraMathuravrindhavnFatehpursikari from '../assets/Popular-Tour-Destinations/delhi-agra-mathura-vrindavan-fatehpursikari.jpeg';
+import jimmCorbettRanikhet from '../assets/Popular-Tour-Destinations/jimm-corbett-ranikhet Tour.jpeg';
+import delhiNainitalBhimtal from '../assets/Popular-Tour-Destinations/delhi-nainital-bhimshel-tour.jpeg';
+import delhiHaridwarRishikesh from '../assets/Popular-Tour-Destinations/delhi-haridhar-rishikesh-musoorie-tour.jpeg';
+import delhiChardham from '../assets/Popular-Tour-Destinations/delhi-chardham-tour.jpeg';
+import delhiLucknowAyodhya from '../assets/Popular-Tour-Destinations/delhi-lucknow-ayodhya-varanasi-tour.jpeg';
+import delhiShimlaManali from '../assets/Popular-Tour-Destinations/delhi-shimla-manali-tour.jpeg';
+import delhiDharamsala from '../assets/Popular-Tour-Destinations/delhi-dharamsala-tour.jpeg';
+import delhiAmritsarWagah from '../assets/Popular-Tour-Destinations/delhi-amritsar-vaghaborder-tour.jpeg';
+import delhiPahalgamSrinagar from '../assets/Popular-Tour-Destinations/delhi-pahalgam-srinagar-tour.jpeg';
+import delhiSrinagarLehLadakh from '../assets/Popular-Tour-Destinations/delhi-srinagar-lehladak-kargil-tour.jpeg';
+import delhiKhatushyam from '../assets/Popular-Tour-Destinations/delhi-khatushyam-balaji-tour.jpeg';
+import delhiJaipurPushkar from '../assets/Popular-Tour-Destinations/delhi-jaipur-pushkal-ajmer-tour.jpeg';
+import delhiJodhpurJaisalmer from '../assets/Popular-Tour-Destinations/delhi-jodhpur-jaisalmer-udaipur-tour.jpeg';
+
 export {
   logo,
   logo2,
@@ -174,6 +190,21 @@ export {
   kolkata,
   bangoluru,
   hydrabad,
+  // Popular Tour Destinations
+  delhiAgraMathuravrindhavnFatehpursikari,
+  jimmCorbettRanikhet,
+  delhiNainitalBhimtal,
+  delhiHaridwarRishikesh,
+  delhiChardham,
+  delhiLucknowAyodhya,
+  delhiShimlaManali,
+  delhiDharamsala,
+  delhiAmritsarWagah,
+  delhiPahalgamSrinagar,
+  delhiSrinagarLehLadakh,
+  delhiKhatushyam,
+  delhiJaipurPushkar,
+  delhiJodhpurJaisalmer,
   // delhisiteseeing
   qutubMinar,
   lotustemple,

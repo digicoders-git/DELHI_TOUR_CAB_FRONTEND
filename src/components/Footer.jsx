@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaCar } from 'react-icons/fa';
+import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaInstagram, FaYoutube, FaTwitter, FaCar } from 'react-icons/fa';
 import { logo, iso, ministry, msme } from '../utils/images';
 
 const Footer = () => {
@@ -23,17 +23,17 @@ const Footer = () => {
               Available 24/7 for all your travel and tourism needs.
             </p>
             <div className="flex space-x-4 justify-center md:justify-start">
-              <a href="#" className="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
+              <a href="https://www.facebook.com/share/187ZvaZbtE/" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition-colors">
                 <FaFacebook size={24} className="text-white" />
               </a>
-              <a href="#" className="w-9 h-9 bg-blue-400 rounded-full flex items-center justify-center hover:bg-blue-500 transition-colors">
+              <a href="https://x.com/DelhiTourCab" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-black rounded-full flex items-center justify-center hover:bg-gray-800 transition-colors">
                 <FaTwitter size={24} className="text-white" />
               </a>
-              <a href="#" className="w-9 h-9 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors">
+              <a href="https://www.instagram.com/delhitourcab?igsh=MTJxOW8zMW9kNG1ucg==" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex items-center justify-center hover:from-purple-600 hover:to-pink-600 transition-colors">
                 <FaInstagram size={24} className="text-white" />
               </a>
-              <a href="#" className="w-9 h-9 bg-blue-700 rounded-full flex items-center justify-center hover:bg-blue-800 transition-colors">
-                <FaLinkedin size={24} className="text-white" />
+              <a href="https://youtube.com/@delhitourcab?si=7oshDbfn4tnpWM7X" target="_blank" rel="noopener noreferrer" className="w-9 h-9 bg-red-600 rounded-full flex items-center justify-center hover:bg-red-700 transition-colors">
+                <FaYoutube size={24} className="text-white" />
               </a>
             </div>
           </motion.div>

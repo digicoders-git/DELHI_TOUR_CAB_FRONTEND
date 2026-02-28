@@ -33,7 +33,19 @@ const Home = () => {
     // Delayed scroll to handle animations
     const timer = setTimeout(scrollToTop, 100);
 
-    return () => clearTimeout(timer);
+    // Load Trustindex widget
+    const loadTrustindex = () => {
+      if (window.Trustindex) {
+        window.Trustindex.init_pager();
+      }
+    };
+    
+    const trustindexTimer = setTimeout(loadTrustindex, 1000);
+
+    return () => {
+      clearTimeout(timer);
+      clearTimeout(trustindexTimer);
+    };
   }, []);
 
   const navigate = useNavigate()
@@ -126,9 +138,9 @@ const Home = () => {
   ];
 
   const stats = [
-    { number: '10000+', label: 'Happy Customers' },
+    { number: '50551+', label: 'Happy Customers' },
     { number: '500+', label: 'Cities Covered' },
-    { number: '50+', label: 'Premium cars' },
+    { number: '150+', label: 'Premium cars' },
     { number: '24/7', label: 'Support Available' }
   ];
 
@@ -607,53 +619,18 @@ const Home = () => {
       {/* Customer Reviews */}
       <section className="py-8 md:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800"
-          >
-            What Our <span className="text-orange-500">Customers Say</span>
-          </motion.h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">
+            100% Genuine <span className="text-orange-500">Google Reviews from Our Customers</span>
+          </h2>
 
-          <div className="relative max-w-4xl mx-auto">
-            <motion.div
-              key={currentReview}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5 }}
-              className="bg-white rounded-lg shadow-lg p-4 md:p-8 text-center"
-            >
-              <FaQuoteLeft className="text-2xl md:text-4xl text-orange-500 mx-auto mb-4 md:mb-6" />
-              <div className="flex justify-center mb-3 md:mb-4">
-                {[...Array(reviews[currentReview].rating)].map((_, i) => (
-                  <FaStar key={i} className="text-orange-500 text-lg md:text-xl" />
-                ))}
-              </div>
-              <p className="text-sm md:text-lg text-gray-700 mb-4 md:mb-6 italic px-2">
-                "{reviews[currentReview].comment}"
-              </p>
-              <div className="flex items-center justify-center">
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full mr-3 md:mr-4 bg-orange-500 text-white flex items-center justify-center font-bold text-lg md:text-xl">
-                  {reviews[currentReview].avatar}
-                </div>
-                <div>
-                  <h4 className="font-semibold text-gray-800 text-sm md:text-base">{reviews[currentReview].name}</h4>
-                  <p className="text-gray-600 text-xs md:text-sm">{reviews[currentReview].location}</p>
-                </div>
-              </div>
-            </motion.div>
-
-            <div className="flex justify-center mt-6 md:mt-8 space-x-2">
-              {reviews.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentReview(index)}
-                  className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all ${index === currentReview ? 'bg-orange-500' : 'bg-gray-300'
-                    }`}
-                />
-              ))}
-            </div>
+          <div className="flex justify-center">
+            <iframe 
+              src="https://widgets.sociablekit.com/google-reviews/iframe/25485858" 
+              frameBorder="0" 
+              width="100%" 
+              height="600"
+              style={{ maxWidth: '1200px' }}
+            ></iframe>
           </div>
         </div>
       </section>
