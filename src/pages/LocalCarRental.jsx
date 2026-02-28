@@ -3,9 +3,19 @@ import { FaCar, FaUsers, FaGasPump, FaShieldAlt, FaPhone, FaWhatsapp } from 'rea
 import { useNavigate } from 'react-router-dom';
 import { innova, fortuner, slider3, breeza, drizer, hondacity, scorpio, verna, wagonr, ertiga, kiacarnival, toyotavellfire, defender, thar, kiacarens, forcewinger, forcetempo, volvo, forceurbano } from '../utils/images';
 import PopularTours from '../components/PopularTours';
+import { useEffect } from 'react';
+import { initiatePayment } from '../utils/razorpay';
 
 const LocalCarRental = () => {
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => document.body.removeChild(script);
+  }, []);
 
   const carssTypes = [
     {
@@ -267,6 +277,21 @@ const LocalCarRental = () => {
     window.location.href = 'tel:+919278063535';
   };
 
+  const handlePayment = (carName) => {
+    initiatePayment(
+      carName,
+      'Local Car Rental',
+      (response) => {
+        alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
+        const text = `Payment Successful! Booking confirmed for ${carName} - Local Car Rental. Payment ID: ${response.razorpay_payment_id}`;
+        window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
+      },
+      (error) => {
+        console.error('Payment failed:', error);
+      }
+    );
+  };
+
   return (
     <div className="pt-20 min-h-screen bg-gray-50">
       {/* Hero Section */}
@@ -429,7 +454,7 @@ const LocalCarRental = () => {
                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
                     whileHover={{ scale: 1.1, y: -2 }}
                     whileTap={{ scale: 0.95 }}
-                    onClick={() => navigate('/book-now')}
+                    onClick={() => handlePayment(carss.name)}
                     className="bg-orange-50 text-orange-600 py-3 rounded-xl text-[10px] font-bold uppercase tracking-wider hover:bg-orange-500 hover:text-white transition-all flex flex-col items-center justify-center cursor-pointer h-full shadow-sm border border-orange-100"
                   >
                     <FaCar className="mb-1 text-sm md:text-base" /> Book Now

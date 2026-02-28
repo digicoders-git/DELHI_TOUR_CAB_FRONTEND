@@ -2,9 +2,19 @@ import { motion } from 'framer-motion';
 import { FaClock, FaUsers, FaCheckCircle, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaCar, FaInfoCircle, FaStar, FaFileInvoiceDollar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import { agra, jaipur, delhi, haridwar, rishikesh, mathura } from '../utils/images';
+import { useEffect } from 'react';
+import { initiatePayment } from '../utils/razorpay';
 
 const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets }) => {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.src = 'https://checkout.razorpay.com/v1/checkout.js';
+        script.async = true;
+        document.body.appendChild(script);
+        return () => document.body.removeChild(script);
+    }, []);
 
     const relatedTours = [
         { name: 'Oneday Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing', image: delhi },
@@ -18,6 +28,21 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
     const handleWhatsApp = () => {
         const text = `Hello, I am interested in ${title}. Please provide more details.`;
         window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
+    };
+
+    const handlePayment = (carName) => {
+        initiatePayment(
+            carName,
+            title,
+            (response) => {
+                alert(`Payment Successful! Payment ID: ${response.razorpay_payment_id}`);
+                const text = `Payment Successful! Booking confirmed for ${carName} - ${title}. Payment ID: ${response.razorpay_payment_id}`;
+                window.open(`https://wa.me/919278063535?text=${encodeURIComponent(text)}`, '_blank');
+            },
+            (error) => {
+                console.error('Payment failed:', error);
+            }
+        );
     };
 
     return (
@@ -145,7 +170,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                                 </motion.button>
                                                 <motion.button
                                                     whileTap={{ scale: 0.95 }}
-                                                    onClick={() => navigate('/book-now')}
+                                                    onClick={() => handlePayment(carss.name)}
                                                     className="flex flex-col items-center justify-center py-3 bg-orange-50 text-orange-600 rounded-xl hover:bg-orange-500 hover:text-white transition-all border border-orange-100 shadow-sm"
                                                 >
                                                     <FaCar className="text-sm mb-1" />
@@ -447,7 +472,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                                     animate={{ scale: [1, 1.05, 1] }}
                                                     transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
                                                     whileTap={{ scale: 0.95 }}
-                                                    onClick={() => navigate('/book-now')}
+                                                    onClick={() => handlePayment(carss.name)}
                                                     className="flex flex-col items-center justify-center py-2.5 bg-orange-50 text-orange-600 rounded-xl hover:bg-orange-500 hover:text-white transition-all border border-orange-100 shadow-sm hover:shadow-orange-200"
                                                     title="Book Now"
                                                 >
