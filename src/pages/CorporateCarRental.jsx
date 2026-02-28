@@ -9,76 +9,124 @@ const CorporateCarRental = () => {
 
   const corporatecarss = [
     {
-      name: 'Toyota Innova Crysta',
-      image: innova,
-      capacity: '7 Seater',
-      fuel: 'Diesel',
-      description: 'The gold standard for corporate travel. Spacious, comfortable, and highly reliable.',
-      features: ['Automatic AC', 'Leather Seats', 'Ample Legroom'],
-      price: 'Price On Request'
-    },
-    {
-      name: 'Honda City / Verna',
-      image: hondacity,
-      capacity: '5 Seater',
-      fuel: 'Petrol',
-      description: 'Perfect executive sedans for business meetings and city commutes.',
-      features: ['Plush Interiors', 'Smooth Ride', 'Sunroof Options'],
-      price: 'Price On Request'
-    },
-    {
-      name: 'Kia Carnival',
-      image: kiacarnival,
-      capacity: '7 Seater',
-      fuel: 'Diesel',
-      description: 'Ultra-luxurious MUV with advanced features for premium executive travel and comfort.',
-      features: ['Captain Seats', 'Dual Sunroof', 'VIP Style'],
-      price: 'Price On Request'
-    },
-    {
-      name: 'Toyota Vellfire',
-      image: toyotavellfire,
-      capacity: '7 Seater',
-      fuel: 'Hybrid',
-      description: 'The pinnacle of luxury corporate mobility with ottoman seats and lounge experience.',
-      features: ['Lounge Seating', 'Electric Doors', 'Hybrid Silent'],
-      price: 'Price On Request'
-    },
-    {
-      name: 'Land Rover Defender',
-      image: defender,
-      capacity: '5+2 Seater',
-      fuel: 'Diesel/Petrol',
-      description: 'Assertive and capable. Perfect for high-profile executive site visits and off-road mobility.',
-      features: ['Rugged Luxury', 'Smart Mirror', 'Elite Safety'],
-      price: 'Price On Request'
-    },
-    {
       name: 'Maruti Suzuki Swift Dzire',
       image: drizer,
       capacity: '5 Seater',
       fuel: 'Petrol/CNG',
+      basePrice: '₹2,000',
+      extraKm: '₹16/km',
+      extraHr: '₹200/hr',
+      nightCharge: '₹300',
       description: 'Ideal for cost-effective daily employee commutes and airport transfers.',
-      features: ['Fuel Efficient', 'Effective AC', 'Compact Design'],
-      price: 'Price On Request'
+      features: ['8hr & 80km', 'AC', 'Music System', 'Fuel Efficient']
+    },
+    {
+      name: 'Maruti Suzuki Vitara Brezza',
+      image: breeza,
+      capacity: '5 Seater',
+      fuel: 'Petrol',
+      basePrice: '₹2,200',
+      extraKm: '₹16/km',
+      extraHr: '₹200/hr',
+      nightCharge: '₹300',
+      description: 'Sporty and compact SUV, perfect for navigating city traffic with ease.',
+      features: ['8hr & 80km', 'AC', 'Music System', 'SUV']
+    },
+    {
+      name: 'Maruti Suzuki Ertiga',
+      image: ertiga,
+      capacity: '7 Seater',
+      fuel: 'Petrol/CNG',
+      basePrice: '₹2,500',
+      extraKm: '₹18/km',
+      extraHr: '₹200/hr',
+      nightCharge: '₹300',
+      description: 'Budget-friendly 7-seater, perfect for family reunions or group city travel.',
+      features: ['8hr & 80km', 'AC Vents', 'Flexible Seats', 'Economy']
+    },
+    {
+      name: 'Toyota Innova Crysta',
+      image: innova,
+      capacity: '7 Seater',
+      fuel: 'Diesel',
+      basePrice: '₹3,500',
+      extraKm: '₹22/km',
+      extraHr: '₹200/hr',
+      nightCharge: '₹300',
+      description: 'The gold standard for corporate travel. Spacious, comfortable, and highly reliable.',
+      features: ['8hr & 80km', 'Rear AC', 'Large Boot', 'Spacious']
+    },
+    {
+      name: 'Honda City',
+      image: hondacity,
+      capacity: '5 Seater',
+      fuel: 'Petrol',
+      basePrice: '₹4,500',
+      extraKm: '₹35/km',
+      extraHr: '₹400/hr',
+      nightCharge: '₹500',
+      description: 'Perfect executive sedan for business meetings and city commutes.',
+      features: ['8hr & 80km', 'AC', 'Music System', 'Premium']
+    },
+    {
+      name: 'Hyundai Verna',
+      image: verna,
+      capacity: '5 Seater',
+      fuel: 'Petrol/Diesel',
+      basePrice: '₹4,500',
+      extraKm: '₹35/km',
+      extraHr: '₹400/hr',
+      nightCharge: '₹500',
+      description: 'Sleek design with advanced features for a premium city tour experience.',
+      features: ['8hr & 80km', 'AC', 'Music System', 'Premium']
     },
     {
       name: 'Toyota Fortuner',
       image: fortuner,
       capacity: '7 Seater',
       fuel: 'Diesel',
+      basePrice: '₹7,500',
+      extraKm: '₹45/km',
+      extraHr: '₹500/hr',
+      nightCharge: '₹500',
       description: 'Make a powerful impression. Premium luxury SUV for senior executives.',
-      features: ['Majestic Presence', '4x4 Capability', 'VIP Safety'],
-      price: 'Price On Request'
+      features: ['8hr & 80km', '4x4', 'Leather Seats', 'Status']
     },
     {
-      name: 'Maruti Suzuki Brezza',
-      image: breeza,
+      name: 'Kia Carnival',
+      image: kiacarnival,
       capacity: '7 Seater',
       fuel: 'Diesel',
-      description: 'Make a powerful impression. Premium luxury SUV for senior executives.',
-      features: ['Majestic Presence', '4x4 Capability', 'VIP Safety'],
-      price: 'Price On Request'
+      basePrice: '₹8,500',
+      extraKm: '₹65/km',
+      extraHr: '₹600/hr',
+      nightCharge: '₹600',
+      description: 'Ultra-luxurious MUV with advanced features for premium executive travel and comfort.',
+      features: ['8hr & 80km', 'Captain Seats', 'Dual Sunroof', 'VIP Look']
+    },
+    {
+      name: 'Land Rover Defender',
+      image: defender,
+      capacity: '7 Seater',
+      fuel: 'Diesel',
+      basePrice: '₹9,500',
+      extraKm: '₹90/km',
+      extraHr: '₹800/hr',
+      nightCharge: '₹700',
+      description: 'Assertive and capable. Perfect for high-profile executive site visits and off-road mobility.',
+      features: ['8hr & 80km', '4x4', 'Luxury', 'Premium']
+    },
+    {
+      name: 'Toyota Vellfire',
+      image: toyotavellfire,
+      capacity: '13 Seater',
+      fuel: 'Petrol Hybrid',
+      basePrice: '₹10,500',
+      extraKm: '₹105/km',
+      extraHr: '₹1,000/hr',
+      nightCharge: '₹800',
+      description: 'The pinnacle of luxury corporate mobility with ottoman seats and lounge experience.',
+      features: ['8hr & 80km', 'Executive Seats', 'Hybrid', 'Ultra Luxury']
     }
   ];
 
@@ -203,21 +251,57 @@ const CorporateCarRental = () => {
                 <div className="p-5 flex-grow bg-white">
                   <div className="flex justify-between items-start mb-4 bg-gradient-to-r from-orange-600 to-orange-400 p-3 rounded-xl shadow-inner">
                     <h3 className="text-sm font-bold text-white flex-1 mr-2 leading-tight uppercase tracking-wide">{carss.name}</h3>
-                    <div className="text-white font-black bg-orange-700/30 px-3 py-1.5 rounded-lg border border-orange-500/50 shadow-sm whitespace-nowrap">{carss.price}</div>
+                    <div className="text-white font-black bg-orange-700/30 px-3 py-1.5 rounded-lg border border-orange-500/50 shadow-sm">{carss.basePrice}</div>
                   </div>
-                  <p className="text-sm text-gray-600 mb-4 line-clamp-2 text-justify leading-relaxed">{carss.description}</p>
+                  <p className="text-sm text-gray-600 mb-4 line-clamp-2 leading-relaxed text-justify">{carss.description}</p>
 
-                  <div className="flex gap-4 mb-6 text-gray-700 text-xs font-bold uppercase tracking-widest">
-                    <span className="flex items-center gap-1.5 bg-gray-50 px-2.5 py-1.5 rounded-md border border-gray-100"><FaUsers className="text-orange-500" /> {carss.capacity}</span>
-                    <span className="flex items-center gap-1.5 bg-gray-50 px-2.5 py-1.5 rounded-md border border-gray-100"><FaGasPump className="text-orange-500" /> {carss.fuel}</span>
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="flex items-center text-gray-700 text-sm font-medium bg-gray-50 p-2 rounded-lg">
+                      <FaUsers className="mr-2 text-orange-500" />
+                      {carss.capacity}
+                    </div>
+                    <div className="flex items-center text-gray-700 text-sm font-medium bg-gray-50 p-2 rounded-lg">
+                      <FaGasPump className="mr-2 text-orange-500" />
+                      {carss.fuel}
+                    </div>
                   </div>
 
-                  <div className="flex flex-wrap gap-2 mb-2">
-                    {carss.features.map((feature, idx) => (
-                      <span key={idx} className="bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-orange-100/50 shadow-sm">
-                        {feature}
-                      </span>
-                    ))}
+                  {/* Pricing Details */}
+                  <div className="bg-gradient-to-br from-orange-50 to-yellow-50 p-3 rounded-lg mb-4 border border-orange-100">
+                    <div className="flex flex-col gap-1 text-lef text-xs">
+                      <div className="flex gap-4">
+                        <span className="text-gray-600 font-medium">8 hr & 80 km</span>
+                        <span className="text-orange-600 font-bold">{carss.basePrice}</span>
+                      </div>
+                      <div className="flex gap-4">
+                        <span className="text-gray-600 font-medium">Extra km:</span>
+                        <span className="text-orange-600 font-bold">{carss.extraKm}</span>
+                      </div>
+                      <div className="flex gap-4">
+                        <span className="text-gray-600 font-medium">Extra hrs:</span>
+                        <span className="text-orange-600 font-bold">{carss.extraHr}</span>
+                      </div>
+                      <div className="flex gap-4 col-span-2">
+                        <span className="text-gray-600 font-medium">Driver Night Charges (10 pm - 6 am):</span>
+                        <span className="text-orange-600 font-bold">{carss.nightCharge}</span>
+                      </div>
+                      <div className="flex gap-4 col-span-2 pt-2 border-t border-orange-200">
+                        <span className="text-gray-600 font-medium">Toll tax,State tax & Parking Extra as per applicable:</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="mb-2">
+                    <div className="flex flex-wrap gap-2">
+                      {carss.features.map((feature, idx) => (
+                        <span
+                          key={idx}
+                          className="bg-orange-50 text-orange-600 px-3 py-1 rounded-full text-[10px] font-bold uppercase border border-orange-100/50 shadow-sm"
+                        >
+                          {feature}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </div>
 
