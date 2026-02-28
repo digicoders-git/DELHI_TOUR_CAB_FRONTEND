@@ -1,13 +1,25 @@
 import { motion } from 'framer-motion';
 import { FaBuilding, FaUsers, FaCalendarAlt, FaShieldAlt, FaClock, FaHeadset, FaCheckCircle, FaPhone, FaWhatsapp, FaGasPump, FaCar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import { slider1, drizer, innova, hondacity, verna, fortuner, ertiga, kiacarnival, toyotavellfire, defender, breeza } from '../utils/images';
+import { slider1, drizer, innova, hondacity, verna, fortuner, ertiga, kiacarnival, toyotavellfire, defender, breeza, wagonr } from '../utils/images';
 import PopularTours from '../components/PopularTours';
 
 const CorporateCarRental = () => {
   const navigate = useNavigate();
 
   const corporatecarss = [
+    {
+      name: 'Maruti Suzuki WagonR',
+      image: wagonr,
+      capacity: '5 Seater',
+      fuel: 'Petrol/CNG',
+      basePrice: '₹1,800',
+      extraKm: '₹14/km',
+      extraHr: '₹200/hr',
+      nightCharge: '₹300',
+      description: 'Budget-friendly hatchback with surprisingly spacious interiors for short city hops.',
+      features: ['8hr & 80km', 'AC', 'Music System', 'Spacious']
+    },
     {
       name: 'Maruti Suzuki Swift Dzire',
       image: drizer,
