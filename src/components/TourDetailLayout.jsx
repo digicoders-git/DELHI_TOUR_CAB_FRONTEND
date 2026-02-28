@@ -95,12 +95,12 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                         </section>
                     )}
 
-                    {/* 3. Available Vehicles (Mobile Only) */}
+                    {/* 3. Vehicle Options & Pricing  (Mobile Only) */}
                     {carss && carss.length > 0 && (
                         <div className="lg:hidden">
                             <div className="bg-white p-6 rounded-2xl shadow-xl border border-gray-100">
                                 <h4 className="font-bold text-gray-800 mb-6 border-b-2 border-orange-500 pb-2 w-fit text-xl">
-                                    Available Vehicles:
+                                    Vehicle Options & Pricing :
                                 </h4>
                                 <div className="space-y-6">
                                     {carss.map((carss, index) => (
@@ -202,7 +202,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                         </section>
                     )}
 
-                   
+
                     {/* 6. Places Details */}
                     {placesWithDetails ? (
                         <section>
@@ -243,7 +243,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                         </section>
                     )}
 
-                     {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
+                    {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
                     {(optionalAddOns || onlineTickets) && (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             {optionalAddOns && (
@@ -399,7 +399,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
 
                         {carss && carss.length > 0 && (
                             <div className="mt-8 pt-8 border-t border-gray-100 hidden lg:block">
-                                <h4 className="font-bold text-gray-800 mb-4 border-b-2 border-orange-500 pb-2 w-fit">Available Vehicles:</h4>
+                                <h4 className="font-bold text-gray-800 mb-4 border-b-2 border-orange-500 pb-2 w-fit">Vehicle Options & Pricing :</h4>
                                 <div className="space-y-4">
                                     {carss.map((carss, index) => (
                                         <div key={index} className="flex flex-col p-4 bg-white rounded-2xl shadow-md border border-gray-100 group hover:shadow-xl transition-all duration-300">
