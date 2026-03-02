@@ -122,13 +122,9 @@ const PopularDestinations = () => {
                 <img 
                   src={destination.image} 
                   alt={destination.title}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain bg-gray-50"
                 />
-                <div className="absolute top-4 left-4">
-                  <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full">
-                    <FaMapMarkedAlt className="text-orange-500" size={20} />
-                  </div>
-                </div>
+                
               </div>
               <div className="p-6">
                 <h3 className="text-lg font-bold text-gray-800 mb-3 line-clamp-2">

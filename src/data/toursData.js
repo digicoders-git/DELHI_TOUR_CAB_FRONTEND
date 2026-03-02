@@ -10,7 +10,8 @@ import {
     rumidarvaja,
     amritsar,
     InnovaCrysta,
-    innovaSlider
+    innovaSlider,
+    khatushyam
 } from '../utils/images';
 import {
     FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie,
@@ -2196,7 +2197,7 @@ export const toursData = {
     // delhi-to-khatu-shyam-one-day-tour page
     "delhi-to-khatu-shyam-one-day-tour": {
         title: "Delhi to Khatu Shyam One Day Tour by Cab",
-        bannerImage: "https://images.unsplash.com/photo-1524492459413-23f57bad9965?w=1600&h=900&fit=crop",
+        bannerImage: khatushyam,
         description: "Embark on a divine journey from Delhi to the holy shrine of Khatu Shyam Ji in Rajasthan. Experience the powerful spiritual energy and seek blessings at one of India's most revered temples. Our premium one-day cab tour ensures a comfortable and hassle-free pilgrimage for you and your family.",
         highlights: [
             "Baba Khatu Shyam Ji Darshan - Seek blessings of Barbarika",

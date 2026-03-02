@@ -1,19 +1,18 @@
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaStar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import { agra, jaipur, delhi, haridwar, rishikesh, mathura } from '../utils/images';
+import { agra, jaipur, delhi, haridwar, rishikesh, mathura, delhiKhatushyam, khatushyam } from '../utils/images';
 
 const PopularTours = () => {
     const navigate = useNavigate();
 
     const tours = [
-        { name: 'Delhi to Haridwar Same Day Tour', path: '/tour/delhi-to-haridwar-tour', image: haridwar },
-
-        { name: 'Delhi to Jaipur Same Day Return Tour', path: '/tour/delhi-to-jaipur-tour', image: jaipur },
-
-        { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: mathura },
-
-
+        { name: 'OneDay Delhi Sightseeing Tour', path: '/tour/delhi-local-sightseeing', image: delhi, price: '₹2,500' },
+        { name: 'Delhi to Agra Same Day Tour', path: '/tour/delhi-to-agra-tour', image: agra, price: '₹3,800' },
+        { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: mathura, price: '₹3,500' },
+        { name: 'Delhi to Jaipur Same Day Return Tour', path: '/tour/delhi-to-jaipur-tour', image: jaipur, price: '₹4,500' },
+        { name: 'Delhi to Haridwar Same Day Tour', path: '/tour/delhi-to-haridwar-tour', image: haridwar, price: '₹6,500' },
+        { name: 'Delhi Khatushyam Ji Tour', path: '/tour/delhi-to-khatu-shyam-one-day-tour', image: khatushyam, price: '₹5,500' },
     ];
 
     return (
@@ -59,9 +58,12 @@ const PopularTours = () => {
                                     Full Day • AC Cab • Guided
                                 </div>
                                 <div className="flex justify-between items-center pt-4 border-t border-gray-200">
-                                    <div className="flex items-center text-yellow-500">
-                                        {[...Array(5)].map((_, i) => <FaStar key={i} className="text-xs mr-1" />)}
-                                        <span className="text-gray-400 text-xs ml-1">(4.9)</span>
+                                    <div className="flex flex-col gap-1">
+                                        <div className="flex items-center text-yellow-500">
+                                            {[...Array(5)].map((_, i) => <FaStar key={i} className="text-xs mr-1" />)}
+                                            <span className="text-gray-400 text-xs ml-1">(4.9)</span>
+                                        </div>
+                                        <span className="text-gray-800 font-bold text-lg">{tour.price}</span>
                                     </div>
                                     <span className="text-orange-500 font-bold text-sm">Explore Tour →</span>
                                 </div>

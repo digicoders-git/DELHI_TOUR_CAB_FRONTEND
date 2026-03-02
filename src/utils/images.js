@@ -126,6 +126,7 @@ import delhiSrinagarLehLadakh from '../assets/Popular-Tour-Destinations/delhi-sr
 import delhiKhatushyam from '../assets/Popular-Tour-Destinations/delhi-khatushyam-balaji-tour.jpeg';
 import delhiJaipurPushkar from '../assets/Popular-Tour-Destinations/delhi-jaipur-pushkal-ajmer-tour.jpeg';
 import delhiJodhpurJaisalmer from '../assets/Popular-Tour-Destinations/delhi-jodhpur-jaisalmer-udaipur-tour.jpeg';
+import khatushyam from '../assets/Images/khatushyam.jpg';
 
 export {
   logo,
@@ -170,6 +171,7 @@ export {
   dehradun,
   ludhiana,
   amritsar,
+  khatushyam,
   delhi,
   delhiBannerNew,
   haridwar,
@@ -244,4 +246,5 @@ export {
   hundaiVerna,
   marcdess,
   kiaCarens,
+
 };

@@ -142,7 +142,8 @@ const DelhiAgraTour = () => {
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹12,500/-", image: innova },
             { name: "Tempo Traveller (12+1 )", price: "₹7500/-", image: forcetempo },
             { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }
-        ]
+        ],
+        onlineTickets: "https://asi.payumoney.com/"
     };
 
     return <TourDetailLayout {...tourData} />;

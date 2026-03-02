@@ -294,7 +294,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
 
                     {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
                     {(optionalAddOns || onlineTickets) && (
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div className="space-y-8">
                             {optionalAddOns && (
                                 <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100 shadow-sm">
                                     <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
@@ -313,7 +313,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                                             <img 
                                                                 src={addonImages[index]} 
                                                                 alt={addon.category}
-                                                                className="w-full h-48 sm:h-56 md:h-64 object-cover rounded-xl shadow-md"
+                                                                className="w-full h-48 sm:h-56 md:h-64 object-contain rounded-xl shadow-md"
                                                             />
                                                         </div>
                                                     )}
@@ -328,22 +328,21 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                             )}
 
                             {onlineTickets && (
-                                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 shadow-sm flex flex-col justify-center items-center text-center">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                        <FaFileInvoiceDollar className="text-2xl text-blue-600" />
-                                    </div>
-                                    <h3 className="text-lg font-bold text-gray-900 mb-2">
+                                <div className="bg-blue-50 p-6 rounded-2xl border border-blue-100 shadow-sm">
+                                    <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                                        <FaFileInvoiceDollar className="text-blue-600" />
                                         Online Monument Tickets
                                     </h3>
+                                    <p className="text-gray-600 text-sm mb-4">Book your monument tickets online in advance to skip the queues and save time.</p>
                                     <motion.a
-                                        whileHover={{ scale: 1.05 }}
-                                        whileTap={{ scale: 0.95 }}
+                                        whileHover={{ scale: 1.02 }}
+                                        whileTap={{ scale: 0.98 }}
                                         href={onlineTickets}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="bg-blue-600 text-white px-4 py-2 rounded-xl font-bold flex items-center gap-2 shadow-md shadow-blue-200 hover:bg-blue-700 transition-all text-sm"
+                                        className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-xl font-bold shadow-md hover:bg-blue-700 transition-all text-sm"
                                     >
-                                        Book Now
+                                        Book Tickets Now →
                                     </motion.a>
                                 </div>
                             )}
