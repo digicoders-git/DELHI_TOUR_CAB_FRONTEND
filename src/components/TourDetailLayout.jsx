@@ -5,6 +5,10 @@ import { agra, jaipur, delhi, haridwar, rishikesh, mathura } from '../utils/imag
 import { useEffect, useState } from 'react';
 import { initiatePayment, getBookingAmount, sendWhatsAppConfirmation } from '../utils/razorpay';
 import BookingModal from './BookingModal';
+import addon1 from '../assets/Optional Add-On-Attractions/add-on-1.jpeg';
+import addon2 from '../assets/Optional Add-On-Attractions/add-on-2.jpeg';
+import addon3 from '../assets/Optional Add-On-Attractions/add-on-3.jpeg';
+import addon4 from '../assets/Optional Add-On-Attractions/add-on-4.jpeg';
 
 const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets }) => {
     const navigate = useNavigate();
@@ -297,16 +301,28 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                         Optional Add-On Attractions
                                     </h3>
                                     <div className="space-y-4">
-                                        {optionalAddOns.map((addon, index) => (
-                                            <div key={index} className="flex flex-col gap-1">
-                                                <h4 className="font-bold text-orange-600 flex items-center gap-2 text-base">
-                                                    {addon.category}:
-                                                </h4>
-                                                <p className="text-gray-700 leading-relaxed text-sm pl-2">
-                                                    {addon.items}
-                                                </p>
-                                            </div>
-                                        ))}
+                                        {optionalAddOns.map((addon, index) => {
+                                            const addonImages = [addon1, addon2, addon3, addon4];
+                                            return (
+                                                <div key={index} className="flex flex-col gap-3">
+                                                    <h4 className="font-bold text-orange-600 flex items-center gap-2 text-base">
+                                                        {addon.category}:
+                                                    </h4>
+                                                    {addonImages[index] && (
+                                                        <div className="w-full flex justify-center">
+                                                            <img 
+                                                                src={addonImages[index]} 
+                                                                alt={addon.category}
+                                                                className="w-full h-48 sm:h-56 md:h-64 object-cover rounded-xl shadow-md"
+                                                            />
+                                                        </div>
+                                                    )}
+                                                    <p className="text-gray-700 leading-relaxed text-sm pl-2">
+                                                        {addon.items}
+                                                    </p>
+                                                </div>
+                                            );
+                                        })}
                                     </div>
                                 </div>
                             )}

@@ -1,4 +1,4 @@
-const RAZORPAY_KEY_ID = 'rzp_test_6kz5nGEzi8uXRw';
+const RAZORPAY_KEY_ID = 'rzp_live_SMIMlYKZPOKIvd';
 
 export const getBookingAmount = (carName) => {
   const car = carName.toLowerCase();
