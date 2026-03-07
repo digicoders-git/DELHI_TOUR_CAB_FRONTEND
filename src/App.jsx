@@ -58,14 +58,6 @@ const AppContent = () => {
         <Route path="/contact" element={<Contact />} />
       </Routes>
 
-      {/* ✅ TRUSTINDEX WIDGET (APP LEVEL PE FIXED) */}
-      <div style={{ marginTop: "50px" }}>
-        <div
-          className="trustindex-widget"
-          data-ti-id="7c726c86556d980664661d20a34"
-        ></div>
-      </div>
-
       <Footer />
       <QuickEnquiry />
       <FixedIcons onCallbackClick={() => setShowCallbackForm(true)} />

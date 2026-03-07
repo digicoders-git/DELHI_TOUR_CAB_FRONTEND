@@ -1,9 +1,15 @@
 function Reviews() {
   return (
-    <div
-      className="trustindex-widget"
-      data-ti-id="7c726c86556d980664661d20a34"
-    ></div>
+    <div className="w-full flex justify-center">
+      <iframe
+        src="https://widgets.sociablekit.com/google-reviews/iframe/254234"
+        width="100%"
+        height="600"
+        style={{ border: "none" }}
+        loading="lazy"
+        title="Google Reviews"
+      ></iframe>
+    </div>
   );
 }
 

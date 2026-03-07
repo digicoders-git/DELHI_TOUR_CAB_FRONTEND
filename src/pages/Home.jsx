@@ -14,6 +14,7 @@ qutubMinar, lotustemple, humayuntomb, indiagate, parliamenthouse, rashtrapati, r
 import TourPackages from './TourPackages';
 import PopularTours from '../components/PopularTours';
 import PopularDestinations from '../components/PopularDestinations';
+import Reviews from '../components/Reviews';
 
 const Home = () => {
 const [currentReview, setCurrentReview] = useState(0);
@@ -622,6 +623,7 @@ return (
         <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">
           100% Genuine <span className="text-orange-500">Google Reviews from Our Customers</span>
         </h2>
+        <Reviews />
       </div>
     </section>
 
