@@ -28,18 +28,16 @@ import { useState, useEffect } from 'react';
 
 const AppContent = () => {
   const [showCallbackForm, setShowCallbackForm] = useState(false);
-
   const location = useLocation();
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
   }, [location.pathname]);
 
-
-
   return (
     <div className="App">
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -58,8 +56,16 @@ const AppContent = () => {
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
         <Route path="/contact" element={<Contact />} />
-        {/* <Route path='/book-now' element={<Book} */}
       </Routes>
+
+      {/* ✅ TRUSTINDEX WIDGET (APP LEVEL PE FIXED) */}
+      <div style={{ marginTop: "50px" }}>
+        <div
+          className="trustindex-widget"
+          data-ti-id="7c726c86556d980664661d20a34"
+        ></div>
+      </div>
+
       <Footer />
       <QuickEnquiry />
       <FixedIcons onCallbackClick={() => setShowCallbackForm(true)} />
