@@ -618,11 +618,16 @@ return (
     </section>
 
     {/* Customer Reviews */}
-    <section className="py-8 md:py-16 bg-gray-50">
+    <section className="pt-12 md:pt-16 pb-0 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-gray-800">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-2xl md:text-4xl font-bold text-center mb-10 md:mb-16 text-gray-800"
+        >
           100% Genuine <span className="text-orange-500">Google Reviews from Our Customers</span>
-        </h2>
+        </motion.h2>
         <Reviews />
       </div>
     </section>
