@@ -155,7 +155,7 @@ const PhoneInput = ({ value, onChange, required = false, placeholder = "Enter ph
                     svg
                     style={{ width: '1.5em', height: '1.5em', borderRadius: '50%' }}
                   />
-                  <span className="flex-1 font-medium text-gray-700">{country.name}</span>
+5                  <span className="flex-1 font-medium text-gray-700">{country.name}</span>
                   <span className="text-sm text-gray-500 font-semibold">{country.code}</span>
                 </button>
               ))}

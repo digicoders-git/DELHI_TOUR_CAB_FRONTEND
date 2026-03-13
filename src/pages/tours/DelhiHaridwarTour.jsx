@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { haridwar, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano } from '../../utils/images';
+import { haridwar, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano } from '../../utils/images';
 import { FaOm, FaWater, FaMountain, FaShoppingBag, FaHistory, FaUserTie, FaCheckCircle, FaStar } from 'react-icons/fa';
 
 const DelhiHaridwarTour = () => {
@@ -83,9 +83,9 @@ const DelhiHaridwarTour = () => {
         ],
         carss: [
             { name: "Hatchback WagonR (4+1)", price: "₹7,500/-", image: wagonr },
-            { name: "Sedan Swift Dzire (4+1)", price: "₹8,000/-", image: drizer },
-            { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga },
-            { name: "Luxury SUV Kia Carens (6+1)", price: "₹12,500/-", image: kiacerens },
+            { name: "Sedan Swift Dzire (4+1)", price: "₹8,000/-", image: dzire },
+            { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹10,000/-", image: ertiga2 },
+            { name: "Luxury SUV Kia Carens (6+1)", price: "₹12,500/-", image: kiacarens },
             { name: "Luxury SUV Innova Crysta (6+1)", price: "₹13,500/-", image: innova },
             { name: "Tempo Traveller (12+1 )", price: "₹7500", image: forcetempo },
             { name: "Force Urbania", price: "₹10,500/-", image: forceurbano }

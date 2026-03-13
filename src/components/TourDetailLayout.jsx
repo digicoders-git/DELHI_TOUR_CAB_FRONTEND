@@ -361,7 +361,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                 {highlights.map((item, index) => {
                                     const isObject = typeof item === 'object' && item !== null;
                                     const title = isObject ? item.title : item;
-                                    const Icon = isObject ? item.icon : FaCheckCircle;
+                                    const Icon = isObject && item.icon ? item.icon : FaCheckCircle;
 
                                     return (
                                         <motion.div
@@ -370,7 +370,7 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                             className="flex items-start gap-4 p-4 rounded-2xl bg-gray-50 border border-gray-100 transition-all hover:bg-orange-50 group"
                                         >
                                             <div className="w-12 h-12 rounded-xl bg-white shadow-sm flex items-center justify-center text-orange-500 group-hover:bg-orange-500 group-hover:text-white transition-colors duration-300">
-                                                {isObject ? <Icon className="text-xl" /> : <FaCheckCircle className="text-xl" />}
+                                                <Icon className="text-xl" />
                                             </div>
                                             <div className="flex-1">
                                                 <p className="text-gray-800 font-bold group-hover:text-orange-700 transition-colors leading-snug">
