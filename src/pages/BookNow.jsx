@@ -7,6 +7,7 @@ import {
   FaArrowRight, FaShieldAlt, FaHeadset
 } from 'react-icons/fa';
 import { toast } from 'react-toastify';
+import PhoneInput from '../components/PhoneInput';
 
 const BookNow = () => {
   const navigate = useNavigate();
@@ -174,18 +175,12 @@ const BookNow = () => {
                     <span className="w-2 h-2 bg-orange-500 rounded-full"></span>
                     Contact Number
                   </label>
-                  <div className="relative">
-                    <FaPhone className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-orange-500 transition-colors" />
-                    <input
-                      type="tel"
-                      name="phone"
-                      required
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      placeholder="Enter phone number"
-                      className="w-full pl-12 pr-4 py-4 bg-gray-50 border-2 border-gray-100 focus:border-orange-500 focus:bg-white rounded-2xl outline-none transition-all font-medium shadow-sm hover:shadow-md"
-                    />
-                  </div>
+                  <PhoneInput
+                    required
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    placeholder="Enter phone number"
+                  />
                 </div>
 
                 {/* Email */}

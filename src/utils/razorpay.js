@@ -70,4 +70,12 @@ ${userDetails.specialRequests ? `📝 Special Requests: ${userDetails.specialReq
 Thank you for booking with Delhi Tour Cab! 🚕`;
   
   window.open(`https://wa.me/919278063535?text=${encodeURIComponent(message)}`, '_blank');
+  
+  if (userDetails.email) {
+    fetch('https://delhitourcab-backend.onrender.com/api/send-booking-email', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ carName, tourTitle, userDetails, paymentId, bookingAmount })
+    }).catch(err => console.error('Email error:', err));
+  }
 };

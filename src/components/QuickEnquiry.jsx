@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaCar, FaMapMarkerAlt, FaWhatsapp, FaPhone, FaPaperPlane, FaChevronRight, FaChevronLeft } from 'react-icons/fa';
+import PhoneInput from './PhoneInput';
 
 const QuickEnquiry = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -113,14 +114,11 @@ const QuickEnquiry = () => {
 
                                     <div>
                                         <label className="block text-sm font-bold text-gray-700 mb-1">Phone Number</label>
-                                        <input
-                                            type="tel"
-                                            name="phone"
+                                        <PhoneInput
                                             required
                                             value={formData.phone}
-                                            onChange={handleChange}
+                                            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                             placeholder="Enter your phone number"
-                                            className="w-full px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 outline-none"
                                         />
                                     </div>
 

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { FaPhone, FaWhatsapp, FaEnvelope, FaMapMarkerAlt, FaClock, FaUser, FaComment, FaCar, FaHeadset, FaGlobe, FaShieldAlt } from 'react-icons/fa';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import PhoneInput from '../components/PhoneInput';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -174,15 +175,11 @@ const Contact = () => {
                 whileHover={{ scale: 1.02 }}
                 className="relative"
               >
-                <FaPhone className="absolute left-4 top-4 text-orange-500" />
-                <input
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="Your Phone Number"
-                  className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all"
+                <PhoneInput
                   required
+                  value={formData.phone}
+                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                  placeholder="Your Phone Number"
                 />
               </motion.div>
 

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaCar, FaUser, FaPhone, FaEnvelope, FaCalendarAlt, FaMapMarkerAlt, FaClock, FaUsers, FaChild, FaPlus, FaMinus, FaMoneyBillWave } from 'react-icons/fa';
+import PhoneInput from './PhoneInput';
 
 const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
   const [formData, setFormData] = useState({
@@ -102,13 +103,10 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
 
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Contact Number</label>
-                  <input
-                    type="tel"
+                  <PhoneInput
                     required
-                    pattern="[0-9]{10}"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                     placeholder="Enter phone number"
                   />
                 </div>
