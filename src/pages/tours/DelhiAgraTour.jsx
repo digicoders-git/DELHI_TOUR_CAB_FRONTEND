@@ -1,11 +1,11 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { agra, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano } from '../../utils/images';
+import { tourAgra, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano, agra, agraFort, itmadUdDaulah } from '../../utils/images';
 import { FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie } from 'react-icons/fa';
 
 const DelhiAgraTour = () => {
     const tourData = {
         title: "Delhi to Agra Same Day Return Tour",
-        bannerImage: agra,
+        bannerImage: tourAgra,
         description: "Embark on an extraordinary voyage with Delhi Tour Cab, where history meets luxury. Our Delhi to Agra Same Day Tour is not just a trip, but a curated experience designed to immerse you in the Mughal grandeur. From the moment our professional chauffeur picks you up in a pristine, air-conditioned vehicle, you'll feel the difference of traveling with Delhi's most trusted tour partner. We don't just take you to the Taj Mahal; we ensure you experience it with ease, comfort, and the local insights that only Delhi Tour Cab can provide. Whether you're a solo explorer, a couple on a romantic getaway, or a family creating lifelong memories, our service is tailored to your rhythm.",
         whatToExpect: "When you book with Delhi Tour Cab, expect nothing less than perfection. Your day begins with a timely pickup and a smooth cruise along the Yamuna Expressway. In Agra, you'll bypass the typical tourist hassles as we guide you through the city's gems with efficiency. You'll witness the Taj Mahal's marble glow, explore the formidable Agra Fort, and discover the delicate 'Baby Taj'. Mid-day, we'll recommend the finest local delicacies. By evening, as you watch the sun set over the Yamuna, you'll realize why Delhi Tour Cab is the preferred choice for thousands of travelers. Our commitment to safety, transparency, and 'no hidden costs' ensures your peace of mind from start to finish.",
         highlights: [
@@ -26,13 +26,13 @@ const DelhiAgraTour = () => {
             },
             {
                 name: "Agra Fort",
-                image: agra, // Using agra image as a placeholder or secondary view
+                image: agraFort,
                 description: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the Mughal Emperors. It houses several beautiful palaces like Khas Mahal, Jahangir Palace, and the Pearl Mosque.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Itmad-ud-Daulah (Baby Taj)",
-                image: agra,
+                image: itmadUdDaulah,
                 description: "Often described as a 'jewel box', sometimes called the 'Baby Taj', the tomb of Itmad-ud-Daulah is often regarded as a draft of the Taj Mahal. It features exquisite marble inlay work.",
                 timings: "06:00 AM – 06:00 PM"
             },

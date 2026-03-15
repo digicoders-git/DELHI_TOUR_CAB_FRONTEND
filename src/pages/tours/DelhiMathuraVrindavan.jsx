@@ -1,11 +1,11 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { mathura, drizer, innova, ertiga, scorpio, wagonr, kiacerens, forcetempo, forceurbano } from '../../utils/images';
+import { tourMathura, drizer, innova, ertiga, scorpio, wagonr, kiacerens, forcetempo, forceurbano } from '../../utils/images';
 import { FaPray, FaOm, FaHeart, FaStar, FaHistory, FaUserTie, FaCheckCircle, FaRupeeSign } from 'react-icons/fa';
 
 const DelhiMathuraVrindavan = () => {
     const tourData = {
         title: "Delhi to Mathura Vrindavan Tour",
-        bannerImage: mathura,
+        bannerImage: tourMathura,
         description: "Embark on a divine spiritual journey to the holy center of Brij Bhoomi with Delhi Tour Cab. Our Delhi to Mathura and Vrindavan Same Day Tour is meticulously crafted to connect you with the birthplace of Lord Krishna. Experience the celestial energy of ancient temples, witness soul-stirring aartis, and immerse yourself in the devotion that fills every street. Traveling in our premium AC fleet, you'll enjoy a serene and peaceful pilgrimage, free from the hassles of public transport. Our professional drivers, well-versed with the sacred routes, ensure you and your family have ample time for peaceful darshan and creating spiritual memories that last a lifetime.",
         whatToExpect: "Your spiritual day begins with a comfortable sunrise pickup from Delhi/NCR. As we glide along the Yamuna Expressway, leave the city's noise behind. In Mathura, you'll visit the powerful Krishna Janmabhoomi and explore the historical temples where divinity feels alive. In Vrindavan, expect a deep connection at the Bankey Bihari Temple and the architectural marvel of Prem Mandir. By evening, as the temples light up like jewels, you'll experience a sense of peace that only Brij Bhoomi can offer. With Delhi Tour Cab's fixed pricing and dedicated service, your only focus remains on your spiritual devotion.",
         highlights: [

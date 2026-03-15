@@ -79,8 +79,8 @@ const Navbar = () => {
               <img src={logo }
                 onClick={() => navigate('/')}
                 alt="Delhi Tour Cab Logo" className="h-10 md:h-16 cursor-pointer w-auto rounded-lg object-contain" />
-              <div className="bg-slate-800 text-white text-[8px] md:text-xs px-2 py-0.5 rounded-md mt-0.5 font-bold whitespace-nowrap overflow-hidden w-full max-w-[100px] md:max-w-none shadow-sm">
-                <marquee behavior="scroll" direction="left" scrollamount="2">
+              <div className="bg-slate-800 text-white text-[8px] md:text-xs px-2 py-0.5 rounded-md mt-0.5 font-bold shadow-sm w-[100px] md:w-auto overflow-hidden">
+                <marquee behavior="scroll" direction="left" scrollamount="3" loop="infinite">
                   A Unit of SU TAXI SERVICE
                 </marquee>
               </div>

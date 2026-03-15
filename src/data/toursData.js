@@ -11,7 +11,50 @@ import {
     amritsar,
     InnovaCrysta,
     innovaSlider,
-    khatushyam
+    khatushyam,
+    tourDelhiLocalSightseeing,
+    tourAgra,
+    tourMathura,
+    tourJaipur,
+    tourHaridwar,
+    tourRishikesh,
+     
+    tourFaridabadAgra,
+    tourAgraFatehpur,
+    tourGhaziabadAgra,
+    tourGhaziabadMathuraVrindavan,
+    tourGurgaonAgra,
+    tourGurgaonMathura,
+    tourNoidaMathura,
+    tourGurgaonDelhi,
+    tourNoidaDelhi,
+    tourGhaziabadDelhi,
+    tourFaridabadDelhi,
+    tourKhatushyam,
+    tourMehandipuri,
+    tourChandigarh,
+    tourAgraToFatehpur,
+    tourAgraToMathura,
+    tourJaipurLocal,
+    tourChandigarhLocal,
+    tourHaridwarRishikeshLocal,
+    tourDehradunMusoorie,
+    tourKainchiDham,
+    tourJaipurFatehpurAgra,
+    tourJaipurPushkarAjmer,
+    tourJimCorbett,
+    tourSrinagarLocal,
+    tourDodham,
+    tourShimlaManali,
+    tourChardham,
+    tourMathuraVrindavanAgra,
+    tourJammuSrinagar,
+    tourMathuraVrindavanAgraOneday,
+    visittajmahal,
+    agraFort,
+    AgraFort,
+    itmad,
+    mehtam
 } from '../utils/images';
 import {
     FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie,
@@ -35,7 +78,7 @@ export const toursData = {
 
     'delhi-to-agra-tour': {
         title: "Delhi to Agra Same Day Return Tour",
-        bannerImage: agra,
+        bannerImage: tourAgra,
         description: "Embark on an extraordinary voyage with Delhi Tour Cab, where history meets luxury. Our Delhi to Agra Same Day Tour is not just a trip, but a curated experience designed to immerse you in the Mughal grandeur. From the moment our professional chauffeur picks you up in a pristine, air-conditioned vehicle, you'll feel the difference of traveling with Delhi's most trusted tour partner. We don't just take you to the Taj Mahal; we ensure you experience it with ease, comfort, and the local insights that only Delhi Tour Cab can provide. Whether you're a solo explorer, a couple on a romantic getaway, or a family creating lifelong memories, our service is tailored to your rhythm.",
         whatToExpect: "When you book with Delhi Tour Cab, expect nothing less than perfection. Your day begins with a timely pickup and a smooth cruise along the Yamuna Expressway. In Agra, you'll bypass the typical tourist hassles as we guide you through the city's gems with efficiency. You'll witness the Taj Mahal's marble glow, explore the formidable Agra Fort, and discover the delicate 'Baby Taj'. Mid-day, we'll recommend the finest local delicacies. By evening, as you watch the sun set over the Yamuna, you'll realize why Delhi Tour Cab is the preferred choice for thousands of travelers. Our commitment to safety, transparency, and 'no hidden costs' ensures your peace of mind from start to finish.",
         highlights: [
@@ -50,25 +93,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: agra,
+                image: visittajmahal,
                 description: "The crown jewel of Mughal architecture and one of the Seven Wonders of the World. Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, this ivory-white marble mausoleum is a symbol of eternal love.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: AgraFort,
                 description: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the Mughal Emperors. It houses several beautiful palaces like Khas Mahal, Jahangir Palace, and the Pearl Mosque.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Itmad-ud-Daulah (Baby Taj)",
-                image: agra,
+                image: itmad,
                 description: "Often described as a 'jewel box', sometimes called the 'Baby Taj', the tomb of Itmad-ud-Daulah is often regarded as a draft of the Taj Mahal. It features exquisite marble inlay work.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Mehtab Bagh",
-                image: agra,
+                image: mehtam,
                 description: "Located on the opposite bank of the Yamuna River, this garden offers a stunning view of the Taj Mahal at sunset. It's the perfect spot for photography and peaceful reflection.",
                 timings: "06:00 AM – 06:00 PM"
             }
@@ -187,7 +230,7 @@ export const toursData = {
 
     'delhi-to-haridwar-tour': {
         title: "Delhi to Haridwar Same Day Tour",
-        bannerImage: haridwar,
+        bannerImage: tourHaridwar,
         description: "Begin a soul-cleansing spiritual journey to the 'Gateway to God' with Delhi Tour Cab. Our Delhi to Haridwar Same Day Tour is designed to immerse you in the sacred atmosphere of one of India's seven holiest places. From the moment you leave Delhi in our premium AC fleet, you're on a path to peace. Witness the majestic Ganges, participate in the powerful evening Aarti at Har Ki Pauri, and explore ancient temples perched on the hills. Our professional chauffeurs, experienced in highway and interstate travel, ensure your pilgrimage is smooth, safe, and deeply revitalizing, allowing you to return to Delhi the same night with a heart full of blessings.",
         whatToExpect: "Your sacred day starts with an early morning pickup from your doorstep in Delhi/NCR. As we head towards the foothills of the Himalayas, relax in the comfort of our well-maintained vehicles. In Haridwar, expect a day of divine experiences—from a holy dip at Har Ki Pauri to a panoramic cable car ride to Mansa Devi Temple. Navigate through the vibrant local spiritual markets and find peace at the various holy ghats. The highlight of your trip will be the mesmerizing Ganga Aarti, a spectacle of faith and fire. With Delhi Tour Cab, every detail of your transport is managed with care, so your only focus is your spiritual connection.",
         highlights: [
@@ -287,7 +330,7 @@ export const toursData = {
 
     'delhi-to-jaipur-tour': {
         title: "Delhi to Jaipur Same Day Return Tour",
-        bannerImage: jaipur,
+        bannerImage: tourJaipur,
         description: "Step into a world of royal heritage and vibrant culture with Delhi Tour Cab's exclusive Delhi to Jaipur Same Day Return Tour. Known as the 'Pink City', Jaipur is a living museum of Rajputana glory. Our curated tour ensures you experience the best of Jaipur’s forts, palaces, and bazaars, all within a single day. Travel in the plush comfort of our premium AC fleet, driven by professional chauffeurs who understand the heritage and the roads. With Delhi Tour Cab, the 270km journey becomes a part of the royal experience itself.",
         whatToExpect: "Your regal adventure starts with a sunrise pickup across Delhi/NCR. As we head towards Rajasthan, relax in our well-maintained vehicles. In Jaipur, you'll be greeted by the amber-hued walls of the Amer Fort, the symmetrical beauty of Hawa Mahal, and the scientific marvels of Jantar Mantar. We optimize your time so you can wander through the City Palace and catch a glimpse of the Jal Mahal floating in Man Sagar Lake. Expect a day filled with stunning photography, local shopping opportunities for handicrafts, and a seamless return to Delhi by night, perfectly managed by the team at Delhi Tour Cab.",
         highlights: [
@@ -454,7 +497,7 @@ export const toursData = {
     },
     'delhi-local-sightseeing': {
         title: "Oneday Delhi Local sightseeing by Car",
-        bannerImage: delhiBannerNew,
+        bannerImage: tourDelhiLocalSightseeing,
         description: `Explore India's capital in comfort with our Delhi Sightseeing Tour by car, the most convenient and flexible way to experience the city's rich history, iconic monuments, spiritual landmarks, and modern attractions in one well-planned trip. This private Delhi city tour is ideal for all tourists, families, couples, and corporate travelers who prefer a relaxed, hassle-free Delhi sightseeing experience.
         With Delhi Tour Cab, you travel in a clean, air-conditioned car driven by an experienced local chauffeur, allowing you to explore Delhi at your own pace. Unlike crowded public transport or fixed group tours, our customizable sightseeing itinerary gives you complete freedom to spend more time at the places you enjoy most, ensuring a smooth, comfortable, and memorable Delhi sightseeing experience. Our Delhi Sightseeing by car packages are designed to offer transparent pricing and excellent value for money. The tour cost depends on the type of vehicle selected, total tour duration (usually 8 hours), and the number of passengers. We provide flexible options to suit solo travelers, families, and groups looking for a comfortable Delhi city tour.`,
         highlights: [
@@ -625,7 +668,7 @@ export const toursData = {
     },
     'delhi-to-mathura-vrindavan': {
         title: "Delhi to Mathura Vrindavan Tour",
-        bannerImage: mathura,
+        bannerImage: tourMathura,
         description: "Embark on a divine spiritual journey to the holy center of Brij Bhoomi with Delhi Tour Cab. Our Delhi to Mathura and Vrindavan Same Day Tour is meticulously crafted to connect you with the birthplace of Lord Krishna. Experience the celestial energy of ancient temples, witness soul-stirring aartis, and immerse yourself in the devotion that fills every street. Traveling in our premium AC fleet, you'll enjoy a serene and peaceful pilgrimage, free from the hassles of public transport. Our professional drivers, well-versed with the sacred routes, ensure you and your family have ample time for peaceful darshan and creating spiritual memories that last a lifetime.",
         whatToExpect: "Your spiritual day begins with a comfortable sunrise pickup from Delhi/NCR. As we glide along the Yamuna Expressway, leave the city's noise behind. In Mathura, you'll visit the powerful Krishna Janmabhoomi and explore the historical temples where divinity feels alive. In Vrindavan, expect a deep connection at the Bankey Bihari Temple and the architectural marvel of Prem Mandir. By evening, as the temples light up like jewels, you'll experience a sense of peace that only Brij Bhoomi can offer. With Delhi Tour Cab's fixed pricing and dedicated service, your only focus remains on your spiritual devotion.",
         highlights: [
@@ -721,7 +764,7 @@ export const toursData = {
     },
     'delhi-to-rishikesh-tour': {
         title: "Delhi to Rishikesh Adventure Tour",
-        bannerImage: rishikesh,
+        bannerImage: tourRishikesh,
         description: "Experience the perfect blend of spiritual serenity and pulse-racing adventure with Delhi Tour Cab's Rishikesh Day Tour. Known as the 'Yoga Capital of the World', Rishikesh offers a unique landscape where the emerald Ganges meets the foothills of the Himalayas. Whether you're seeking a soul-stirring Ganga Aarti, a peaceful meditative session in a riverside ashram, or the thrill of white-water rafting, our day tour is designed to deliver it all. Travel in the comfort of our premium AC vehicles, driven by professional chauffeurs who know the best routes and hidden gems of Rishikesh, ensuring your one-day escape is perfectly managed and memorable.",
         whatToExpect: "Your journey starts with a swift sunrise drive from Delhi/NCR, cruising along the modern expressways. In Rishikesh, expect a day of contrasts: from walking across the iconic Ram Jhula to cafe-hopping in the vibrant lanes of Tapovan. You'll witness the divine evening Aarti at Parmarth Niketan, a spectacle of light and sound that stays with you forever. With Delhi Tour Cab, you skip the hassles of public transport and focus entirely on the experience—whether it's the adrenaline of the rapids or the peace of the temples. Our all-inclusive pricing means you travel with total peace of mind.",
         highlights: [
@@ -817,7 +860,7 @@ export const toursData = {
     },
     'delhi-mathura-vrindavan-agra-tour': {
         title: "Delhi to Mathura, Vrindavan & Agra One Day Return Tour",
-        bannerImage: agra,
+        bannerImage: tourMathuraVrindavanAgraOneday,
         description: "Experience the ultimate spiritual and historical journey with Delhi Tour Cab's exclusive Mathura, Vrindavan, and Agra Same Day Tour. This meticulously planned itinerary allows you to witness the architectural brilliance of the Taj Mahal and the divine aura of Brij Bhoomi's most sacred temples, all in a single day. Our professional chauffeurs ensure a smooth, time-efficient travel experience, allowing you to focus on your darshan and sightseeing without any stress. Perfect for families, pilgrims, and history enthusiasts alike.",
         whatToExpect: "Your day begins with an early morning pickup from Delhi/NCR, heading straight to Agra via the Yamuna Expressway. After witnessing the morning glory of the Taj Mahal and exploring Agra Fort, we'll drive towards the sacred towns of Mathura and Vrindavan. Expect a soul-stirring visit to the Krishna Janmabhoomi in Mathura and the mesmerizing Bankey Bihari Temple and Prem Mandir in Vrindavan. With our reliable AC fleet and expert drivers, you'll cover these iconic landmarks comfortably and return to Delhi by night with a heart full of memories and blessings.",
         highlights: [
@@ -953,7 +996,7 @@ export const toursData = {
     },
     'faridabad-to-agra-tour': {
         title: "Faridabad to Agra Same Day Return Tour",
-        bannerImage: agra,
+        bannerImage: tourFaridabadAgra,
         description: "Experience the majestic beauty of the Taj Mahal with Delhi Tour Cab's premium Faridabad to Agra Same Day Tour. Starting from Faridabad, this tour is designed for those who want a quick yet comprehensive visit to India's most iconic city. Travel in comfort along the Yamuna Expressway and witness the ivory-white marble masterpiece, the Taj Mahal, and the grand Agra Fort. Our professional drivers ensure a safe and timely journey, making your day trip from Faridabad truly memorable.",
         whatToExpect: "Your journey begins with a morning pickup from your doorstep in Faridabad. Enjoy a fast and smooth drive on the Yamuna Expressway. In Agra, you'll visit the Taj Mahal, a symbol of eternal love, followed by the formidable Agra Fort. We also offer optional stops for local Mughlai cuisine and shopping for Agra's famous handicrafts and petha. After a fulfilling day of exploration, sit back and relax as we drive you back to Faridabad by night.",
         highlights: [
@@ -1057,7 +1100,7 @@ export const toursData = {
     },
     'delhi-to-agra-fatehpur-sikri-tour': {
         title: "Delhi to Agra & Fatehpur Sikri Same Day Return Tour",
-        bannerImage: agra,
+        bannerImage: tourAgraFatehpur,
         description: "Embark on a grand historical journey with Delhi Tour Cab's exclusive Delhi to Agra and Fatehpur Sikri Same Day Tour. This tour is perfectly crafted for heritage lovers, combining the eternal beauty of the Taj Mahal with the abandoned but perfectly preserved Mughal city of Fatehpur Sikri. Travel comfortably along the Yamuna Expressway in our premium AC car and explore the architectural wonders that defined the Mughal era. Our expert drivers and well-maintained fleet ensure you have a seamless and enriching experience.",
         whatToExpect: "Your day begins with an early morning pickup from Delhi/NCR. We'll head straight to Agra to witness the breathtaking Taj Mahal. After exploring the grand Agra Fort, we'll take a short drive to the historic city of Fatehpur Sikri, founded by Emperor Akbar. Witness the majestic Buland Darwaza and the serene tomb of Salim Chishti. This comprehensive tour allows you to cover two UNESCO World Heritage sites in a single day, returning to Delhi by night with unforgettable memories of India's royal past.",
         highlights: [
@@ -1295,7 +1338,7 @@ export const toursData = {
     },
     "ghaziabad-to-agra-same-day-return-tour": {
         title: "Ghaziabad to Agra Same Day Return Tour by Cab",
-        bannerImage: agra,
+        bannerImage: tourGhaziabadAgra,
         description: "Experience the magic of Agra with a same-day return tour from Ghaziabad. Witness the grandeur of the Taj Mahal and Agra Fort with our premium cab services, ensuring a comfortable and memorable day trip.",
         highlights: [
             "Taj Mahal - The Majestic Symbol of Love",
@@ -1403,7 +1446,7 @@ export const toursData = {
     },
     "gurgaon-to-agra-same-day-return-tour": {
         title: "Gurgaon to Agra Same Day Return Tour by Cab",
-        bannerImage: agra,
+        bannerImage: tourGurgaonAgra,
         description: "Enjoy a premium day trip from Gurgaon to Agra. Travel in comfort through the Peripheral or Yamuna Expressway to witness the iconic Taj Mahal, Agra Fort, and more. Perfect for a quick family getaway or business break.",
         highlights: [
             "Taj Mahal - The World's Finest Symbol of Love",
@@ -1515,7 +1558,7 @@ export const toursData = {
     },
     "gurgaon-to-mathura-same-day-return-tour": {
         title: "Gurgaon to Mathura Same Day Return Tour by Cab",
-        bannerImage: mathura,
+        bannerImage: tourGurgaonMathura,
         description: "Experience the spiritual bliss of Brij Bhoomi with our same-day return tour from Gurgaon to Mathura and Vrindavan. Journey through the expressways to reach the holy land where Lord Krishna was born and raised. Ideal for families seeking a peaceful and divine pilgrimage.",
         highlights: [
             "Shri Krishna Janmabhoomi - The Birthplace of Lord Krishna",
@@ -1631,7 +1674,7 @@ export const toursData = {
     },
     "noida-greater-noida-to-mathura-one-day-tour": {
         title: "Noida/Greater Noida to Mathura Vrindavan One Day Tour by car",
-        bannerImage: mathura,
+        bannerImage: tourNoidaMathura,
         description: "Embark on a soul-stirring one-day pilgrimage from Noida or Greater Noida to the holy cities of Mathura and Vrindavan. Known as Brij Bhoomi, these twin cities are the heart of Krishna devotion. Our premium car service ensures a comfortable and timely journey, allowing you to immerse yourself in the divine energy of the temples and the holy Yamuna river.",
         highlights: [
             "Shri Krishna Janmabhoomi (Mathura) - The Birthplace of Lord Krishna",
@@ -1747,7 +1790,7 @@ export const toursData = {
     },
     "gurgaon-to-delhi-local-sightseeing-tour": {
         title: "Gurgaon to Delhi Local Sightseeing Tour by car",
-        bannerImage: delhiBannerNew,
+        bannerImage: tourGurgaonDelhi,
         description: "Explore the historic and modern heart of India with our exclusive Gurgaon to Delhi local sightseeing tour. From majestic Mughal monuments to colonial landmarks and spiritual centers, experience the best of Delhi with a private premium cab. We provide doorstep pickup from anywhere in Gurgaon for a hassle-free day trip.",
         highlights: [
             "Visit Qutub Minar - A UNESCO World Heritage Site",
@@ -1859,7 +1902,7 @@ export const toursData = {
     },
     "noida-to-delhi-local-sightseeing-tour": {
         title: "Noida to Delhi Local Sightseeing Tour by car",
-        bannerImage: delhiBannerNew,
+        bannerImage: tourNoidaDelhi,
         description: "Explore the vibrant capital of India with a personalized Noida to Delhi local sightseeing tour. From the historical charm of Old Delhi to the architectural brilliance of New Delhi, our private cab service offers a comfortable and flexible way to visit all major monuments and attractions. We provide doorstep pickup from all sectors of Noida and Greater Noida.",
         highlights: [
             "Qutub Minar - Explore the world's tallest brick minaret",
@@ -1971,7 +2014,7 @@ export const toursData = {
     },
     "ghaziabad-to-delhi-local-sightseeing-tour": {
         title: "Ghaziabad to Delhi Local Sightseeing Tour by car",
-        bannerImage: delhiBannerNew,
+        bannerImage: tourGhaziabadDelhi,
         description: "Discover the heritage and culture of India's capital with our personalized Ghaziabad to Delhi local sightseeing tour. From the historic landmarks of Old Delhi to the majestic architecture of New Delhi, our private cab service offers a comfortable and flexible way to explore the city. We provide doorstep pickup from all areas of Ghaziabad including Indirapuram, Vaishali, and Kaushambi.",
         highlights: [
             "Qutub Minar - The world's tallest brick minaret and a UNESCO site",
@@ -2083,7 +2126,7 @@ export const toursData = {
     },
     "faridabad-to-delhi-local-sightseeing-tour": {
         title: "Faridabad to Delhi Local Sightseeing Tour by car",
-        bannerImage: delhiBannerNew,
+        bannerImage: tourFaridabadDelhi,
         description: "Experience the grand history and vibrant culture of Delhi with our specialized Faridabad to Delhi local sightseeing tour. We offer a seamless door-to-door private cab service, taking you through the most iconic monuments, spiritual sites, and shopping hubs of the capital city. Whether you're a family seeking a day out or a solo traveler, our professional drivers ensure a comfortable and personalized experience.",
         highlights: [
             "Qutub Minar - Discover the brilliance of Indo-Islamic architecture",
@@ -2197,7 +2240,7 @@ export const toursData = {
     // delhi-to-khatu-shyam-one-day-tour page
     "delhi-to-khatu-shyam-one-day-tour": {
         title: "Delhi to Khatu Shyam One Day Tour by Cab",
-        bannerImage: khatushyam,
+        bannerImage: tourKhatushyam,
         description: "Embark on a divine journey from Delhi to the holy shrine of Khatu Shyam Ji in Rajasthan. Experience the powerful spiritual energy and seek blessings at one of India's most revered temples. Our premium one-day cab tour ensures a comfortable and hassle-free pilgrimage for you and your family.",
         highlights: [
             "Baba Khatu Shyam Ji Darshan - Seek blessings of Barbarika",
@@ -2311,7 +2354,7 @@ export const toursData = {
     // delhi-to-mehandipur-balaji-one-day-tour page
     "delhi-to-mehandipur-balaji-one-day-tour": {
         title: "Delhi to Mehandipur Balaji One Day Tour by Cab",
-        bannerImage: "https://heritagecabs.in/blog/wp-content/uploads/2025/07/Mehandipur-Balaji-Temple.png",
+        bannerImage: tourMehandipuri,
         description: "Experience the divine power and seek blessings at the Shri Mehandipur Balaji Temple in Rajasthan with our specialized one-day return cab tour. Known for its spiritual significance and healing powers, this pilgrimage is a must-visit for devotees of Lord Hanuman. We provide a comfortable, private, and well-timed journey from Delhi/NCR.",
         highlights: [
             "Shri Mehandipur Balaji Darshan - Powerful Lord Hanuman Shrine",
@@ -2421,7 +2464,7 @@ export const toursData = {
     // delhi-to-chandigarh-one-day-tour page
     "delhi-to-chandigarh-one-day-tour": {
         title: "Delhi to Chandigarh One Day Tour by Cab",
-        bannerImage: chandigarh,
+        bannerImage: tourChandigarh,
         description: "Explore the 'City Beautiful' with our premium one-day return tour from Delhi to Chandigarh. Known for its modern architecture, urban planning, and lush gardens, Chandigarh is a perfect day-trip destination. Visit iconic spots like the Rock Garden, Sukhna Lake, and Rose Garden in the comfort of a private AC cab.",
         highlights: [
             "Rock Garden - Unique sculpture garden made of recycled materials",
@@ -2672,7 +2715,7 @@ export const toursData = {
     },
     'agra-to-fatehpur-sikri-one-day-tour': {
         title: "Agra to Fatehpur Sikri One Day Tour by Cab",
-        bannerImage: agra,
+        bannerImage: tourAgraToFatehpur,
         description: "Embark on a historical journey from Agra to the majestic ghost city of Fatehpur Sikri with Delhi Tour Cab. Built by Emperor Akbar, this UNESCO World Heritage site is a masterpiece of Mughal architecture. Our one-day tour ensures a comfortable ride in a private AC cab with a professional driver, allowing you to explore the stunning Buland Darwaza, Tomb of Salim Chishti, and Panch Mahal at your leisure.",
         whatToExpect: "Your tour begins with a pickup from your hotel or location in Agra. Enjoy a smooth drive to Fatehpur Sikri (approx. 40km). Explore the grand sandstone palaces, courtyards, and the spiritual atmosphere of the Dargah. Our driver will be at your service throughout the trip, ensuring a hassle-free experience. After sightseeing, we will drop you back at your preferred location in Agra.",
         highlights: [
@@ -2796,7 +2839,7 @@ export const toursData = {
     },
     'agra-to-mathura-vrindavan-tour': {
         title: "Agra to Mathura Vrindavan Tour by Cab",
-        bannerImage: mathura,
+        bannerImage: tourAgraToMathura,
         description: "Experience a divine journey from Agra to the sacred lands of Mathura and Vrindavan with Delhi Tour Cab. Immerse yourself in the spiritual aura of Lord Krishna's birthplace and childhood home. Our comfortable and convenient cab service ensures a peaceful pilgrimage, allowing you to visit iconic temples like Krishna Janmabhoomi, Bankey Bihari, and Prem Mandir with ease.",
         whatToExpect: "Your spiritual day starts with a pickup from Agra in a private, air-conditioned vehicle. Enjoy a comfortable drive to Mathura (approx. 60km). Visit the holy Krishna Janmabhoomi temple and Dwarkadhish temple. Proceed to Vrindavan to experience the devotion at Bankey Bihari Temple, ISKCON, and the stunning Prem Mandir. Our experienced driver will guide you through the narrow lanes and busy streets, ensuring a hassle-free darshan. Return to Agra by evening with a heart full of blessings.",
         highlights: [
@@ -2924,7 +2967,7 @@ export const toursData = {
     },
     'jaipur-local-sightseeing-by-car': {
         title: "Jaipur Local Sightseeing by Car",
-        bannerImage: jaipur,
+        bannerImage: tourJaipurLocal,
         description: "Discover the Pink City like never before with Delhi Tour Cab's Jaipur Local Sightseeing tour. Jaipur, a UNESCO World Heritage City, is a treasure trove of royal palaces, vibrant bazaars, and mighty forts. Our private car rental service offers you the freedom to explore the Amber Fort, Hawa Mahal, City Palace, and more at your own pace. With a professional local driver, comfortable AC cab, and flexible itinerary, we ensure your day in Jaipur is nothing short of royal.",
         whatToExpect: "Your royal day begins with a pickup from your hotel or residence in Jaipur. Start with the majestic Amber Fort, followed by a photo stop at the Jal Mahal. Explore the intricate architecture of the City Palace and the astronomical wonders of Jantar Mantar. Don't miss the iconic Hawa Mahal and the panoramic views from Nahargarh Fort. Our detailed itinerary ensures you cover all major attractions comfortably. End your day with some shopping in Jaipur's famous markets before we drop you back.",
         highlights: [
@@ -3052,7 +3095,7 @@ export const toursData = {
     },
     'chandigarh-local-sightseeing-by-car': {
         title: "Chandigarh Local Sightseeing by Car",
-        bannerImage: chandigarh,
+        bannerImage: tourChandigarhLocal,
         description: "Explore 'The City Beautiful' with our premium car rental service. Chandigarh, known for its modern architecture and urban design by Le Corbusier, offers a perfect blend of nature and concrete. Visit the famous Rock Garden, serene Sukhna Lake, and the vast Rose Garden. Our comfortable cabs and professional drivers ensure you see the best of Chandigarh at your own pace.",
         whatToExpect: "Your day begins with a pickup from your location in Chandigarh. Drive through the well-planned sectors to reach the artistic Rock Garden. Enjoy the calm waters of Sukhna Lake and take a stroll in the Rose Garden. Visit the architectural marvels of the Capitol Complex. Our driver will guide you to local markets for shopping and food. Experience a hassle-free and comfortable sightseeing tour in our AC cabs.",
         highlights: [
@@ -3176,7 +3219,7 @@ export const toursData = {
     },
     'haridwar-rishikesh-local-sightseeing-by-car': {
         title: "Haridwar Rishikesh Local Sightseeing by Car",
-        bannerImage: haridwar,
+        bannerImage: tourHaridwarRishikeshLocal,
         description: "Experience the spiritual essence of India with our Haridwar and Rishikesh local sightseeing tour. Visit the holy ghats of Haridwar, witness the mesmerizing Ganga Aarti at Har Ki Pauri, and explore the yoga capital of the world, Rishikesh. Our comfortable car rental service ensures a serene and hassle-free journey through these twin holy cities, covering ancient temples, suspension bridges, and ashrams.",
         whatToExpect: "Your spiritual journey begins with a pickup from your location in Haridwar or Rishikesh. We take you to the famous Har Ki Pauri and Mansa Devi Temple in Haridwar. Then, proceed to Rishikesh to walk across the iconic Ram Jhula and Laxman Jhula. Visit the Beatles Ashram and attend the evening Ganga Aarti at Triveni Ghat or Parmarth Niketan. Our experienced driver guides you through the sacred spots for a fulfilling experience.",
         highlights: [
@@ -3304,7 +3347,7 @@ export const toursData = {
     },
     'dehradoon-masoorie-local-sightseeing-by-car': {
         title: "Dehradoon Masoorie Local Sightseeing by Car",
-        bannerImage: dehradun,
+        bannerImage: tourDehradunMusoorie,
         description: "Escape to the hills with our Dehradun and Mussoorie local sightseeing tour. Explore the scenic beauty of the Doon Valley and the charm of the 'Queen of Hills', Mussoorie. Our comfortable car rental ensures a pleasant journey through winding roads, lush forests, and misty mountains. Visit famous waterfalls, caves, and viewpoints with our experienced drivers.",
         whatToExpect: "Your hill station adventure begins with a pickup from Dehradun. We start by exploring Dehradun's gems like Robber's Cave and Sahastradhara. Then, enjoy a scenic drive up to Mussoorie. Witness the majestic Kempty Falls, take a ropeway ride to Gun Hill, and stroll along the famous Mall Road. Whether you love nature or colonial architecture, this tour covers the best of both towns in a single day.",
         highlights: [
@@ -3432,7 +3475,7 @@ export const toursData = {
     },
     'srinagar-sonmarg-gulmarg-local-sightseeing-by-car': {
         title: "Srinagar Sonmarg Gulmarg Local Sightseeing by Car",
-        bannerImage: dehradun, // Using dehradun as placeholder for mountains
+        bannerImage: tourSrinagarLocal, // Using dehradun as placeholder for mountains
         description: "Experience the paradise on earth with our premium car rental service in Kashmir. Covering the breathtaking valleys of Srinagar, the meadow of gold 'Sonmarg', and the meadow of flowers 'Gulmarg'. Whether you want to enjoy a Shikara ride on Dal Lake, take a Gondola ride in Gulmarg, or witness the glaciers of Sonmarg, our professional drivers and comfortable heating-equipped cars ensure a memorable and safe journey through the Himalayas.",
         whatToExpect: "Explore the mesmerizing beauty of Kashmir at your own pace. You can choose to spend a day locally in Srinagar visiting Mughal Gardens and Dal Lake, or take a day trip to the snow-capped peaks of Gulmarg for skiing and Gondola rides. Another option is driving to Sonmarg to see the Thajiwas Glacier. Our service is flexible – book for a day or multiple days to cover all these destinations comfortably from Srinagar.",
         highlights: [
@@ -3552,7 +3595,7 @@ export const toursData = {
     },
     'delhi-to-kainchi-dham-neem-karoli-baba-tour': {
         title: "Delhi to Kainchi Dham, Neem Karoli Baba One Night Tour",
-        bannerImage: rishikesh, // Placeholder
+        bannerImage: tourKainchiDham, // Placeholder
         description: "Embark on a spiritual journey to the serene Kainchi Dham Ashram, established by the revered Neem Karoli Baba. Located near Nainital, this ashram is a place of immense peace and devotion, attracting followers from across the globe including tech titans like Steve Jobs and Mark Zuckerberg. Our 2-day tour package offers a comfortable round trip from Delhi, allowing you to seek blessings and enjoy the tranquil beauty of the Kumaon hills.",
         whatToExpect: "A peaceful drive from Delhi to the Kumaon hills. Upon reaching Kainchi Dham, experience the divine vibrations of the ashram, attend the aarti, and meditate in the calming surroundings. We arrange for a comfortable overnight stay in designated hotels/homestays near Bhimtal or Bhowali. On the way back, enjoy scenic views or a quick stop at Nainital lake (time permitting).",
         highlights: [
@@ -3657,7 +3700,7 @@ export const toursData = {
     },
     'delhi-jaipur-fatehpur-sikri-agra-golden-triangle-tour': {
         title: "Delhi to Jaipur, Fatehpur Sikri & Agra Golden Triangle Tour",
-        bannerImage: agra, // Placeholder, can be a collage if available, or just Agra
+        bannerImage: tourJaipurFatehpurAgra, // Placeholder, can be a collage if available, or just Agra
         description: "Experience the rich history and culture of India with our 2 Nights 3 Days Golden Triangle Tour. This tour takes you through the majestic forts of Jaipur, the ghost city of Fatehpur Sikri, and the eternal symbol of love, the Taj Mahal in Agra. Perfect for history buffs and those wanting to see the gems of North India in a short duration. Our comfortable cab service ensures a seamless journey across these iconic cities.",
         whatToExpect: "A well-planned journey covering three historic cities. Day 1 involves driving to Jaipur and exploring its royal heritage. Day 2 takes you en route to Agra via the UNESCO World Heritage site of Fatehpur Sikri. Day 3 is dedicated to the Taj Mahal and Agra Fort before returning to Delhi. Expect professional drivers, comfortable travel, and memories for a lifetime.",
         highlights: [
@@ -3773,7 +3816,7 @@ export const toursData = {
     },
     'delhi-jaipur-pushkar-ajmer-tour': {
         title: "Delhi to Jaipur, Pushkar & Ajmer Tour (2 Nights 3 Days)",
-        bannerImage: ajmer,
+        bannerImage: tourJaipurPushkarAjmer,
         description: "Explore the royal heritage of Rajasthan with our 3-day tour covering Jaipur, Pushkar, and Ajmer. Witness the grandeur of Amber Fort in Jaipur, seek blessings at the holy Ajmer Sharif Dargah, and visit the only Brahma Temple in the world at Pushkar. This tour offers a perfect blend of history, spirituality, and culture. travel in comfort with our private cab service.",
         whatToExpect: "A 3-day journey starting from Delhi. Day 1 is dedicated to the Pink City, Jaipur. Day 2 takes you to the spiritual twin cities of Ajmer and Pushkar. Visit the Dargah and the holy Pushkar Lake. Day 3 involves a calm return to Delhi or further local sightseeing. We provide experienced drivers and well-maintained cars for a hassle-free road trip.",
         highlights: [
@@ -3889,7 +3932,7 @@ export const toursData = {
     },
     'delhi-to-jim-corbett-tour': {
         title: "Delhi to Jim Corbett 2 Night 3 Days Tour",
-        bannerImage: dehradun, // Placeholder for nature/wildlife
+        bannerImage: tourJimCorbett, // Placeholder for nature/wildlife
         description: "Escape into the wild with our 3-day tour to Jim Corbett National Park, the oldest national park in India. Home to the majestic Royal Bengal Tiger, elephants, and diverse bird species, Corbett offers a thrilling experience for nature lovers. Enjoy a comfortable drive from Delhi, exciting jeep safaris, and serenity by the Kosi river.",
         whatToExpect: "A thrilling wildlife getaway. The drive takes you from the bustle of Delhi to the tranquil forests of Uttarakhand. Spend 2 nights at a resort near the park. The highlight is the Jeep Safari into the jungle to spot tigers and other wildlife. You will also visit the Garjiya Devi Temple and Corbett Falls. Perfect for a weekend recharge.",
         highlights: [
@@ -3999,7 +4042,7 @@ export const toursData = {
     },
     'delhi-to-do-dham-kedarnath-badrinath-tour': {
         title: "Delhi to Do Dham (Kedarnath & Badrinath) 5 Night 6 Days",
-        bannerImage: haridwar,
+        bannerImage: tourDodham,
         description: "Embark on a sacred pilgrimage to Kedarnath and Badrinath, two of the most revered shrines in Hindu mythology. Our 6-day tour package from Delhi is designed to provide you with a soulful spiritual experience amidst the majestic Himalayas. With comfortable private cabs and experienced drivers, we ensure your journey through the winding mountain roads is safe and serene.",
         whatToExpect: "A profound spiritual journey covering the 'Kedarnath' (Abode of Lord Shiva) and 'Badrinath' (Abode of Lord Vishnu). You will witness the confluence of holy rivers (Prayags), enjoy the scenic beauty of the Garhwal Himalayas, and participate in the divine aartis. Our professional drivers are well-versed with mountain driving and local routes, prioritizing your safety throughout the trip.",
         highlights: [
@@ -4121,7 +4164,7 @@ export const toursData = {
     },
     'delhi-shimla-manali-tour': {
         title: "Delhi to Shimla & Manali 5 Night 6 Days Tour",
-        bannerImage: dehradun, // Placeholder for mountains
+        bannerImage: tourShimlaManali, // Placeholder for mountains
         description: "Experience the magic of the Himalayas with our 6-day tour package covering Shimla and Manali. From the colonial charm of Shimla's Ridge to the snow-covered slopes of Rohtang Pass, this tour offers the perfect escape from the city heat. Enjoy comfortable travel in our private cabs with experienced mountain drivers who ensure your safety and enjoyment throughout the scenic journey.",
         whatToExpect: "A breathtaking journey through the heart of Himachal Pradesh. Explore the 'Queen of Hills' Shimla, visit the adventure capital Manali, and witness the stunning Solang Valley. Our package covers all major sightseeing spots with a flexible itinerary, allowing you to enjoy paragliding, river rafting, or peaceful walks through pine forests at your own pace.",
         highlights: [
@@ -4243,7 +4286,7 @@ export const toursData = {
     },
     'delhi-to-char-dham-tour': {
         title: "Delhi to Char Dham (Yamunotri, Gangotri, Kedarnath & Badrinath) 11N/12D",
-        bannerImage: haridwar,
+        bannerImage: tourChardham,
         description: "Embark on the ultimate spiritual odyssey with our 12-day Char Dham Yatra package from Delhi. Covering the four sacred abodes—Yamunotri, Gangotri, Kedarnath, and Badrinath—this journey takes you through the heart of the Himalayas. Our premium car rental service provides you with experienced mountain drivers and well-maintained vehicles to ensure a safe, comfortable, and soul-stirring pilgrimage.",
         whatToExpect: "A comprehensive 12-day pilgrimage through the 'Devbhoomi' Uttarakhand. You will visit the source of holy rivers Yamuna and Ganga, seek blessings at the majestic Kedarnath and Badrinath temples, and witness the unparalleled natural beauty of the Garhwal Himalayas. The tour is meticulously planned to allow for proper acclimatization and enough time for darshans and rituals at each Dham.",
         highlights: [
@@ -4367,7 +4410,7 @@ export const toursData = {
     },
     'delhi-comprehensive-up-spiritual-tour': {
         title: "Delhi to Mathura, Vrindavan, Agra, Lucknow, Ayodhya, Prayagraj & Varanasi Tour",
-        bannerImage: varanasi,
+        bannerImage: tourMathuraVrindavanAgra,
         description: "Experience the ultimate spiritual and cultural journey across Uttar Pradesh with our 7-day comprehensive tour from Delhi. This package covers the most sacred sites of India—from the birthplace of Lord Krishna and Lord Rama to the eternal city of Varanasi and the majestic Taj Mahal. Travel comfortably across these historic cities with our private cab service and expert drivers.",
         whatToExpect: "A deep dive into Indian heritage and spirituality. Visit the sacred temples of Mathura and Vrindavan, the world-famous Taj Mahal in Agra, the royal 'Tehzeeb' of Lucknow, the newly built Ram Mandir in Ayodhya, the holy Sangam in Prayagraj, and the spiritual heart of India, Varanasi. Our tour is meticulously planned to cover all major landmarks with enough time for darshans and exploring local culture.",
         highlights: [
@@ -4499,7 +4542,7 @@ export const toursData = {
     },
     'delhi-kashmir-vaishnodevi-amritsar-grand-tour': {
         title: "Delhi to Jammu, Pahalgam, Srinagar, Gulmarg, Vaishno Devi & Amritsar Grand Tour (9N/10D)",
-        bannerImage: amritsar,
+        bannerImage: tourJammuSrinagar,
         description: "Experience the ultimate North India expedition with our 10-day grand tour. This epic journey takes you from the national capital to the 'Heaven on Earth' Kashmir, the sacred shrine of Vaishno Devi, and the spiritual Golden Temple in Amritsar. A perfect blend of adventure, spirituality, and breathtaking natural beauty, all in the comfort of our premium private cabs.",
         whatToExpect: "A massive 10-day loop covering 3 states and 1 union territory. Enjoy the scenic valleys of Pahalgam and Gulmarg, stay in a luxury houseboat in Srinagar, seek blessings at Mata Vaishno Devi, and witness the patriotic ceremony at the Wagah Border. Our experienced long-route drivers ensure a smooth transition between the plains and the mighty mountains.",
         highlights: [

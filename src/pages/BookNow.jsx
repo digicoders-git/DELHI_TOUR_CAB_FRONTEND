@@ -40,7 +40,8 @@ const BookNow = () => {
     e.preventDefault();
 
     // Construct WhatsApp message
-    const message = `*New Booking Request*%0A%0A` +
+    const message =
+      `*New Booking Request*%0A%0A` +
       `*Full Name:* ${formData.fullName}%0A` +
       `*Phone:* ${formData.phone}%0A` +
       `*Email:* ${formData.email}%0A` +
@@ -51,10 +52,23 @@ const BookNow = () => {
       `*Travellers:* ${formData.adults} Adults, ${formData.children} Children%0A` +
       `*Notes:* ${formData.specialRequests}`;
 
-    toast.success('Booking request initiated! Opening WhatsApp...');
+    const emailSubject = `New Booking Request from ${formData.fullName} - Delhi Tour Cab`;
+    const emailBody =
+      `Full Name: ${formData.fullName}%0A` +
+      `Phone: ${formData.phone}%0A` +
+      `Email: ${formData.email}%0A` +
+      `Pickup: ${formData.pickupLocation}%0A` +
+      `Drop: ${formData.dropLocation}%0A` +
+      `Date: ${formData.pickupDate}%0A` +
+      `Time: ${formData.pickupTime}%0A` +
+      `Travellers: ${formData.adults} Adults, ${formData.children} Children%0A` +
+      `Notes: ${formData.specialRequests}`;
+
+    toast.success('Booking request initiated! Opening WhatsApp & Email...');
 
     setTimeout(() => {
       window.open(`https://wa.me/919278063535?text=${message}`, '_blank');
+      window.location.href = `mailto:delhitourcab@gmail.com?subject=${emailSubject}&body=${emailBody}`;
       navigate('/thank-you');
     }, 1500);
   };

@@ -1,11 +1,11 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { haridwar, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano } from '../../utils/images';
+import { tourHaridwarRishikeshLocal, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano, tourHaridwar } from '../../utils/images';
 import { FaOm, FaWater, FaMountain, FaShoppingBag, FaHistory, FaUserTie, FaCheckCircle, FaStar } from 'react-icons/fa';
 
 const DelhiHaridwarTour = () => {
     const tourData = {
         title: "Delhi to Haridwar Same Day Tour",
-        bannerImage: haridwar,
+        bannerImage: tourHaridwar,
         description: "Begin a soul-cleansing spiritual journey to the 'Gateway to God' with Delhi Tour Cab. Our Delhi to Haridwar Same Day Tour is designed to immerse you in the sacred atmosphere of one of India's seven holiest places. From the moment you leave Delhi in our premium AC fleet, you're on a path to peace. Witness the majestic Ganges, participate in the powerful evening Aarti at Har Ki Pauri, and explore ancient temples perched on the hills. Our professional chauffeurs, experienced in highway and interstate travel, ensure your pilgrimage is smooth, safe, and deeply revitalizing, allowing you to return to Delhi the same night with a heart full of blessings.",
         whatToExpect: "Your sacred day starts with an early morning pickup from your doorstep in Delhi/NCR. As we head towards the foothills of the Himalayas, relax in the comfort of our well-maintained vehicles. In Haridwar, expect a day of divine experiences—from a holy dip at Har Ki Pauri to a panoramic cable car ride to Mansa Devi Temple. Navigate through the vibrant local spiritual markets and find peace at the various holy ghats. The highlight of your trip will be the mesmerizing Ganga Aarti, a spectacle of faith and fire. With Delhi Tour Cab, every detail of your transport is managed with car, so your only focus is your spiritual connection.",
         highlights: [

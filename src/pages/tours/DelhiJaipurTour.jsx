@@ -1,6 +1,6 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
 import {
-    jaipur, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano,
+    tourJaipur, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano,
     albertHallMuseum, amberFort, cityPalace, jalMahal, jantarMantar, nahargarhFort
 } from '../../utils/images';
 import { FaFortAwesome, FaWind, FaSun, FaCrown, FaWater, FaOm, FaPalette, FaFileInvoiceDollar } from 'react-icons/fa';
@@ -8,7 +8,7 @@ import { FaFortAwesome, FaWind, FaSun, FaCrown, FaWater, FaOm, FaPalette, FaFile
 const DelhiJaipurTour = () => {
     const tourData = {
         title: "Delhi to Jaipur Same Day Return Tour",
-        bannerImage: jaipur,
+        bannerImage: tourJaipur,
         description: "Step into a world of royal heritage and vibrant culture with Delhi Tour Cab's exclusive Delhi to Jaipur Same Day Return Tour. Known as the 'Pink City', Jaipur is a living museum of Rajputana glory. Our curated tour ensures you experience the best of Jaipur’s forts, palaces, and bazaars, all within a single day. Travel in the plush comfort of our premium AC fleet, driven by professional chauffeurs who understand the heritage and the roads. With Delhi Tour Cab, the 270km journey becomes a part of the royal experience itself.",
         whatToExpect: "Your regal adventure starts with a sunrise pickup across Delhi/NCR. As we head towards Rajasthan, relax in our well-maintained vehicles. In Jaipur, you'll be greeted by the amber-hued walls of the Amer Fort, the symmetrical beauty of Hawa Mahal, and the scientific marvels of Jantar Mantar. We optimize your time so you can wander through the City Palace and catch a glimpse of the Jal Mahal floating in Man Sagar Lake. Expect a day filled with stunning photography, local shopping opportunities for handicrafts, and a seamless return to Delhi by night, perfectly managed by the team at Delhi Tour Cab.",
         highlights: [

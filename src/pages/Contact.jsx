@@ -15,8 +15,30 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    toast.success('Message sent successfully! We will contact you soon.');
-    setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+
+    const whatsappMessage =
+      `*New Enquiry - Delhi Tour Cab*%0A%0A` +
+      `*Name:* ${formData.name}%0A` +
+      `*Phone:* ${formData.phone}%0A` +
+      `*Email:* ${formData.email}%0A` +
+      `*Service:* ${formData.service}%0A` +
+      `*Message:* ${formData.message}`;
+
+    const emailSubject = `New Enquiry from ${formData.name} - Delhi Tour Cab`;
+    const emailBody =
+      `Name: ${formData.name}%0A` +
+      `Phone: ${formData.phone}%0A` +
+      `Email: ${formData.email}%0A` +
+      `Service: ${formData.service}%0A` +
+      `Message: ${formData.message}`;
+
+    toast.success('Sending your enquiry via WhatsApp & Email...');
+
+    setTimeout(() => {
+      window.open(`https://wa.me/919278063535?text=${whatsappMessage}`, '_blank');
+      window.location.href = `mailto:delhitourcab@gmail.com?subject=${emailSubject}&body=${emailBody}`;
+      setFormData({ name: '', phone: '', email: '', service: '', message: '' });
+    }, 1000);
   };
 
   const handleChange = (e) => {

@@ -1,18 +1,23 @@
 import { motion } from 'framer-motion';
 import { FaMapMarkerAlt, FaStar } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
-import { agra, jaipur, delhi, haridwar, rishikesh, mathura, delhiKhatushyam, khatushyam } from '../utils/images';
+import { agra, jaipur, delhi, haridwar, rishikesh, mathura, delhiKhatushyam, khatushyam, tourHaridwar, tourDelhiLocalSightseeing, tourAgra, tourMathura, tourJaipur, tourKhatushyam } from '../utils/images';
 
 const PopularTours = () => {
     const navigate = useNavigate();
 
     const tours = [
-        { name: 'OneDay Delhi Sightseeing Tour', path: '/tour/delhi-local-sightseeing', image: delhi, price: '₹2,500' },
-        { name: 'Delhi to Agra Same Day Tour', path: '/tour/delhi-to-agra-tour', image: agra, price: '₹3,800' },
-        { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: mathura, price: '₹3,500' },
-        { name: 'Delhi to Jaipur Same Day Return Tour', path: '/tour/delhi-to-jaipur-tour', image: jaipur, price: '₹4,500' },
-        { name: 'Delhi to Haridwar Same Day Tour', path: '/tour/delhi-to-haridwar-tour', image: haridwar, price: '₹6,500' },
-        { name: 'Delhi Khatushyam Ji Tour', path: '/tour/delhi-to-khatu-shyam-one-day-tour', image: khatushyam, price: '₹5,500' },
+        { name: 'OneDay Delhi Sightseeing Tour', path: '/tour/delhi-local-sightseeing', image: tourDelhiLocalSightseeing, price: '₹2,200/-' },
+
+        { name: 'Delhi to Agra Same Day Tour', path: '/tour/delhi-to-agra-tour', image: tourAgra, price: ' ₹6,500/-' },
+        
+        { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: tourMathura, price: '₹7,500/-' },
+
+        { name: 'Delhi to Jaipur Same Day Return Tour', path: '/tour/delhi-to-jaipur-tour', image: tourJaipur  , price: ' ₹7500/' },
+
+        { name: 'Delhi to Haridwar Same Day Tour', path: '/tour/delhi-to-haridwar-tour', image: tourHaridwar, price: '₹6,500' },
+
+        { name: 'Delhi Khatushyam Ji Tour', path: '/tour/delhi-to-khatu-shyam-one-day-tour', image: tourKhatushyam, price: '₹5,500' },
     ];
 
     return (
@@ -44,13 +49,12 @@ const PopularTours = () => {
                                 window.scrollTo(0, 0);
                             }}
                         >
-                            <div className="h-56 overflow-hidden relative">
+                            <div className="relative">
                                 <img
                                     src={tour.image}
                                     alt={tour.name}
-                                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                    className="w-full block"
                                 />
-
                             </div>
                             <div className="p-6">
                                 <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-500 transition-colors">{tour.name}</h3>

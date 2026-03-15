@@ -1,11 +1,11 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { delhiBannerNew, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano } from '../../utils/images';
+import { delhiBannerNew, tourDelhiLocalSightseeing, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano } from '../../utils/images';
 import { qutubMinar, lotustemple, humayuntomb, indiagate, parliamenthouse, rashtrapati, redfort, rajghat, akshardham } from '../../utils/images';
 
 const DelhiLocalSightseeing = () => {
     const tourData = {
         title: "Delhi Sightseeing Tour by car",
-        bannerImage: delhiBannerNew,
+        bannerImage: tourDelhiLocalSightseeing,
         description: `Explore India's capital in comfort with our Delhi Sightseeing Tour by car, the most convenient and flexible way to experience the city's rich history, iconic monuments, spiritual landmarks, and modern attractions in one well-planned trip. This private Delhi city tour is ideal for all tourists, families, couples, and corporate travelers who prefer a relaxed, hassle-free Delhi sightseeing experience.
         With Delhi Tour Cab, you travel in a clean, air-conditioned car driven by an experienced local chauffeur, allowing you to explore Delhi at your own pace. Unlike crowded public transport or fixed group tours, our customizable sightseeing itinerary gives you complete freedom to spend more time at the places you enjoy most, ensuring a smooth, comfortable, and memorable Delhi sightseeing experience. Our Delhi Sightseeing by car packages are designed to offer transparent pricing and excellent value for money. The tour cost depends on the type of vehicle selected, total tour duration (usually 8 hours), and the number of passengers. We provide flexible options to suit solo travelers, families, and groups looking for a comfortable Delhi city tour.`,
         highlights: [

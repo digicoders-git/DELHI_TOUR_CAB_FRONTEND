@@ -1,11 +1,11 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { rishikesh, dzire, innova, ertiga2, wagonr, kiacarens, forcetempo, forceurbano } from '../../utils/images';
+import { tourHaridwarRishikeshLocal, dzire, innova, ertiga2, wagonr, kiacarens, forcetempo, forceurbano } from '../../utils/images';
 import { FaMountain, FaWater, FaOm, FaUtensils, FaUserTie, FaCheckCircle, FaStar, FaLeaf } from 'react-icons/fa';
 
 const DelhiRishikeshTour = () => {
     const tourData = {
         title: "Delhi to Rishikesh Adventure Tour",
-        bannerImage: rishikesh,
+        bannerImage: tourHaridwarRishikeshLocal,
         description: "Experience the perfect blend of spiritual serenity and pulse-racing adventure with Delhi Tour Cab's Rishikesh Day Tour. Known as the 'Yoga Capital of the World', Rishikesh offers a unique landscape where the emerald Ganges meets the foothills of the Himalayas. Whether you're seeking a soul-stirring Ganga Aarti, a peaceful meditative session in a riverside ashram, or the thrill of white-water rafting, our day tour is designed to deliver it all. Travel in the comfort of our premium AC vehicles, driven by professional chauffeurs who know the best routes and hidden gems of Rishikesh, ensuring your one-day escape is perfectly managed and memorable.",
         whatToExpect: "Your journey starts with a swift sunrise drive from Delhi/NCR, cruising along the modern expressways. In Rishikesh, expect a day of contrasts: from walking across the iconic Ram Jhula to cafe-hopping in the vibrant lanes of Tapovan. You'll witness the divine evening Aarti at Parmarth Niketan, a spectacle of light and sound that stays with you forever. With Delhi Tour Cab, you skip the hassles of public transport and focus entirely on the experience—whether it's the adrenaline of the rapids or the peace of the temples. Our all-inclusive pricing means you travel with total peace of mind.",
         highlights: [

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { FaClock, FaUsers, FaCheckCircle, FaPhone, FaWhatsapp, FaMapMarkerAlt, FaCar, FaInfoCircle, FaStar, FaFileInvoiceDollar } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
-import { agra, jaipur, delhi, haridwar, rishikesh, mathura } from '../utils/images';
+import { useNavigate, useLocation } from 'react-router-dom';
+import { agra, jaipur, delhi, haridwar, rishikesh, mathura, tourDelhiLocalSightseeing, tourAgra, tourJaipur, tourMathura, tourHaridwar, tourRishikesh } from '../utils/images';
 import { useEffect, useState } from 'react';
 import { initiatePayment, getBookingAmount, sendWhatsAppConfirmation } from '../utils/razorpay';
 import BookingModal from './BookingModal';
@@ -12,6 +12,7 @@ import addon4 from '../assets/Optional Add-On-Attractions/add-on-4.jpeg';
 
 const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets }) => {
     const navigate = useNavigate();
+    const location = useLocation();
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedCar, setSelectedCar] = useState(null);
 
@@ -24,13 +25,13 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
     }, []);
 
     const relatedTours = [
-        { name: 'Oneday Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing', image: delhi },
-        { name: 'Delhi to Agra Tour', path: '/tour/delhi-to-agra-tour', image: agra },
-        { name: 'Delhi to Jaipur Tour', path: '/tour/delhi-to-jaipur-tour', image: jaipur },
-        { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: mathura },
-        { name: 'Delhi to Haridwar Tour', path: '/tour/delhi-to-haridwar-tour', image: haridwar },
-        { name: 'Delhi to Rishikesh Tour', path: '/tour/delhi-to-rishikesh-tour', image: rishikesh },
-    ].filter(t => t.name !== title);
+        { name: 'Oneday Delhi Local Sightseeing', path: '/tour/delhi-local-sightseeing', image: tourDelhiLocalSightseeing },
+        { name: 'Delhi to Agra Tour', path: '/tour/delhi-to-agra-tour', image: tourAgra },
+        { name: 'Delhi to Jaipur Tour', path: '/tour/delhi-to-jaipur-tour', image: tourJaipur },
+        { name: 'Delhi to Mathura Vrindavan', path: '/tour/delhi-to-mathura-vrindavan', image: tourMathura },
+        { name: 'Delhi to Haridwar Tour', path: '/tour/delhi-to-haridwar-tour', image: tourHaridwar },
+        { name: 'Delhi to Rishikesh Tour', path: '/tour/delhi-to-rishikesh-tour', image: tourRishikesh },
+    ].filter(t => t.path !== location.pathname);
 
     const handleWhatsApp = () => {
         const text = `Hello, I am interested in ${title}. Please provide more details.`;
@@ -92,24 +93,12 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
             </div>
 
             {/* Hero Banner Section (Full Visual Display) */}
-            <section className="relative w-full h-[400px] sm:h-[600px] md:h-[800px] lg:h-[900px] flex items-center justify-center text-white overflow-hidden">
-                {/* Background Image */}
+            <section className="w-full">
                 <img
                     src={bannerImage}
                     alt={title}
-                    className="absolute inset-0 w-full h-full object-cover object-center"
+                    className="w-full block"
                 />
-                {/* Optimized Overlay (Removed to show original colors) */}
-                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20"></div> */}
-
-                <div className="relative z-10 text-center px-4">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.9 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.3 }}
-                    >
-                    </motion.div>
-                </div>
             </section>
 
             <div className="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -541,13 +530,12 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                                     window.scrollTo(0, 0);
                                 }}
                             >
-                                <div className="h-48 overflow-hidden relative">
+                                <div className="relative">
                                     <img
                                         src={tour.image}
                                         alt={tour.name}
-                                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                                        className="w-full block"
                                     />
-                                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors"></div>
                                 </div>
                                 <div className="p-6">
                                     <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-orange-500 transition-colors">{tour.name}</h3>
