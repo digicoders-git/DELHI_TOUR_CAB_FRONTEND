@@ -1,7 +1,14 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
 import {
     tourJaipur, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano,
-    albertHallMuseum, amberFort, cityPalace, jalMahal, jantarMantar, nahargarhFort
+    albertHallMuseum, amberFort, cityPalace, jalMahal, jantarMantar, nahargarhFort,
+    hawamahal,
+    jantarmantar,
+    citypalace,
+    albertmuseum,
+    Nahargarhfort,
+    jalmahal,
+    amberfort
 } from '../../utils/images';
 import { FaFortAwesome, FaWind, FaSun, FaCrown, FaWater, FaOm, FaPalette, FaFileInvoiceDollar } from 'react-icons/fa';
 
@@ -24,43 +31,43 @@ const DelhiJaipurTour = () => {
         placesWithDetails: [
             {
                 name: "Hawa Mahal",
-                image: "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?q=80&w=1000&auto=format&fit=crop",
+                image: hawamahal,
                 description: "Known as the “Palace of Winds,” Hawa Mahal has 953 small windows that allowed royal women to observe street festivals unseen. Its pink façade is an architectural wonder and Jaipur’s most iconic monument.",
                 timings: "09:00 AM – 05:00 PM"
             },
             {
                 name: "Jantar Mantar",
-                image: jantarMantar,
+                image: jantarmantar,
                 description: "A UNESCO World Heritage Site, Jantar Mantar is an astronomical observatory built by Maharaja Sawai Jai Singh II. The instruments are still accurate in measuring time and celestial bodies.",
                 timings: "09:00 AM – 04:30 PM"
             },
             {
                 name: "City Palace",
-                image: cityPalace,
+                image: citypalace,
                 description: "City Palace is a blend of Rajasthani and Mughal architecture, housing museums, courtyards, and the royal residence. It reflects Jaipur’s regal heritage and vibrant culture.",
                 timings: "09:30 AM – 05:00 PM"
             },
             {
                 name: "Albert Hall Museum",
-                image: albertHallMuseum,
+                image: albertmuseum,
                 description: "The oldest museum in Rajasthan, Albert Hall displays royal artifacts, paintings, weapons, and an Egyptian mummy. Its Indo-Saracenic architecture is stunning by night.",
                 timings: "09:00 AM – 05:00 PM"
             },
             {
                 name: "Nahargarh Fort",
-                image: nahargarhFort,
+                image: Nahargarhfort,
                 description: "Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan. Along with Amer Fort and Jaigarh Fort, Nahargarh once formed a strong defense ring for the city.",
                 timings: "10:00 AM – 05:30 PM"
             },
             {
                 name: "Jal Mahal",
-                image: jalMahal,
+                image: jalmahal,
                 description: "Located in the middle of Man Sagar Lake, Jal Mahal appears to float on water. Though entry is restricted, its view from the banks is mesmerizing, especially at sunset.",
                 timings: "Photography stop only"
             },
             {
                 name: "Amber Fort",
-                image: amberFort,
+                image: amberfort,
                 description: "Amber Fort is a majestic fort on a hilltop with grand courtyards, mirror work halls, and stunning architecture. A light-and-sound show tells its glorious story.",
                 timings: "08:00 AM – 05:30 PM"
             }

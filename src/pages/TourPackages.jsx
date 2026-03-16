@@ -11,6 +11,7 @@ import {
     tourNoidaMathura, tourNoidaDelhi, tourDelhiLocalSightseeing,
     tourAgraToFatehpur, tourAgraToMathura, tourChandigarhLocal,
     tourDehradunMusoorie, tourSrinagarLocal, tourHaridwarRishikeshLocal, tourJaipurLocal,
+    tourAgraSightseeing,
 } from '../utils/images';
 
 const categories = [
@@ -73,7 +74,7 @@ const categories = [
     {
         label: 'Local Sightseeing',
         tours: [
-            { name: 'Agra Sightseeing by Car', path: '/tour/agra-sightseeing-by-car', image: tourAgraToFatehpur, price: 'Rs.3,500/-' },
+            { name: 'Agra Sightseeing by Car', path: '/tour/agra-sightseeing-by-car', image: tourAgraSightseeing, price: 'Rs.3,500/-' },
             { name: 'Agra to Fatehpur Sikri Tour', path: '/tour/agra-to-fatehpur-sikri-one-day-tour', image: tourAgraToFatehpur, price: 'Rs.2,500/-' },
             { name: 'Agra to Mathura Vrindavan Tour', path: '/tour/agra-to-mathura-vrindavan-tour', image: tourAgraToMathura, price: 'Rs.3,000/-' },
             { name: 'Jaipur Local Sightseeing', path: '/tour/jaipur-local-sightseeing-by-car', image: tourJaipurLocal, price: 'Rs.3,500/-' },

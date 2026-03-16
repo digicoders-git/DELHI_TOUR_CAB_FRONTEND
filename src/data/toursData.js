@@ -54,7 +54,76 @@ import {
     agraFort,
     AgraFort,
     itmad,
-    mehtam
+    mehtam,
+    hawamahal,
+    jantarmantar,
+    citypalace,
+    albertmuseum,
+    Nahargarhfort,
+    jalmahal,
+    amberfort,
+    khatushym,
+    shyamkund,
+    taj,
+    agrafort,
+    krishnjanambhumi,
+    bakevihari,
+    premmandir,
+    mehandipurbalaji,
+    pretrajsarkar,
+    rockgarden,
+    sukhnalake,
+    kaichidham,
+    goludevta,
+    bhimtallake,
+    ambertfort,
+    fatehpursikari,
+    tajmahal,
+    mahalhawa,
+    ajmersarifdargah,
+    BrahmanTemple,
+    pushkarlake,
+    jimcorbeetpark,
+    garjidevitemple,
+    corbettwaterfall,
+    kedarnathji,
+    badrinath,
+    manakvillage,
+    theridge,
+    solangvalley,
+    hadimbadevi,
+    yamunatri,
+    gangotari,
+    varanasghat,
+    ayodhyatemple,
+    sangam,
+    rummydarwaja,
+    dallake,
+    matavaishnav,
+    goldentemple,
+    gulmarg,
+    mahaltaj,
+    fortagra,
+    itmadUdDaulah,
+    tourAgraSightseeing,
+    zakirhussainpark,
+    iscontemple,
+    bulandarwaja,
+    TombofSalimChishti,
+    panchmahal,
+    jamamasid,
+    itmadud,
+    copitalcomplex,
+    harkipauri,
+    mansidevitemple,
+    laxmanjhula,
+    ramjhula,
+    kemptyfall,
+    robbercave,
+    gunhill,
+    sahstra,
+    mughalgardens,
+    sonmarg
 } from '../utils/images';
 import {
     FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie,
@@ -93,19 +162,19 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: visittajmahal,
+                image: tajmahal,
                 description: "The crown jewel of Mughal architecture and one of the Seven Wonders of the World. Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, this ivory-white marble mausoleum is a symbol of eternal love.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: AgraFort,
+                image: fortagra,
                 description: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the Mughal Emperors. It houses several beautiful palaces like Khas Mahal, Jahangir Palace, and the Pearl Mosque.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Itmad-ud-Daulah (Baby Taj)",
-                image: itmad,
+                image: itmadud,
                 description: "Often described as a 'jewel box', sometimes called the 'Baby Taj', the tomb of Itmad-ud-Daulah is often regarded as a draft of the Taj Mahal. It features exquisite marble inlay work.",
                 timings: "06:00 AM – 06:00 PM"
             },
@@ -346,43 +415,43 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Hawa Mahal",
-                image: "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?q=80&w=1000&auto=format&fit=crop",
+                image: hawamahal,
                 description: "Known as the “Palace of Winds,” Hawa Mahal has 953 small windows that allowed royal women to observe street festivals unseen. Its pink façade is an architectural wonder and Jaipur’s most iconic monument.",
                 timings: "09:00 AM – 05:00 PM"
             },
             {
                 name: "Jantar Mantar",
-                image: jantarMantar,
+                image: jantarmantar,
                 description: "A UNESCO World Heritage Site, Jantar Mantar is an astronomical observatory built by Maharaja Sawai Jai Singh II. The instruments are still accurate in measuring time and celestial bodies.",
                 timings: "09:00 AM – 04:30 PM"
             },
             {
                 name: "City Palace",
-                image: cityPalace,
+                image: citypalace,
                 description: "City Palace is a blend of Rajasthani and Mughal architecture, housing museums, courtyards, and the royal residence. It reflects Jaipur’s regal heritage and vibrant culture.",
                 timings: "09:30 AM – 05:00 PM"
             },
             {
                 name: "Albert Hall Museum",
-                image: albertHallMuseum,
+                image: albertmuseum,
                 description: "The oldest museum in Rajasthan, Albert Hall displays royal artifacts, paintings, weapons, and an Egyptian mummy. Its Indo-Saracenic architecture is stunning by night.",
                 timings: "09:00 AM – 05:00 PM"
             },
             {
                 name: "Nahargarh Fort",
-                image: nahargarhFort,
+                image: Nahargarhfort,
                 description: "Nahargarh Fort stands on the edge of the Aravalli Hills, overlooking the city of Jaipur in the Indian state of Rajasthan. Along with Amer Fort and Jaigarh Fort, Nahargarh once formed a strong defense ring for the city.",
                 timings: "10:00 AM – 05:30 PM"
             },
             {
                 name: "Jal Mahal",
-                image: jalMahal,
+                image: jalmahal,
                 description: "Located in the middle of Man Sagar Lake, Jal Mahal appears to float on water. Though entry is restricted, its view from the banks is mesmerizing, especially at sunset.",
                 timings: "Photography stop only"
             },
             {
                 name: "Amber Fort",
-                image: amberFort,
+                image: amberfort,
                 description: "Amber Fort is a majestic fort on a hilltop with grand courtyards, mirror work halls, and stunning architecture. A light-and-sound show tells its glorious story.",
                 timings: "08:00 AM – 05:30 PM"
             }
@@ -875,31 +944,31 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: agra,
+                image: taj,
                 description: "The crown jewel of Mughal architecture and one of the Seven Wonders of the World. Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: agrafort,
                 description: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the Mughal Emperors.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Krishna Janmabhoomi",
-                image: mathura,
+                image: krishnjanambhumi,
                 description: "The sacred birthplace of Lord Krishna in Mathura, featuring a beautiful temple complex that radiates divine energy.",
                 timings: "05:00 AM – 12:00 PM, 04:00 PM – 09:30 PM"
             },
             {
                 name: "Bankey Bihari Temple",
-                image: vrindavan,
+                image: bakevihari,
                 description: "One of the most famous and holiest temples in Vrindavan, dedicated to Lord Krishna. The deity is worshipped as a child.",
                 timings: "07:30 AM – 01:00 PM, 05:30 PM – 09:30 PM"
             },
             {
                 name: "Prem Mandir",
-                image: vrindavan,
+                image: premmandir,
                 description: "The 'Temple of Divine Love', a massive marble structure known for its intricate carvings and breathtaking evening light show.",
                 timings: "08:30 AM – 12:30 PM, 04:30 PM – 10:00 PM"
             }
@@ -1009,13 +1078,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: agra,
+                image: tajmahal,
                 description: "Built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal, the Taj Mahal is a masterpiece of Mughal architecture and a UNESCO World Heritage site. Its white marble reflects beauty in every corner.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: fortagra,
                 description: "Also known as the Red Fort of Agra, this massive structure was the main residence of the Mughal dynasty. It houses magnificent palaces and offers a great view of the Taj Mahal.",
                 timings: "06:00 AM – 06:00 PM"
             }
@@ -1351,13 +1420,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop",
+                image: mahaltaj,
                 description: "The world-renowned white marble mausoleum, a testament to eternal love and one of the finest examples of Mughal architecture.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: fortagra,
                 description: "A historic fort in the city of Agra in India. It was the main residence of the emperors of the Mughal Dynasty until 1638.",
                 timings: "06:00 AM – 06:00 PM"
             }
@@ -1459,13 +1528,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=800&h=600&fit=crop",
+                image: tajmahal,
                 description: "The white marble mausoleum, a masterpiece of architectural brilliance and a symbol of everlasting love.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: fortagra,
                 description: "Built by Emperor Akbar, this fort is an architectural wonder and was once the center of the Mughal Empire.",
                 timings: "06:00 AM – 06:00 PM"
             }
@@ -1571,13 +1640,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Shri Krishna Janmabhoomi",
-                image: mathura,
+                image: krishnjanambhumi,
                 description: "The most sacred site in Mathura, where Lord Krishna was born. The complex includes the prison cell and a magnificent temple.",
                 timings: "05:00 AM – 12:00 PM, 04:00 PM – 09:00 PM"
             },
             {
                 name: "Prem Mandir",
-                image: vrindavan,
+                image: premmandir,
                 description: "A colossal temple complex dedicated to Radha Krishna and Sita Ram, famous for its intricate marble carvings and musical fountains.",
                 timings: "05:30 AM – 12:00 PM, 04:30 PM – 08:30 PM"
             }
@@ -1687,13 +1756,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Krishna Janmabhoomi",
-                image: mathura,
+                image: krishnjanambhumi,
                 description: "The most sacred site in Mathura, where Lord Krishna was born. The prison cell and the grand temple complex attract millions of devotees.",
                 timings: "05:00 AM – 12:00 PM, 04:00 PM – 09:30 PM"
             },
             {
                 name: "Prem Mandir",
-                image: vrindavan,
+                image: premmandir,
                 description: "Maintained by Jagadguru Kripalu Parishat, this temple is famous for its intricate marble carvings, musical gardens, and spectacular evening lighting.",
                 timings: "08:30 AM – 12:00 PM, 04:30 PM – 08:30 PM"
             }
@@ -2253,13 +2322,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Khatu Shyam Temple",
-                image: "https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?w=800&h=600&fit=crop",
+                image: khatushym,
                 description: "The main temple dedicated to Baba Khatu Shyam, known as the God of the Kaliyuga. Millions of devotees visit to seek his blessings.",
                 timings: "05:30 AM – 01:00 PM, 04:30 PM – 09:00 PM"
             },
             {
                 name: "Shyam Kund",
-                image: "https://images.unsplash.com/photo-1621360841013-c7683c659ec6?w=800&h=600&fit=crop",
+                image: shyamkund,
                 description: "A sacred pond near the temple where it is believed the head of Barbarika appeared. Devotees take a holy dip here.",
                 timings: "Open All Day"
             }
@@ -2367,13 +2436,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Shri Mehandipur Balaji Temple",
-                image: "https://mehandipursawamani.com/wp-content/uploads/2022/06/1-min.jpg",
+                image: mehandipurbalaji,
                 description: "The main temple dedicated to Lord Hanuman, located in Dausa district. It is famous for ritualistic healing and exorcism spirits.",
                 timings: "06:00 AM – 09:00 PM"
             },
             {
                 name: "Pretraj Sarkar & Bhairav Ji",
-                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ7mTeErpGwsEzRPe6ZaZu8XuTzstH68ClPg&s",
+                image: pretrajsarkar,
                 description: "Devotees also visit the courts of Pretraj Sarkar (King of Spirits) and Bhairav Ji within the temple complex.",
                 timings: "06:00 AM – 09:00 PM"
             }
@@ -2477,13 +2546,13 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Rock Garden",
-                image: "https://www.shoutlo.com/uploads/articles/header-img-facts-about-rock-garden.jpg",
+                image: rockgarden,
                 description: "Famous for its sculptures made entirely from industrial and home waste and discarded items.",
                 timings: "09:00 AM – 06:00 PM"
             },
             {
                 name: "Sukhna Lake",
-                image: "https://www.trawell.in/admin/images/upload/472763834Chandigarh_Sukhna_Lake_Main.jpg",
+                image: sukhnalake,
                 description: "A beautiful reservoir created by damming the Sukhna Choe, popular for boating and evening strolls.",
                 timings: "05:00 AM – 09:00 PM"
             }
@@ -2583,7 +2652,7 @@ export const toursData = {
 
     'agra-sightseeing-by-car': {
         title: "Agra Sightseeing by Car",
-        bannerImage: agra,
+        bannerImage: tourAgraSightseeing,
         description: "Explore the magnificent city of Agra with our comfortable and convenient car rental service. Visit the iconic Taj Mahal, Agra Fort, and other historical monuments at your own pace with a professional driver. Our Agra sightseeing tour by car offers flexibility, comfort, and the freedom to customize your itinerary according to your preferences.",
         whatToExpect: "Experience the grandeur of Agra's Mughal heritage with our premium car rental service. Your professional driver will take you to all major attractions including the Taj Mahal, Agra Fort, Itmad-ud-Daulah (Baby Taj), and Mehtab Bagh. Enjoy the convenience of door-to-door service, comfortable AC vehicles, and the flexibility to spend as much time as you want at each location. Perfect for families, couples, and solo travelers who want a personalized sightseeing experience.",
         highlights: [
@@ -2598,25 +2667,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: agra,
+                image: tajmahal,
                 description: "The crown jewel of Mughal architecture and one of the Seven Wonders of the World. Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, this ivory-white marble mausoleum is a symbol of eternal love.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: fortagra,
                 description: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the Mughal Emperors. It houses several beautiful palaces like Khas Mahal, Jahangir Palace, and the Pearl Mosque.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Itmad-ud-Daulah (Baby Taj)",
-                image: agra,
+                image: itmadud,
                 description: "Often described as a 'jewel box', sometimes called the 'Baby Taj', the tomb of Itmad-ud-Daulah is often regarded as a draft of the Taj Mahal. It features exquisite marble inlay work.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Mehtab Bagh",
-                image: agra,
+                image: mehtam,
                 description: "Located on the opposite bank of the Yamuna River, this garden offers a stunning view of the Taj Mahal at sunset. It's the perfect spot for photography and peaceful reflection.",
                 timings: "06:00 AM – 06:00 PM"
             }
@@ -2730,25 +2799,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Buland Darwaza",
-                image: agra,
+                image: bulandarwaja,
                 description: "A 54-meter high gateway built by Akbar to commemorate his victory over Gujarat. It is a stunning example of Mughal architecture.",
                 timings: "Sunrise to Sunset"
             },
             {
                 name: "Tomb of Salim Chishti",
-                image: agra,
+                image: TombofSalimChishti,
                 description: "A beautiful white marble mausoleum dedicated to the Sufi saint Salim Chishti, known for its intricate jali work.",
                 timings: "Sunrise to Sunset"
             },
             {
                 name: "Panch Mahal",
-                image: agra,
+                image: panchmahal,
                 description: "An extraordinary five-storied structure open on all sides, used for relaxation and entertainment by the royal court.",
                 timings: "Sunrise to Sunset"
             },
             {
                 name: "Jama Masjid",
-                image: agra,
+                image: jamamasid,
                 description: "The congregational mosque of Fatehpur Sikri, showcasing a perfect blend of Persian and Indian architectural styles.",
                 timings: "Sunrise to Sunset"
             }
@@ -2854,25 +2923,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Krishna Janmabhoomi (Mathura)",
-                image: mathura,
+                image: krishnjanambhumi,
                 description: "The main temple in Mathura is built around the prison cell where Lord Krishna is believed to have been born. It is a site of immense spiritual significance.",
                 timings: "05:00 AM – 12:00 PM | 04:00 PM – 09:30 PM"
             },
             {
                 name: "Bankey Bihari Temple (Vrindavan)",
-                image: vrindavan,
+                image: bakevihari,
                 description: "Dedicated to Lord Krishna, the idol here is worshipped as a child. It is one of the holiest and most visited temples in Braj region.",
                 timings: "07:45 AM – 12:00 PM | 05:30 PM – 09:30 PM"
             },
             {
                 name: "Prem Mandir (Vrindavan)",
-                image: vrindavan,
+                image: premmandir,
                 description: "A massive temple complex built with white Italian marble, known for its intricate carvings and beautiful musical fountain and light show in the evening.",
                 timings: "05:30 AM – 12:00 PM | 04:30 PM – 08:30 PM"
             },
             {
                 name: "ISKCON Temple (Vrindavan)",
-                image: vrindavan,
+                image: iscontemple,
                 description: "Also known as Sri Sri Krishna Balaram Mandir, it is a key center for the International Society for Krishna Consciousness, known for its kirtans and cleanliness.",
                 timings: "04:30 AM – 01:00 PM | 04:00 PM – 08:30 PM"
             }
@@ -2982,25 +3051,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Amber Fort",
-                image: jaipur,
+                image: amberfort,
                 description: "A majestic fort built on a hill, known for its artistic Hindu style elements. The Sheesh Mahal (Mirror Palace) is a must-see.",
                 timings: "08:00 AM – 05:30 PM"
             },
             {
                 name: "Hawa Mahal",
-                image: jaipur,
+                image: hawamahal,
                 description: "Built in 1799, this five-story palace has 953 small windows called Jharokhas, designed to allow royal ladies to observe street festivals without being seen.",
                 timings: "09:00 AM – 04:30 PM"
             },
             {
                 name: "City Palace",
-                image: jaipur,
+                image: citypalace,
                 description: "A complex of courtyards, gardens, and buildings, offering a fusion of Rajasthani and Mughal architecture. It houses a museum with royal artifacts.",
                 timings: "09:30 AM – 05:00 PM"
             },
             {
                 name: "Jantar Mantar",
-                image: jaipur,
+                image: jantarmantar,
                 description: "An astronomical observation site built in the early 18th century. It features the world's largest stone sundial.",
                 timings: "09:00 AM – 04:30 PM"
             }
@@ -3110,25 +3179,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Rock Garden",
-                image: chandigarh,
+                image: rockgarden,
                 description: "A sculpture garden started by Nek Chand, completely built of industrial and home waste and thrown-away items. It's a maze of pottery, waterfalls, and sculptures.",
                 timings: "09:00 AM – 07:00 PM"
             },
             {
                 name: "Sukhna Lake",
-                image: chandigarh,
+                image: sukhnalake,
                 description: "A reservoir at the foothills of the Himalayas (Shivalik hills). It is a sanctuary for many migratory birds and offers boating facilities.",
                 timings: "05:00 AM – 09:00 PM"
             },
             {
                 name: "Zakir Hussain Rose Garden",
-                image: chandigarh,
+                image: zakirhussainpark,
                 description: "Spread over 30 acres, this botanical garden has some 50,000 rose-bushes of 1600 different species. It is the largest of its kind in Asia.",
                 timings: "06:00 AM – 10:00 PM"
             },
             {
                 name: "Capitol Complex",
-                image: chandigarh,
+                image: copitalcomplex,
                 description: "A UNESCO World Heritage site designed by Le Corbusier, comprising the Legislative Assembly, Secretariat, and High Court.",
                 timings: "09:00 AM – 05:00 PM"
             }
@@ -3234,25 +3303,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Har Ki Pauri (Haridwar)",
-                image: haridwar,
+                image: harkipauri,
                 description: "The most famous ghat on the banks of the Ganges. It is believed that Lord Vishnu left his footprint here. The evening Aarti is a spectacular sight.",
                 timings: "Open 24 Hours (Aarti at Sunset)"
             },
             {
                 name: "Mansa Devi Temple (Haridwar)",
-                image: haridwar,
+                image: mansidevitemple,
                 description: "Located atop the Bilwa Parvat on the Sivalik Hills. You can reach the temple by a ropeway (Udan Khatola) or by trekking.",
                 timings: "05:00 AM – 09:00 PM"
             },
             {
                 name: "Laxman Jhula (Rishikesh)",
-                image: rishikesh,
+                image: laxmanjhula,
                 description: "An iron suspension bridge across the river Ganges. It is one of the most iconic landmarks of Rishikesh, offering beautiful river views.",
                 timings: "Open 24 Hours"
             },
             {
                 name: "Ram Jhula (Rishikesh)",
-                image: rishikesh,
+                image: ramjhula,
                 description: "A bigger suspension bridge connecting Shivananda Nagar with Swargashram. It is surrounded by many ashrams and temples.",
                 timings: "Open 24 Hours"
             }
@@ -3362,25 +3431,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Kempty Falls (Mussoorie)",
-                image: dehradun,
+                image: kemptyfall,
                 description: "A gigantic fall with somersaulting streams before they hit the bottom, Kempty Falls is the most popular tourist spot in Mussoorie.",
                 timings: "08:00 AM – 06:00 PM"
             },
             {
                 name: "Robber's Cave (Dehradun)",
-                image: dehradun,
+                image: robbercave,
                 description: "Locally known as Guchhupani, this natural river cave formation offers a unique experience of walking through water inside a cave.",
                 timings: "07:00 AM – 07:30 PM"
             },
             {
                 name: "Sahastradhara (Dehradun)",
-                image: dehradun,
+                image: sahstra,
                 description: "Meaning 'Thousand Fold Spring', it is famous for its ecotourism, sulphur springs known for medicinal value, and picturesque beauty.",
                 timings: "08:00 AM – 07:00 PM"
             },
             {
                 name: "Gun Hill (Mussoorie)",
-                image: dehradun,
+                image: gunhill,
                 description: "The second highest point in Mussoorie, offering panoramic views of the Himalayas and the Doon Valley. Accessible by ropeway.",
                 timings: "10:00 AM – 06:00 PM"
             }
@@ -3490,25 +3559,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Dal Lake (Srinagar)",
-                image: dehradun,
+                image: dallake,
                 description: "The most famous lake in Kashmir, known for its houseboats and Shikara rides. The floating market and sunset views are mesmerizing.",
                 timings: "Open 24 Hours"
             },
             {
                 name: "Gulmarg",
-                image: dehradun,
+                image: gulmarg,
                 description: "A premier hill station famously known for skiing and the Gulmarg Gondola. It offers stunning views of snow-clad peaks.",
                 timings: "Best visited: 09:00 AM – 05:00 PM"
             },
             {
                 name: "Sonmarg",
-                image: dehradun,
+                image: sonmarg,
                 description: "Known as the 'Meadow of Gold', it is famous for Thajiwas Glacier and as a base for the Amarnath Yatra.",
                 timings: "Best visited: 08:00 AM – 04:00 PM"
             },
             {
                 name: "Mughal Gardens (Srinagar)",
-                image: dehradun,
+                image: mughalgardens,
                 description: "Beautiful terraced gardens built by the Mughals, including Nishat Bagh, Shalimar Bagh, and Chashme Shahi.",
                 timings: "09:00 AM – 07:00 PM"
             }
@@ -3609,19 +3678,19 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Kainchi Dham",
-                image: rishikesh,
+                image: kaichidham,
                 description: "A spiritual ashram settled in the lap of nature. It was established by Neem Karoli Baba in 1964 and is dedicated to Lord Hanuman. The atmosphere here is electrifyingly peaceful.",
                 timings: "06:00 AM – 07:00 PM"
             },
             {
                 name: "Golu Devta Temple (Chitai)",
-                image: rishikesh,
+                image: goludevta,
                 description: "Famous as the 'God of Justice', this temple is adorned with thousands of bells offered by devotees whose wishes have been fulfilled.",
                 timings: "06:00 AM – 08:00 PM"
             },
             {
                 name: "Bhimtal Lake",
-                image: rishikesh,
+                image: bhimtallake,
                 description: "A large scenic lake near the ashram, perfect for a peaceful evening walk or boating. It has an island in the center with an aquarium.",
                 timings: "Open 24 Hours"
             }
@@ -3715,25 +3784,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Amber Fort (Jaipur)",
-                image: jaipur,
+                image: ambertfort,
                 description: "A majestic fort located on a hill in Amer, Rajasthan. Known for its artistic style elements, large ramparts, and series of gates and cobbled paths.",
                 timings: "08:00 AM – 05:30 PM"
             },
             {
                 name: "Fatehpur Sikri",
-                image: agra,
+                image: fatehpursikari,
                 description: "A small city in northern India, just west of Agra, founded by a 16th-century Mughal emperor. Red sandstone buildings cluster at its center.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Taj Mahal (Agra)",
-                image: agra,
+                image: tajmahal,
                 description: "An immense mausoleum of white marble, built in Agra between 1631 and 1648 by order of the Mughal emperor Shah Jahan in memory of his favourite wife.",
                 timings: "Sunrise – Sunset (Closed on Fridays)"
             },
             {
                 name: "Hawa Mahal (Jaipur)",
-                image: jaipur,
+                image: mahalhawa,
                 description: "The 'Palace of Winds' is a high screen wall built so the women of the royal household could observe street festivals while unseen from the outside.",
                 timings: "09:00 AM – 04:30 PM"
             }
@@ -3831,25 +3900,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Ajmer Sharif Dargah",
-                image: ajmer,
+                image: ajmersarifdargah,
                 description: "A Sufi shrine (Dargah) of the revered sufi saint, Moinuddin Chishti. It is one of the most important pilgrimage sites in India for people of all faiths.",
                 timings: "05:00 AM – 10:00 PM"
             },
             {
                 name: "Brahma Temple (Pushkar)",
-                image: jaipur, // Using Jaipur/Generic image if Pushkar not available
+                image: BrahmanTemple, // Using Jaipur/Generic image if Pushkar not available
                 description: "Jagatpita Brahma Mandir is a Hindu temple situated at Pushkar close to the sacred Pushkar Lake. It is one of the very few existing temples dedicated to the Hindu creator-god Brahma.",
                 timings: "06:00 AM – 08:00 PM"
             },
             {
                 name: "Amber Fort (Jaipur)",
-                image: jaipur,
+                image: amberfort,
                 description: "A majestic fort located on a hill in Amer, Rajasthan. Known for its artistic style elements, large ramparts, and series of gates.",
                 timings: "08:00 AM – 05:30 PM"
             },
             {
                 name: "Pushkar Lake",
-                image: jaipur,
+                image: pushkarlake,
                 description: "A sacred lake where pilgrims take a holy dip. It is surrounded by 52 ghats and offers a mesmerizing sunset view.",
                 timings: "Open 24 Hours"
             }
@@ -3947,19 +4016,19 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Jim Corbett National Park",
-                image: dehradun,
+                image: jimcorbeetpark,
                 description: "India's first national park, famous for having the highest number of tigers. It spans over 520 sq km and offers hills, riverine belts, and grasslands.",
                 timings: "Safari Timings: Morning & Afternoon slots"
             },
             {
                 name: "Garjiya Devi Temple",
-                image: dehradun,
+                image: garjidevitemple,
                 description: "A famous temple located on a large rock amidst the Kosi River. It is a major pilgrimage spot for locals.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Corbett Waterfall",
-                image: dehradun,
+                image: corbettwaterfall,
                 description: "A scenic waterfall surrounded by dense teak forests, dropping from a height of 20 meters. A small trek is required to reach it.",
                 timings: "08:00 AM – 05:00 PM"
             }
@@ -4057,19 +4126,19 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Kedarnath Temple",
-                image: haridwar,
+                image: kedarnathji,
                 description: "A holy Hindu temple dedicated to Lord Shiva, located near the Mandakini river. It is one of the most sacred pilgrimage centers in the world.",
                 timings: "04:00 AM – 09:00 PM (Temple closes during winter)"
             },
             {
                 name: "Badrinath Temple",
-                image: haridwar,
+                image: badrinath,
                 description: "Dedicated to Lord Vishnu, this temple is situated in the town of Badrinath. It is one of the four Char Dham pilgrimage sites.",
                 timings: "04:30 AM – 09:00 PM (Temple closes during winter)"
             },
             {
                 name: "Mana Village",
-                image: haridwar,
+                image: manakvillage,
                 description: "Known as the last village of India, located near Badrinath. It has historical significance related to the Mahabharata.",
                 timings: "Daylight Hours"
             }
@@ -4179,19 +4248,19 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "The Ridge (Shimla)",
-                image: dehradun,
+                image: theridge,
                 description: "The large open space in the heart of Shimla, offering spectacular views of the mountain ranges and houses the famous Christ Church.",
                 timings: "Open 24 Hours"
             },
             {
                 name: "Solang Valley (Manali)",
-                image: dehradun,
+                image: solangvalley,
                 description: "Famous for adventure sports like paragliding, zorbing, and skiing. It offers stunning views of glaciers and snow-capped peaks.",
                 timings: "09:00 AM – 06:00 PM"
             },
             {
                 name: "Hadimba Devi Temple",
-                image: dehradun,
+                image: hadimbadevi,
                 description: "A 16th-century wooden temple dedicated to Goddess Hadimba, surrounded by cedar forests in Manali.",
                 timings: "08:00 AM – 06:00 PM"
             }
@@ -4301,25 +4370,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Yamunotri Temple",
-                image: haridwar,
+                image: yamunatri,
                 description: "The first stop of the Char Dham Yatra, dedicated to Goddess Yamuna. It is situated in the western Garhwal Himalayas.",
                 timings: "06:00 AM – 08:00 PM (May to Nov)"
             },
             {
                 name: "Gangotri Temple",
-                image: haridwar,
+                image: gangotari,
                 description: "The white granite temple of Goddess Ganga, located on the banks of Bhagirathi River at an altitude of 3,100 meters.",
                 timings: "06:15 AM – 09:30 PM (May to Nov)"
             },
             {
                 name: "Kedarnath Temple",
-                image: haridwar,
+                image: kedarnathji,
                 description: "The highest of the 12 Jyotirlingas, dedicated to Lord Shiva and surrounded by snow-clad peaks.",
                 timings: "04:00 AM – 09:00 PM (Temple closes in winter)"
             },
             {
                 name: "Badrinath Temple",
-                image: haridwar,
+                image: badrinath,
                 description: "A sacred temple of Lord Vishnu, situated between the Nar and Narayan mountain ranges.",
                 timings: "04:30 AM – 09:00 PM (Temple closes in winter)"
             }
@@ -4425,25 +4494,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Varanasi Ghats",
-                image: varanasi,
+                image: varanasghat,
                 description: "The ancient steps leading to the Ganges. Famous for the mesmerizing Ganga Aarti and spiritual vibes that draw seekers from around the world.",
                 timings: "Ganga Aarti: 06:30 PM (Daily)"
             },
             {
                 name: "Shree Ram Mandir (Ayodhya)",
-                image: ayodhya,
+                image: ayodhyatemple,
                 description: "The historic temple at the birthplace of Lord Rama. A masterpiece of Indian temple architecture and a symbol of faith.",
                 timings: "06:30 AM – 09:30 PM"
             },
             {
                 name: "Triveni Sangam (Prayagraj)",
-                image: prayagraj,
+                image: sangam,
                 description: "The sacred meeting point of three rivers—Ganga, Yamuna, and the mythical Saraswati. A holy dip here is considered highly auspicious.",
                 timings: "Open 24 Hours"
             },
             {
                 name: "Rumi Darwaza (Lucknow)",
-                image: rumidarvaja,
+                image: rummydarwaja,
                 description: "An imposing gateway built in the 1780s, showcasing Awadhi architecture. It is the signature landmark of the City of Nawabs.",
                 timings: "Open 24 Hours"
             }
@@ -4557,25 +4626,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Dal Lake (Srinagar)",
-                image: dehradun,
+                image: dallake,
                 description: "The jewel of Srinagar, famous for its houseboats and floating markets. A Shikara ride at sunset is an unforgettable experience.",
                 timings: "Best during Day/Sunset"
             },
             {
                 name: "Mata Vaishno Devi (Katra)",
-                image: dehradun,
+                image: matavaishnav,
                 description: "One of the most visited holy shrines in India. Pilgrims trek 12km from Katra to reach the holy cave in Trikuta mountains.",
                 timings: "Open 24 Hours (Registration required)"
             },
             {
                 name: "Golden Temple (Amritsar)",
-                image: amritsar,
+                image: goldentemple,
                 description: "The holiest Gurdwara of Sikhism, known for its stunning golden architecture and peaceful community kitchen (Langar).",
                 timings: "Open 24 Hours"
             },
             {
                 name: "Gulmarg Gondola",
-                image: dehradun,
+                image: gulmarg,
                 description: "One of the highest cable cars in the world, offering breathtaking views of the snow-clad Himalayas.",
                 timings: "10:00 AM – 05:00 PM"
             }

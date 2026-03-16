@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { tourAgra, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano, agra, agraFort, itmadUdDaulah } from '../../utils/images';
+import { tourAgra, drizer, innova, ertiga, forcetempo, wagonr, kiacerens, forceurbano, agra, agraFort, itmadUdDaulah, tajmahal, fortagra, itmadud } from '../../utils/images';
 import { FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie } from 'react-icons/fa';
 
 const DelhiAgraTour = () => {
@@ -20,19 +20,19 @@ const DelhiAgraTour = () => {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: agra,
+                image: tajmahal,
                 description: "The crown jewel of Mughal architecture and one of the Seven Wonders of the World. Built by Emperor Shah Jahan in memory of his beloved wife Mumtaz Mahal, this ivory-white marble mausoleum is a symbol of eternal love.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agraFort,
+                image: fortagra,
                 description: "A UNESCO World Heritage site, this massive red sandstone fort was the main residence of the Mughal Emperors. It houses several beautiful palaces like Khas Mahal, Jahangir Palace, and the Pearl Mosque.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Itmad-ud-Daulah (Baby Taj)",
-                image: itmadUdDaulah,
+                image: itmadud,
                 description: "Often described as a 'jewel box', sometimes called the 'Baby Taj', the tomb of Itmad-ud-Daulah is often regarded as a draft of the Taj Mahal. It features exquisite marble inlay work.",
                 timings: "06:00 AM – 06:00 PM"
             },

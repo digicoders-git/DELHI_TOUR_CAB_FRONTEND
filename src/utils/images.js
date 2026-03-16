@@ -136,6 +136,7 @@ import khatushyam from '../assets/Images/khatushyam.jpg';
 
 // Tour Packages Images
 import tourAgra from '../assets/Tour-packages/delhi-to-agra-same-day-tour-by-delhi-tour-cab.jpeg';
+import tourAgraSightseeing from '../assets/Tour-packages/agra-sightseeing-bycar-delhitourcab.jpeg';
 import tourAgraFatehpur from '../assets/Tour-packages/delhi-to-agra-and-fatehpur-sikari-samedayreturntour-delhi-tour-cab.jpeg';
 import tourJaipur from '../assets/Tour-packages/delhi-to-jaipur-same-day-tour-by-delhi-tour-cab.jpeg';
 import tourMathura from '../assets/Tour-packages/delhi-to-mathura-same-day-return-tour-by-delhi-tour-cab.jpeg';
@@ -175,17 +176,161 @@ import tourSrinagarLocal from '../assets/Tour-packages/srinagar-sonmarg-gulmarg-
 
 
 
-// Top visited places
+// Top visited places for delhi to agra
 
 import visittajmahal from '../assets/delhitoagra/tajmahal.jpeg';
 import AgraFort from '../assets/delhitoagra/agrafort.jpeg';
 import itmad from '../assets/delhitoagra/itmad.jpeg';
 import mehtam from '../assets/delhitoagra/mehtam.jpeg';
 
- 
+//  Top visited places for delhi to agra and fatehpur sikari
+
+import fortagra from '../assets/TopPlacestoVisit/DelhitoAgra&FatehpurSikriTour/agrafort.jpeg';
+import bulanddarwaja from '../assets/TopPlacestoVisit/DelhitoAgra&FatehpurSikriTour/bulanddarwaja.jpeg';
+import fatehpursikari from '../assets/TopPlacestoVisit/DelhitoAgra&FatehpurSikriTour/fatehpursikari.jpeg';
+import mahaltaj from '../assets/TopPlacestoVisit/DelhitoAgra&FatehpurSikriTour/tajmahal.jpeg';
+
+
+//  Top visited places for delhi to chandigarh oneday tour
+
+import rockgarden from '../assets/TopPlacestoVisit/DelhitoChandigarhOneDayTourbyCab/rockgarden.jpeg';
+import sukhnalake from '../assets/TopPlacestoVisit/DelhitoChandigarhOneDayTourbyCab/sukhnalake.jpeg';
+import zakirhussainpark from '../assets/TopPlacestoVisit/DelhitoChandigarhOneDayTourbyCab/zakirhussainpark.jpeg';
+import copitalcomplex from '../assets/TopPlacestoVisit/DelhitoChandigarhOneDayTourbyCab/copitalcomplex.jpeg';
+
+
+// top visited delhi to jaipur same day return tour
+
+import albertmuseum from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/alberthallmauseum.jpeg';
+import ambertfort from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/amberfort.jpeg';
+import citypalace from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/citypalace.jpeg';
+import hawamahal from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/hawamahal.jpeg';
+import jalmahal from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/jalmahal.jpeg';
+import jantarmantar from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/jantarmantar.jpeg';
+import Nahargarhfort from '../assets/TopPlacestoVisit/DelhitoJaipurSameDayReturnTour/Nahargarhfort.jpeg';
+
+// top visited delhi to kaichi dham nimkaroli baba tour
+
+import kaichidham from '../assets/TopPlacestoVisit/DelhitoKainchiDhamNeemKaroliBabaOneNightTour/kaichidham.jpeg';
+import goludevta from '../assets/TopPlacestoVisit/DelhitoKainchiDhamNeemKaroliBabaOneNightTour/goludevta.jpeg';
+import bhimtallake from '../assets/TopPlacestoVisit/DelhitoKainchiDhamNeemKaroliBabaOneNightTour/bhimtallake.jpeg';
+
+
+// top visited delhi to khatushyam oneday tourcab
+import khatushym from '../assets/TopPlacestoVisit/DelhitoKhatuShyamOneDayTourbyCab/khatushyam.jpeg';
+import shyamkund from '../assets/TopPlacestoVisit/DelhitoKhatuShyamOneDayTourbyCab/shyamkund.jpeg';
+
+// top visited to mathura vrindavan and agra one day return tour
+
+import agrafort from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavan&AgraOneDayReturnTour/agrafort.jpeg';
+import bakevihari from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavan&AgraOneDayReturnTour/bakevihari.jpeg';
+import krishnjanambhumi from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavan&AgraOneDayReturnTour/krishnjanambhumi.jpeg';
+import premmandir from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavan&AgraOneDayReturnTour/premmandir.jpeg';
+import taj from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavan&AgraOneDayReturnTour/tajmahal.jpeg';
+import iscontemple from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavan&AgraOneDayReturnTour/iscontemple.jpeg';
+
+
+// top visited places for delhi to mehandipur balaji oneday tour by car
+
+import mehandipurbalaji from '../assets/TopPlacestoVisit/DelhitoMehandipurBalajiOneDayTourbyCab/mehandipurbalaji.jpeg';
+import pretrajsarkar from '../assets/TopPlacestoVisit/DelhitoMehandipurBalajiOneDayTourbyCab/pretrajsarkar.jpeg';
+
+
+// top visited palces for Delhi to Jaipur, Fatehpur Sikri & Agra Golden Triangle Tour
+
+import agrakila from '../assets/TopPlacestoVisit/DelhitoJaipurFatehpurSikri&AgraGoldenTriangleTour/agrafort.jpeg';
+import sikarifatehpur from '../assets/TopPlacestoVisit/DelhitoJaipurFatehpurSikri&AgraGoldenTriangleTour/fatehpursikari.jpeg';
+import mahalhawa from '../assets/TopPlacestoVisit/DelhitoJaipurFatehpurSikri&AgraGoldenTriangleTour/hawamahal.jpeg';
+import mumtajmahal from '../assets/TopPlacestoVisit/DelhitoJaipurFatehpurSikri&AgraGoldenTriangleTour/tajmahal.jpeg';
+
+
+// top visited places for Delhi to Jaipur, Pushkar & Ajmer Tour (2 Nights 3 Days)
+
+import ajmersarifdargah from '../assets/TopPlacestoVisit/DelhitoJaipurPushkar&AjmerTour/ajmersarifdargah.jpeg';
+import amberfort from '../assets/TopPlacestoVisit/DelhitoJaipurPushkar&AjmerTour/amberfort.jpeg';
+import BrahmanTemple from '../assets/TopPlacestoVisit/DelhitoJaipurPushkar&AjmerTour/BrahmaTemple.jpeg';
+import pushkarlake from '../assets/TopPlacestoVisit/DelhitoJaipurPushkar&AjmerTour/pushkarlake.jpeg';
+
+
+// top visited palaces for delhi to jim corbett 2 night 3 day tour
+
+import corbettwaterfall from '../assets/TopPlacestoVisit/DelhitoJimCorbett2Night3DaysTour/corbettwaterfall.jpeg';
+import garjidevitemple from '../assets/TopPlacestoVisit/DelhitoJimCorbett2Night3DaysTour/garjiyadevitemple.jpeg';
+import jimcorbeetpark from '../assets/TopPlacestoVisit/DelhitoJimCorbett2Night3DaysTour/jimcorbeetpark.jpeg';
+
+
+// top visited places for Delhi to Do Dham (Kedarnath & Badrinath) 5 Night 6 Days
+
+
+import badrinath from '../assets/TopPlacestoVisit/DelhitoDoDhamKedarnath&Badrinath5Night6Days/badrinath.jpeg';
+import kedarnath from '../assets/TopPlacestoVisit/DelhitoDoDhamKedarnath&Badrinath5Night6Days/kedarnath.jpeg';
+import manakvillage from '../assets/TopPlacestoVisit/DelhitoDoDhamKedarnath&Badrinath5Night6Days/manakvillage.jpeg';
+
+
+
+// top visited palaces for delhi to shimal manali 5 night 6 days tour
+
+import theridge from '../assets/TopPlacestoVisit/DelhitoShimla&Manali5Night6DaysTour/theridge.jpeg';
+import solangvalley from '../assets/TopPlacestoVisit/DelhitoShimla&Manali5Night6DaysTour/solangvalley.jpeg';
+import hadimbadevi from '../assets/TopPlacestoVisit/DelhitoShimla&Manali5Night6DaysTour/hadimbadevi.jpeg';
+
+// top visited palaces for Delhi to Char Dham (Yamunotri, Gangotri, Kedarnath & Badrinath) 11N/12D
+
+import badrinathji from '../assets/TopPlacestoVisit/DelhitoCharDhamYamunotriGangotriKedarnath&Badrinath/badrinath.jpeg';
+import gangotari from '../assets/TopPlacestoVisit/DelhitoCharDhamYamunotriGangotriKedarnath&Badrinath/gangotari.jpeg';
+import yamunatri from '../assets/TopPlacestoVisit/DelhitoCharDhamYamunotriGangotriKedarnath&Badrinath/yamunatri.jpeg';
+import kedarnathji from '../assets/TopPlacestoVisit/DelhitoCharDhamYamunotriGangotriKedarnath&Badrinath/kedarnath.jpeg';
+
+
+// top visited Delhi to Mathura, Vrindavan, Agra, Lucknow, Ayodhya, Prayagraj & Varanasi Tour
+
+import varanasghat from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavanAgraLucknowAyodhya&VaranasiTour/varansighat.jpeg';
+import ayodhyatemple from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavanAgraLucknowAyodhya&VaranasiTour/ayodhya.jpeg';
+import sangam from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavanAgraLucknowAyodhya&VaranasiTour/sangam.jpeg';
+import rummydarwaja from '../assets/TopPlacestoVisit/DelhitoMathuraVrindavanAgraLucknowAyodhya&VaranasiTour/rummydarwaja.jpeg';
+
+
+// top visited for delhi to jammu pahalgam srinagar gulmarg vaishnodevi amritsar grand tour 9night 10days
+
+import dallake from '../assets/TopPlacestoVisit/DelhitoJammuPahalgamSrinagarGulmargVaishnoDeviAmritsarGrandTour/dallake.jpeg';
+import goldentemple from '../assets/TopPlacestoVisit/DelhitoJammuPahalgamSrinagarGulmargVaishnoDeviAmritsarGrandTour/goldentemple.jpeg';
+import gulmarg from '../assets/TopPlacestoVisit/DelhitoJammuPahalgamSrinagarGulmargVaishnoDeviAmritsarGrandTour/gulmarg.jpeg';
+import matavaishnav from '../assets/TopPlacestoVisit/DelhitoJammuPahalgamSrinagarGulmargVaishnoDeviAmritsarGrandTour/matavaishnav.jpeg';
+
+
+// top visited for Agra to Fatehpur Sikri One Day Tour by Cab
+
+import bulandarwaja from '../assets/TopPlacestoVisit/AgratoFatehpurSikriOneDayTourbyCab/bulandarwaja.jpeg';
+import panchmahal from '../assets/TopPlacestoVisit/AgratoFatehpurSikriOneDayTourbyCab/panchmahal.jpeg';
+import TombofSalimChishti from '../assets/TopPlacestoVisit/AgratoFatehpurSikriOneDayTourbyCab/TombofSalimChishti.jpeg';
+import jamamasid from '../assets/TopPlacestoVisit/AgratoFatehpurSikriOneDayTourbyCab/jamamasid.jpeg';
+import itmadud from '../assets/TopPlacestoVisit/AgratoFatehpurSikriOneDayTourbyCab/itmadud.jpeg';
+
+
+// top visited for delhi Haridwar Rishikesh Local Sightseeing by Car
+
+
+import harkipauri from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/harkipauri.jpeg';
+import laxmanjhula from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/laxmanjhula.jpeg';
+import mansidevitemple from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/mansidevitemple.jpeg';
+import ramjhula from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/ramjhula.jpeg';
+
+
+// top visited for Dehradoon Masoorie Local Sightseeing by Car
+
+import gunhill from '../assets/TopPlacestoVisit/DehradoonMasoorieLocalSightseeingbyCar/gunhill.jpeg';
+import kemptyfall from '../assets/TopPlacestoVisit/DehradoonMasoorieLocalSightseeingbyCar/kemptyfall.jpeg';
+import robbercave from '../assets/TopPlacestoVisit/DehradoonMasoorieLocalSightseeingbyCar/robbercave.jpeg';
+import sahstra from '../assets/TopPlacestoVisit/DehradoonMasoorieLocalSightseeingbyCar/sahstra.jpeg';
+
+// top visited for srinagar sonmarg gulmarg local sightseeing by car
+
+import mughalgardens from '../assets/TopPlacestoVisit/SrinagarSonmargGulmargLocalSightseeingbyCar/mughalgarden.jpeg';
+import sonmarg from '../assets/TopPlacestoVisit/SrinagarSonmargGulmargLocalSightseeingbyCar/sonmarg.jpeg';
+
 export {
 
-  visittajmahal,AgraFort,itmad,mehtam,
+  visittajmahal,AgraFort,itmad,mehtam,fortagra,bulanddarwaja,fatehpursikari,mahaltaj,rockgarden,sukhnalake,albertmuseum,ambertfort,citypalace,hawamahal,jalmahal,jantarmantar,Nahargarhfort,kaichidham,goludevta,bhimtallake,khatushym,shyamkund,agrafort,bakevihari,krishnjanambhumi,premmandir,taj,mehandipurbalaji,pretrajsarkar,agrakila,sikarifatehpur,mahalhawa,mumtajmahal,ajmersarifdargah,amberfort,BrahmanTemple,pushkarlake,corbettwaterfall,garjidevitemple,jimcorbeetpark,badrinath,kedarnath,manakvillage,theridge,solangvalley,hadimbadevi,badrinathji,gangotari,yamunatri,kedarnathji,varanasghat,ayodhyatemple,sangam,rummydarwaja,dallake,goldentemple,gulmarg,matavaishnav,bulandarwaja,panchmahal,TombofSalimChishti,jamamasid,iscontemple,zakirhussainpark,copitalcomplex,itmadud,harkipauri,laxmanjhula,mansidevitemple,ramjhula,gunhill,kemptyfall,robbercave,sahstra,mughalgardens,sonmarg,
 
 
 
@@ -231,7 +376,7 @@ export {
   tourGhaziabadMathuraVrindavan, tourGurgaonAgra, tourGurgaonDelhi, tourGurgaonMathura, tourHaridwarRishikeshLocal,
   tourJaipurLocal, tourNoidaMathura, tourNoidaDelhi, tourDelhiLocalSightseeing,
   tourAgraToFatehpur, tourAgraToMathura, tourChandigarhLocal, tourDehradunMusoorie,
-  tourSrinagarLocal,
+  tourSrinagarLocal,tourAgraSightseeing
 
 
 
