@@ -1184,25 +1184,25 @@ export const toursData = {
         placesWithDetails: [
             {
                 name: "Taj Mahal",
-                image: agra,
+                image: tajmahal,
                 description: "The crown jewel of Mughal architecture and one of the Seven Wonders of the World. Built by Emperor Shah Jahan for his wife Mumtaz Mahal.",
                 timings: "06:00 AM – 06:30 PM (Closed on Fridays)"
             },
             {
                 name: "Agra Fort",
-                image: agra,
+                image: fortagra,
                 description: "A UNESCO World Heritage site, this massive fort was the main residence of the Mughal Emperors before the capital shifted to Delhi.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Fatehpur Sikri",
-                image: agra,
+                image: fatehpursikari,
                 description: "Founded by Akbar in 1571, this city served as the Mughal capital for 14 years. It is famous for its distinct blend of Indian and Persian architecture.",
                 timings: "06:00 AM – 06:00 PM"
             },
             {
                 name: "Buland Darwaza",
-                image: agra,
+                image: bulandarwaja,
                 description: "The 'Gate of Victory', built by Akbar to commemorate his victory over Gujarat. It serves as the main entrance to the Jama Masjid at Fatehpur Sikri.",
                 timings: "06:00 AM – 06:00 PM"
             }

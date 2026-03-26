@@ -10,7 +10,7 @@ import addon2 from '../assets/Optional Add-On-Attractions/add-on-2.jpeg';
 import addon3 from '../assets/Optional Add-On-Attractions/add-on-3.jpeg';
 import addon4 from '../assets/Optional Add-On-Attractions/add-on-4.jpeg';
 
-const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets }) => {
+const TourDetailLayout = ({ title, bannerImage, description, highlights, itinerary, includes, exclusions, carss, placesCovered, faqs, importantNotes, whyChooseUs, placesWithDetails, whatToExpect, tourTypes, optionalAddOns, onlineTickets, slug }) => {
     const navigate = useNavigate();
     const location = useLocation();
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -282,9 +282,9 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                     )}
 
                     {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
-                    {(optionalAddOns || onlineTickets) && (
+                    {(onlineTickets || (slug === 'delhi-local-sightseeing' && optionalAddOns)) && (
                         <div className="space-y-8">
-                            {optionalAddOns && (
+                            {slug === 'delhi-local-sightseeing' && optionalAddOns && (
                                 <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100 shadow-sm">
                                     <h3 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
                                         Optional Add-On Attractions

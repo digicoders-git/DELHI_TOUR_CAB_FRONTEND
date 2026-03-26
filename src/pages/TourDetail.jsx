@@ -20,7 +20,7 @@ const TourDetail = () => {
         return <Navigate to="/tour-packages" replace />;
     }
 
-    return <TourDetailLayout {...tour} />;
+    return <TourDetailLayout {...tour} slug={currentSlug} />;
 };
 
 export default TourDetail;
