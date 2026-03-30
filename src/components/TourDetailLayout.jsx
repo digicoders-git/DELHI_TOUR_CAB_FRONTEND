@@ -283,8 +283,20 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
 
                     {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
                     {(() => {
-                        const hideTickets = ['delhi-to-haridwar-tour', 'haridwar-rishikesh-local-sightseeing-by-car'].includes(slug);
-                        return (onlineTickets && !hideTickets) || (slug === 'delhi-local-sightseeing' && optionalAddOns);
+                        const showTickets = [
+                            'delhi-to-agra-tour','delhi-to-jaipur-tour','delhi-local-sightseeing',
+                            'delhi-to-mathura-vrindavan','delhi-to-rishikesh-tour','delhi-mathura-vrindavan-agra-tour',
+                            'delhi-to-agra-fatehpur-sikri-tour','delhi-to-chandigarh-one-day-tour',
+                            'delhi-to-khatu-shyam-one-day-tour','delhi-to-mehandipur-balaji-one-day-tour',
+                            'delhi-jaipur-fatehpur-sikri-agra-golden-triangle-tour','delhi-jaipur-pushkar-ajmer-tour',
+                            'gurgaon-to-delhi-local-sightseeing-tour','noida-to-delhi-local-sightseeing-tour',
+                            'ghaziabad-to-delhi-local-sightseeing-tour','faridabad-to-delhi-local-sightseeing-tour',
+                            'faridabad-to-agra-tour','noida-greater-noida-to-agra-same-day-return-tour',
+                            'ghaziabad-to-agra-same-day-return-tour','gurgaon-to-agra-same-day-return-tour',
+                            'agra-sightseeing-by-car','agra-to-fatehpur-sikri-one-day-tour','agra-to-mathura-vrindavan-tour',
+                            'jaipur-local-sightseeing-by-car','chandigarh-local-sightseeing-by-car'
+                        ];
+                        return (onlineTickets && showTickets.includes(slug)) || (slug === 'delhi-local-sightseeing' && optionalAddOns);
                     })() && (
                         <div className="space-y-8">
                             {slug === 'delhi-local-sightseeing' && optionalAddOns && (

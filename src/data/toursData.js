@@ -123,7 +123,9 @@ import {
     gunhill,
     sahstra,
     mughalgardens,
-    sonmarg
+    sonmarg,
+    chandidevi,
+    dakshmahadev
 } from '../utils/images';
 import {
     FaGem, FaFortAwesome, FaHistory, FaLeaf, FaShoppingBag, FaFileInvoiceDollar, FaUserTie,
@@ -317,13 +319,13 @@ export const toursData = {
             },
             {
                 name: "Chandi Devi Temple",
-                image: mansidevitemple,
+                image: chandidevi,
                 description: "Situated on the Neel Parvat hill on the eastern bank of the Ganges, this temple is dedicated to Goddess Chandi Devi. It is one of the Siddha Peethas and can be reached by ropeway or a trek through the forest.",
                 timings: "06:00 AM – 08:00 PM"
             },
             {
                 name: "Daksh Mahadev Temple",
-                image: harkipauri,
+                image: dakshmahadev,
                 description: "One of the oldest temples in Haridwar, dedicated to Lord Shiva. It is believed to be the site where King Daksha performed the grand Yagna, making it a place of immense historical and religious significance.",
                 timings: "06:00 AM – 08:00 PM"
             }

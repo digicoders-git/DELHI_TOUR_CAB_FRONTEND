@@ -313,6 +313,8 @@ import itmadud from '../assets/TopPlacestoVisit/AgratoFatehpurSikriOneDayTourbyC
 import harkipauri from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/harkipauri.jpeg';
 import laxmanjhula from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/laxmanjhula.jpeg';
 import mansidevitemple from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/mansidevitemple.jpeg';
+import chandidevi from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/chandidevi.png';
+import dakshmahadev from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/dakshmahadev.png';
 import ramjhula from '../assets/TopPlacestoVisit/HaridwarRishikeshLocalSightseeingbyCar/ramjhula.jpeg';
 
 
@@ -330,7 +332,7 @@ import sonmarg from '../assets/TopPlacestoVisit/SrinagarSonmargGulmargLocalSight
 
 export {
 
-  visittajmahal,AgraFort,itmad,mehtam,fortagra,bulanddarwaja,fatehpursikari,mahaltaj,rockgarden,sukhnalake,albertmuseum,ambertfort,citypalace,hawamahal,jalmahal,jantarmantar,Nahargarhfort,kaichidham,goludevta,bhimtallake,khatushym,shyamkund,agrafort,bakevihari,krishnjanambhumi,premmandir,taj,mehandipurbalaji,pretrajsarkar,agrakila,sikarifatehpur,mahalhawa,mumtajmahal,ajmersarifdargah,amberfort,BrahmanTemple,pushkarlake,corbettwaterfall,garjidevitemple,jimcorbeetpark,badrinath,kedarnath,manakvillage,theridge,solangvalley,hadimbadevi,badrinathji,gangotari,yamunatri,kedarnathji,varanasghat,ayodhyatemple,sangam,rummydarwaja,dallake,goldentemple,gulmarg,matavaishnav,bulandarwaja,panchmahal,TombofSalimChishti,jamamasid,iscontemple,zakirhussainpark,copitalcomplex,itmadud,harkipauri,laxmanjhula,mansidevitemple,ramjhula,gunhill,kemptyfall,robbercave,sahstra,mughalgardens,sonmarg,
+  visittajmahal,AgraFort,itmad,mehtam,fortagra,bulanddarwaja,fatehpursikari,mahaltaj,rockgarden,sukhnalake,albertmuseum,ambertfort,citypalace,hawamahal,jalmahal,jantarmantar,Nahargarhfort,kaichidham,goludevta,bhimtallake,khatushym,shyamkund,agrafort,bakevihari,krishnjanambhumi,premmandir,taj,mehandipurbalaji,pretrajsarkar,agrakila,sikarifatehpur,mahalhawa,mumtajmahal,ajmersarifdargah,amberfort,BrahmanTemple,pushkarlake,corbettwaterfall,garjidevitemple,jimcorbeetpark,badrinath,kedarnath,manakvillage,theridge,solangvalley,hadimbadevi,badrinathji,gangotari,yamunatri,kedarnathji,varanasghat,ayodhyatemple,sangam,rummydarwaja,dallake,goldentemple,gulmarg,matavaishnav,bulandarwaja,panchmahal,TombofSalimChishti,jamamasid,iscontemple,zakirhussainpark,copitalcomplex,itmadud,harkipauri,laxmanjhula,mansidevitemple,ramjhula,gunhill,kemptyfall,robbercave,sahstra,mughalgardens,sonmarg,chandidevi,dakshmahadev,
 
 
 

@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { tourHaridwarRishikeshLocal, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano, tourHaridwar, harkipauri, mansidevitemple } from '../../utils/images';
+import { tourHaridwarRishikeshLocal, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano, tourHaridwar, harkipauri, mansidevitemple, chandidevi, dakshmahadev } from '../../utils/images';
 import { FaOm, FaWater, FaMountain, FaShoppingBag, FaHistory, FaUserTie, FaCheckCircle, FaStar } from 'react-icons/fa';
 
 const DelhiHaridwarTour = () => {
@@ -82,13 +82,13 @@ const DelhiHaridwarTour = () => {
             },
             {
                 name: "Chandi Devi Temple",
-                image: mansidevitemple,
+                image: chandidevi,
                 description: "Situated on the Neel Parvat hill on the eastern bank of the Ganges, this temple is dedicated to Goddess Chandi Devi. It is one of the Siddha Peethas and can be reached by ropeway or a trek through the forest.",
                 timings: "06:00 AM – 08:00 PM"
             },
             {
                 name: "Daksh Mahadev Temple",
-                image: harkipauri,
+                image: dakshmahadev,
                 description: "One of the oldest temples in Haridwar, dedicated to Lord Shiva. It is believed to be the site where King Daksha performed the grand Yagna, making it a place of immense historical and religious significance.",
                 timings: "06:00 AM – 08:00 PM"
             }
