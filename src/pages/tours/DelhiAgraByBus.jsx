@@ -10,19 +10,19 @@ const busSchedule = [
         busType: 'Luxury AC Deluxe Pushback Seater (2+2)',
         departure: '9:30 AM',
         returnTime: '6:30 PM',
-        fare: '499',
+        fare: '999',
     },
     {
         busType: 'Hi Tech Air Suspension AC Pushback Seater (2+2)',
         departure: '10:30 AM',
         returnTime: '7:00 PM',
-        fare: '599',
+        fare: '1099',
     },
     {
         busType: 'Tata AC Super Deluxe (2+2) Pushback Seater',
         departure: '09:00 AM',
         returnTime: '06:00 PM',
-        fare: '699',
+        fare: '1199',
     },
 ];
 

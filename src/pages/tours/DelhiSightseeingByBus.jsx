@@ -9,19 +9,19 @@ const busSchedule = [
         busType: 'Luxury AC Deluxe (2+2) Pushback Seater',
         departure: '7:00 AM',
         returnTime: '11:30 PM',
-        fare: '999',
+        fare: '499',
     },
     {
         busType: 'Volvo/Bharat Benz AC Pushback Seater (2+2)',
         departure: '7:05 AM',
         returnTime: '11:35 PM',
-        fare: '1099',
+        fare: '599',
     },
     {
         busType: 'Tata AC Luxury Super Deluxe Pushback Seater (2+2)',
         departure: '7:10 AM',
         returnTime: '11:45 PM',
-        fare: '1199',
+        fare: '699',
     },
 ];
 

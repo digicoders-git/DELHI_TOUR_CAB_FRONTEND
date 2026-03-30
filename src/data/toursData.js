@@ -302,6 +302,32 @@ export const toursData = {
         bannerImage: tourHaridwar,
         description: "Begin a soul-cleansing spiritual journey to the 'Gateway to God' with Delhi Tour Cab. Our Delhi to Haridwar Same Day Tour is designed to immerse you in the sacred atmosphere of one of India's seven holiest places. From the moment you leave Delhi in our premium AC fleet, you're on a path to peace. Witness the majestic Ganges, participate in the powerful evening Aarti at Har Ki Pauri, and explore ancient temples perched on the hills. Our professional chauffeurs, experienced in highway and interstate travel, ensure your pilgrimage is smooth, safe, and deeply revitalizing, allowing you to return to Delhi the same night with a heart full of blessings.",
         whatToExpect: "Your sacred day starts with an early morning pickup from your doorstep in Delhi/NCR. As we head towards the foothills of the Himalayas, relax in the comfort of our well-maintained vehicles. In Haridwar, expect a day of divine experiences—from a holy dip at Har Ki Pauri to a panoramic cable car ride to Mansa Devi Temple. Navigate through the vibrant local spiritual markets and find peace at the various holy ghats. The highlight of your trip will be the mesmerizing Ganga Aarti, a spectacle of faith and fire. With Delhi Tour Cab, every detail of your transport is managed with care, so your only focus is your spiritual connection.",
+        placesWithDetails: [
+            {
+                name: "Har Ki Pauri",
+                image: harkipauri,
+                description: "The most sacred ghat in Haridwar, where Lord Vishnu is believed to have left his footprint. The evening Ganga Aarti here is a mesmerizing spectacle of faith, fire, and devotion that draws thousands of pilgrims daily.",
+                timings: "Open 24 Hours (Ganga Aarti at Sunset)"
+            },
+            {
+                name: "Mansa Devi Temple",
+                image: mansidevitemple,
+                description: "Perched atop the Bilwa Parvat on the Sivalik Hills, this temple is dedicated to Goddess Mansa Devi. Accessible by a scenic ropeway (Udan Khatola), it offers a panoramic view of Haridwar and the holy Ganges.",
+                timings: "05:00 AM – 09:00 PM"
+            },
+            {
+                name: "Chandi Devi Temple",
+                image: mansidevitemple,
+                description: "Situated on the Neel Parvat hill on the eastern bank of the Ganges, this temple is dedicated to Goddess Chandi Devi. It is one of the Siddha Peethas and can be reached by ropeway or a trek through the forest.",
+                timings: "06:00 AM – 08:00 PM"
+            },
+            {
+                name: "Daksh Mahadev Temple",
+                image: harkipauri,
+                description: "One of the oldest temples in Haridwar, dedicated to Lord Shiva. It is believed to be the site where King Daksha performed the grand Yagna, making it a place of immense historical and religious significance.",
+                timings: "06:00 AM – 08:00 PM"
+            }
+        ],
         highlights: [
             { title: "Holy Dip at Sacred Har Ki Pauri Ghat", icon: FaWater },
             { title: "Mansa Devi Temple (by Scenic Cable car)", icon: FaMountain },
@@ -740,6 +766,32 @@ export const toursData = {
         bannerImage: tourMathura,
         description: "Embark on a divine spiritual journey to the holy center of Brij Bhoomi with Delhi Tour Cab. Our Delhi to Mathura and Vrindavan Same Day Tour is meticulously crafted to connect you with the birthplace of Lord Krishna. Experience the celestial energy of ancient temples, witness soul-stirring aartis, and immerse yourself in the devotion that fills every street. Traveling in our premium AC fleet, you'll enjoy a serene and peaceful pilgrimage, free from the hassles of public transport. Our professional drivers, well-versed with the sacred routes, ensure you and your family have ample time for peaceful darshan and creating spiritual memories that last a lifetime.",
         whatToExpect: "Your spiritual day begins with a comfortable sunrise pickup from Delhi/NCR. As we glide along the Yamuna Expressway, leave the city's noise behind. In Mathura, you'll visit the powerful Krishna Janmabhoomi and explore the historical temples where divinity feels alive. In Vrindavan, expect a deep connection at the Bankey Bihari Temple and the architectural marvel of Prem Mandir. By evening, as the temples light up like jewels, you'll experience a sense of peace that only Brij Bhoomi can offer. With Delhi Tour Cab's fixed pricing and dedicated service, your only focus remains on your spiritual devotion.",
+        placesWithDetails: [
+            {
+                name: "Krishna Janmabhoomi (Mathura)",
+                image: krishnjanambhumi,
+                description: "The most sacred site in Mathura, built around the prison cell where Lord Krishna is believed to have been born. The complex radiates divine energy and attracts millions of devotees from across the world.",
+                timings: "05:00 AM – 12:00 PM, 04:00 PM – 09:30 PM"
+            },
+            {
+                name: "Bankey Bihari Temple (Vrindavan)",
+                image: bakevihari,
+                description: "One of the holiest and most visited temples in Vrindavan, dedicated to Lord Krishna. The deity is worshipped as a child and the atmosphere is filled with devotional energy and chanting.",
+                timings: "07:30 AM – 01:00 PM, 05:30 PM – 09:30 PM"
+            },
+            {
+                name: "Prem Mandir (Vrindavan)",
+                image: premmandir,
+                description: "The 'Temple of Divine Love', a magnificent marble structure known for its intricate carvings depicting the life of Radha-Krishna. The evening light show transforms it into a breathtaking spectacle.",
+                timings: "08:30 AM – 12:30 PM, 04:30 PM – 10:00 PM"
+            },
+            {
+                name: "ISKCON Temple (Vrindavan)",
+                image: iscontemple,
+                description: "Also known as Sri Sri Krishna Balaram Mandir, this serene temple is a key center for the International Society for Krishna Consciousness, known for its melodious kirtans and peaceful atmosphere.",
+                timings: "04:30 AM – 01:00 PM, 04:00 PM – 08:30 PM"
+            }
+        ],
         highlights: [
             { title: "Krishna Janmabhoomi (Birthplace) Visit", icon: FaPray },
             { title: "Darshan at Bankey Bihari Temple (Vrindavan)", icon: FaOm },
@@ -836,6 +888,32 @@ export const toursData = {
         bannerImage: tourRishikesh,
         description: "Experience the perfect blend of spiritual serenity and pulse-racing adventure with Delhi Tour Cab's Rishikesh Day Tour. Known as the 'Yoga Capital of the World', Rishikesh offers a unique landscape where the emerald Ganges meets the foothills of the Himalayas. Whether you're seeking a soul-stirring Ganga Aarti, a peaceful meditative session in a riverside ashram, or the thrill of white-water rafting, our day tour is designed to deliver it all. Travel in the comfort of our premium AC vehicles, driven by professional chauffeurs who know the best routes and hidden gems of Rishikesh, ensuring your one-day escape is perfectly managed and memorable.",
         whatToExpect: "Your journey starts with a swift sunrise drive from Delhi/NCR, cruising along the modern expressways. In Rishikesh, expect a day of contrasts: from walking across the iconic Ram Jhula to cafe-hopping in the vibrant lanes of Tapovan. You'll witness the divine evening Aarti at Parmarth Niketan, a spectacle of light and sound that stays with you forever. With Delhi Tour Cab, you skip the hassles of public transport and focus entirely on the experience—whether it's the adrenaline of the rapids or the peace of the temples. Our all-inclusive pricing means you travel with total peace of mind.",
+        placesWithDetails: [
+            {
+                name: "Laxman Jhula",
+                image: laxmanjhula,
+                description: "An iconic iron suspension bridge across the river Ganges, named after Lord Laxman who is believed to have crossed the river here on a jute rope. It is one of the most photographed landmarks of Rishikesh.",
+                timings: "Open 24 Hours"
+            },
+            {
+                name: "Ram Jhula",
+                image: ramjhula,
+                description: "A larger suspension bridge connecting Shivananda Nagar with Swargashram, surrounded by ashrams and temples. It offers beautiful views of the Ganges and the surrounding hills.",
+                timings: "Open 24 Hours"
+            },
+            {
+                name: "Triveni Ghat",
+                image: harkipauri,
+                description: "The main bathing ghat in Rishikesh where three rivers are believed to meet. The evening Ganga Aarti here is a deeply moving spiritual experience with lamps floating on the holy river.",
+                timings: "Open 24 Hours (Aarti at Sunset)"
+            },
+            {
+                name: "Parmarth Niketan Ashram",
+                image: ramjhula,
+                description: "One of the largest ashrams in Rishikesh, situated on the banks of the Ganges. It hosts the famous evening Ganga Aarti and offers yoga, meditation, and spiritual programs.",
+                timings: "05:00 AM – 10:00 PM"
+            }
+        ],
         highlights: [
             { title: "Visit Iconic Laxman Jhula & Ram Jhula", icon: FaMountain },
             { title: "River Rafting Adventure (Optional)", icon: FaWater },

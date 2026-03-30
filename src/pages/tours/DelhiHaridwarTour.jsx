@@ -1,5 +1,5 @@
 import TourDetailLayout from '../../components/TourDetailLayout';
-import { tourHaridwarRishikeshLocal, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano, tourHaridwar } from '../../utils/images';
+import { tourHaridwarRishikeshLocal, dzire, innova, ertiga2, forcetempo, wagonr, kiacarens, forceurbano, tourHaridwar, harkipauri, mansidevitemple } from '../../utils/images';
 import { FaOm, FaWater, FaMountain, FaShoppingBag, FaHistory, FaUserTie, FaCheckCircle, FaStar } from 'react-icons/fa';
 
 const DelhiHaridwarTour = () => {
@@ -66,6 +66,32 @@ const DelhiHaridwarTour = () => {
             "Advance Booking: ₹1000 Only.",
             "Cable car (Ropeway) tickets are not included in the package.",
             "Payment via GPay / PhonePe / UPI: 9278063535"
+        ],
+        placesWithDetails: [
+            {
+                name: "Har Ki Pauri",
+                image: harkipauri,
+                description: "The most sacred ghat in Haridwar, where Lord Vishnu is believed to have left his footprint. The evening Ganga Aarti here is a mesmerizing spectacle of faith, fire, and devotion that draws thousands of pilgrims daily.",
+                timings: "Open 24 Hours (Ganga Aarti at Sunset)"
+            },
+            {
+                name: "Mansa Devi Temple",
+                image: mansidevitemple,
+                description: "Perched atop the Bilwa Parvat on the Sivalik Hills, this temple is dedicated to Goddess Mansa Devi. Accessible by a scenic ropeway (Udan Khatola), it offers a panoramic view of Haridwar and the holy Ganges.",
+                timings: "05:00 AM – 09:00 PM"
+            },
+            {
+                name: "Chandi Devi Temple",
+                image: mansidevitemple,
+                description: "Situated on the Neel Parvat hill on the eastern bank of the Ganges, this temple is dedicated to Goddess Chandi Devi. It is one of the Siddha Peethas and can be reached by ropeway or a trek through the forest.",
+                timings: "06:00 AM – 08:00 PM"
+            },
+            {
+                name: "Daksh Mahadev Temple",
+                image: harkipauri,
+                description: "One of the oldest temples in Haridwar, dedicated to Lord Shiva. It is believed to be the site where King Daksha performed the grand Yagna, making it a place of immense historical and religious significance.",
+                timings: "06:00 AM – 08:00 PM"
+            }
         ],
         tourTypes: [
             {
