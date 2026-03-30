@@ -40,6 +40,26 @@ const notes = [
     'Payment via GPay / PhonePe / UPI: +91-9278063535',
 ];
 
+const busPickupOptions = [
+    'New Delhi Railway Station Gate Num 2 (Paharganj Side) at 9:15 AM',
+    'NDLS Metro (Paharganj) Gate Number 3 at 9:20 AM',
+    'Sheela Cinema Paharganj at 9:25 AM',
+    'Karol Bagh Metro Station Gate Num 2 at 9:30 AM',
+    'R.K.Ashram Marg Metro Station Gate Num 3 at 9:40 AM',
+    'Patel Chowk Metro Station Gate Num 1 at 10:00 AM',
+    'Birla Temple at 10:20 AM',
+    'India Gate at 10:50 AM',
+];
+
+const busDropOptions = [
+    'New Delhi Railway Station Gate Num 2 Paharganj',
+    'NDLS Metro Gate Num 3',
+    'Sheela Cinema Paharganj',
+    'Karol Bagh Metro Station',
+    'R.K.Ashram Marg Metro Station at 7:00 PM',
+    'Red Fort at 6:30 PM',
+];
+
 const DelhiSightseeingByBus = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedBus, setSelectedBus] = useState(null);
@@ -227,6 +247,8 @@ const DelhiSightseeingByBus = () => {
                 <BookingModal
                     isOpen={modalOpen}
                     onClose={() => setModalOpen(false)}
+                    pickupOptions={busPickupOptions}
+                    dropOptions={busDropOptions}
                     carDetails={{
                         carName: selectedBus.busType,
                         tourTitle: 'Budget Delhi Sightseeing – Bus Tour Per Person',

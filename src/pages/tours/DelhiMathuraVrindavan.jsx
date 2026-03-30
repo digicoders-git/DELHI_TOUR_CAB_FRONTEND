@@ -82,14 +82,14 @@ const DelhiMathuraVrindavan = () => {
             }
         ],
         carss: [
-            { name: "Hatchback WagonR (4+1)", price: "₹7,500/-", image: wagonr },
-            { name: "Sedan Swift Dzire (4+1)", price: "₹8,000/-", image: drizer },
-            { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹9,000/-", image: ertiga },
-            { name: "Luxury SUV Kia Carens / Innova Crysta (6+1)", price: "₹11,500/-", image: kiacerens },
-            { name: "Tempo Traveller (12+1)", price: "₹15,000/-", image: forcetempo },
-            { name: "Tempo Traveller (17+1)", price: "₹18,000/-", image: forcetempo },
-            { name: "Force Urbania", price: "₹24,500/-", image: forceurbano }
-        ]
+            { name: "Hatchback WagonR (4+1)", price: "₹5,000/-", image: wagonr },
+            { name: "Sedan Swift Dzire (4+1)", price: "₹5,500/-", image: drizer },
+            { name: "Budget SUV Suzuki Ertiga (6+1)", price: "₹7,000/-", image: ertiga },
+            { name: "Luxury SUV Kia Carens (4+1)", price: "₹8,500/-", image: kiacerens },
+            { name: "Luxury SUV Innova Crysta (6+1)", price: "₹8,500/-", image: innovaSlider },
+            { name: "Tempo Traveller (12+1)", price: "₹12,000/-", image: forcetempo },
+            { name: "Tempo Traveller (17+1)", price: "₹15,000/-", image: forcetempo },
+            { name: "Force Urbania", price: "₹18,000/-", image: forceurbano }        ]
     };
 
     return <TourDetailLayout {...tourData} />;

@@ -5,7 +5,7 @@ import PhoneInput from './PhoneInput';
 import { initiatePayment, sendWhatsAppConfirmation } from '../utils/razorpay';
 import { useNavigate } from 'react-router-dom';
 
-const BookingModal = ({ isOpen, onClose, carDetails }) => {
+const BookingModal = ({ isOpen, onClose, carDetails, pickupOptions, dropOptions }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -57,48 +57,48 @@ const BookingModal = ({ isOpen, onClose, carDetails }) => {
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
+      <div className="fixed inset-0 z-50 flex items-start justify-center p-2 sm:p-4 bg-black/60 backdrop-blur-sm overflow-y-auto">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
-          className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full my-8"
+          className="bg-white rounded-2xl shadow-2xl max-w-4xl w-full my-4 sm:my-8"
         >
           {/* Header */}
-          <div className="bg-gradient-to-r from-orange-600 to-orange-400 p-6 relative rounded-t-2xl">
+          <div className="bg-gradient-to-r from-orange-600 to-orange-400 p-4 sm:p-6 relative rounded-t-2xl">
             <button
               onClick={onClose}
-              className="absolute top-4 right-4 text-white hover:bg-white/20 p-2 rounded-full transition-all z-10"
+              className="absolute top-3 right-3 text-white hover:bg-white/20 p-2 rounded-full transition-all z-10"
             >
-              <FaTimes size={20} />
+              <FaTimes size={18} />
             </button>
-            <h2 className="text-3xl font-bold text-white mb-2">Complete Your Booking</h2>
-            <p className="text-orange-100 text-sm">Fill in your details to proceed with payment</p>
+            <h2 className="text-xl sm:text-3xl font-bold text-white mb-1 sm:mb-2 pr-8">Complete Your Booking</h2>
+            <p className="text-orange-100 text-xs sm:text-sm">Fill in your details to proceed with payment</p>
           </div>
 
           {/* Form */}
-          <form onSubmit={handleSubmit} className="p-8 space-y-8 max-h-[70vh] overflow-y-auto">
+          <form onSubmit={handleSubmit} className="p-4 sm:p-8 space-y-6 sm:space-y-8 max-h-[80vh] sm:max-h-[70vh] overflow-y-auto">
 
             {/* Vehicle Details */}
-            <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-2xl border-2 border-orange-200">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
-                  <FaCar className="text-2xl text-white" />
+            <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-4 sm:p-6 rounded-2xl border-2 border-orange-200">
+              <div className="flex items-center gap-3 mb-3 sm:mb-4">
+                <div className="w-9 h-9 sm:w-12 sm:h-12 bg-orange-500 rounded-xl flex items-center justify-center">
+                  <FaCar className="text-lg sm:text-2xl text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Selected Vehicle</h3>
+                <h3 className="text-base sm:text-xl font-bold text-gray-800">Selected Vehicle</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div className="bg-white p-4 rounded-xl">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                <div className="bg-white p-3 rounded-xl">
                   <p className="text-xs text-gray-500 font-semibold mb-1">Vehicle</p>
-                  <p className="font-bold text-gray-800">{carDetails.carName}</p>
+                  <p className="font-bold text-gray-800 text-sm">{carDetails.carName}</p>
                 </div>
-                <div className="bg-white p-4 rounded-xl">
+                <div className="bg-white p-3 rounded-xl">
                   <p className="text-xs text-gray-500 font-semibold mb-1">Service</p>
-                  <p className="font-bold text-gray-800">{carDetails.tourTitle}</p>
+                  <p className="font-bold text-gray-800 text-sm">{carDetails.tourTitle}</p>
                 </div>
-                <div className="bg-white p-4 rounded-xl">
+                <div className="bg-white p-3 rounded-xl">
                   <p className="text-xs text-gray-500 font-semibold mb-1">Booking Amount</p>
-                  <p className="text-xl font-black text-orange-600">₹{carDetails.bookingAmount}</p>
+                  <p className="text-lg sm:text-xl font-black text-orange-600">₹{carDetails.bookingAmount}</p>
                 </div>
               </div>
             </div>
@@ -106,10 +106,10 @@ const BookingModal = ({ isOpen, onClose, carDetails }) => {
             {/* Personal Details */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-blue-500 rounded-xl flex items-center justify-center">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-blue-500 rounded-xl flex items-center justify-center">
                   <FaUser className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Personal Details</h3>
+                <h3 className="text-base sm:text-xl font-bold text-gray-800">Personal Details</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
@@ -144,29 +144,51 @@ const BookingModal = ({ isOpen, onClose, carDetails }) => {
             {/* Trip Details */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-green-500 rounded-xl flex items-center justify-center">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-green-500 rounded-xl flex items-center justify-center">
                   <FaMapMarkerAlt className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Trip Details</h3>
+                <h3 className="text-base sm:text-xl font-bold text-gray-800">Trip Details</h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Pickup Location</label>
-                  <input
-                    type="text" required value={formData.pickupLocation}
-                    onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
-                    placeholder="Enter pickup location"
-                  />
+                  {pickupOptions ? (
+                    <select
+                      required value={formData.pickupLocation}
+                      onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
+                    >
+                      <option value="">-- Select Pickup Point --</option>
+                      {pickupOptions.map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
+                    </select>
+                  ) : (
+                    <input
+                      type="text" required value={formData.pickupLocation}
+                      onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
+                      placeholder="Enter pickup location"
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Drop Location</label>
-                  <input
-                    type="text" value={formData.dropLocation}
-                    onChange={(e) => setFormData({ ...formData, dropLocation: e.target.value })}
-                    className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
-                    placeholder="Enter drop location"
-                  />
+                  {dropOptions ? (
+                    <select
+                      value={formData.dropLocation}
+                      onChange={(e) => setFormData({ ...formData, dropLocation: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
+                    >
+                      <option value="">-- Select Drop Point --</option>
+                      {dropOptions.map((opt, i) => <option key={i} value={opt}>{opt}</option>)}
+                    </select>
+                  ) : (
+                    <input
+                      type="text" value={formData.dropLocation}
+                      onChange={(e) => setFormData({ ...formData, dropLocation: e.target.value })}
+                      className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
+                      placeholder="Enter drop location"
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Pickup Date</label>
@@ -191,30 +213,30 @@ const BookingModal = ({ isOpen, onClose, carDetails }) => {
             {/* Passengers */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-purple-500 rounded-xl flex items-center justify-center">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 bg-purple-500 rounded-xl flex items-center justify-center">
                   <FaUsers className="text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Number of Travellers</h3>
+                <h3 className="text-base sm:text-xl font-bold text-gray-800">Number of Travellers</h3>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-4">
                 {[
                   { field: 'adults', label: 'Adults', icon: <FaUsers className="text-purple-500" />, color: 'purple' },
                   { field: 'children', label: 'Children (Below 8)', icon: <FaChild className="text-pink-500" />, color: 'pink' }
                 ].map(({ field, label, icon, color }) => (
                   <div key={field}>
-                    <label className="text-sm font-bold text-gray-700 mb-3 flex items-center gap-2">{icon} {label}</label>
-                    <div className={`flex items-center gap-4 bg-gradient-to-r from-${color}-50 to-pink-50 p-4 rounded-2xl border-2 border-${color}-100`}>
+                    <label className="text-xs sm:text-sm font-bold text-gray-700 mb-2 flex items-center gap-1">{icon} {label}</label>
+                    <div className={`flex items-center gap-2 bg-gradient-to-r from-${color}-50 to-pink-50 p-3 rounded-2xl border-2 border-${color}-100`}>
                       <button type="button" onClick={() => handleCountChange(field, 'dec')}
-                        className={`w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-${color}-600 hover:bg-${color}-600 hover:text-white transition-all`}>
-                        <FaMinus />
+                        className={`w-9 h-9 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-xl shadow text-${color}-600 hover:bg-${color}-600 hover:text-white transition-all flex-shrink-0`}>
+                        <FaMinus size={12} />
                       </button>
                       <div className="flex-1 text-center">
-                        <div className={`text-4xl font-black text-${color}-600`}>{formData[field]}</div>
-                        <div className="text-xs text-gray-500 font-semibold mt-1">{field === 'adults' ? 'Passengers' : 'Kids'}</div>
+                        <div className={`text-2xl sm:text-4xl font-black text-${color}-600`}>{formData[field]}</div>
+                        <div className="text-xs text-gray-500 font-semibold">{field === 'adults' ? 'Passengers' : 'Kids'}</div>
                       </div>
                       <button type="button" onClick={() => handleCountChange(field, 'inc')}
-                        className={`w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-${color}-600 hover:bg-${color}-600 hover:text-white transition-all`}>
-                        <FaPlus />
+                        className={`w-9 h-9 sm:w-12 sm:h-12 flex items-center justify-center bg-white rounded-xl shadow text-${color}-600 hover:bg-${color}-600 hover:text-white transition-all flex-shrink-0`}>
+                        <FaPlus size={12} />
                       </button>
                     </div>
                   </div>
@@ -235,13 +257,13 @@ const BookingModal = ({ isOpen, onClose, carDetails }) => {
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-4 pt-4">
+            <div className="flex gap-3 pt-2">
               <button type="button" onClick={onClose}
-                className="flex-1 px-6 py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition-all">
+                className="flex-1 px-4 py-3 sm:py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-bold text-sm sm:text-base hover:bg-gray-50 transition-all">
                 Cancel
               </button>
               <button type="submit" disabled={loading}
-                className="flex-1 px-6 py-4 bg-gradient-to-r from-orange-600 to-orange-400 text-white rounded-xl font-bold text-lg hover:from-orange-700 hover:to-orange-500 transition-all shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                className="flex-1 px-4 py-3 sm:py-4 bg-gradient-to-r from-orange-600 to-orange-400 text-white rounded-xl font-bold text-sm sm:text-lg hover:from-orange-700 hover:to-orange-500 transition-all shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2">
                 {loading ? <><FaSpinner className="animate-spin" /> Processing...</> : 'PROCEED TO PAYMENT'}
               </button>
             </div>

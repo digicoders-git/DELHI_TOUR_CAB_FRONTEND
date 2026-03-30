@@ -41,6 +41,46 @@ const notes = [
     'Payment via GPay / PhonePe / UPI: +91-9278063535',
 ];
 
+const busPickupOptions = [
+    'Lal Qila Metro Station Gate No-4 at 5:45 AM',
+    'Jama Masjid Metro Station Gate No-3 at 5:50 AM',
+    'Shivaji Stadium Metro Station Gate No-1 at 6:50 AM',
+    'Karol Bagh Metro Station Gate Num-2 at 6:10 AM',
+    'New Delhi Railway Station Gate Num 2 (Paharganj Side) at 6:20 AM',
+    'R.K.Ashram Marg Metro Station Gate Num 3 at 6:45 AM',
+    'Patel Chowk Metro Station at 7:00 AM',
+    'India Gate Near Patiala House Court at 7:05 AM',
+    'Malai Mandir R.K.Puram at 7:15 AM',
+    'INA (Dilli Haat) Metro Station Gate Num 2 at 7:20 AM',
+    'Lajpat Nagar Metro Station Gate Num-3 at 7:25 AM',
+    'Jangpura Metro Station Gate Num-2 at 7:30 AM',
+    'Nizamuddin Police Station Opposite Railway Station at 7:35 AM',
+    'Ashram Chowk Bharat Petrol Pump at 7:40 AM',
+    'Mahamaya Flyover at 7:45 AM',
+    'Zero Point Greater Noida at 8:00 AM',
+    'Agra Fort at 11:20 AM',
+];
+
+const busDropOptions = [
+    'Lal Qila Metro Station',
+    'Jama Masjid Metro Station',
+    'Shivaji Stadium Metro Station',
+    'Karol Bagh Metro Station',
+    'New Delhi Railway Station Gate Num 2',
+    'R.K.Ashram Marg Metro Station',
+    'Patel Chowk Metro Station',
+    'India Gate Patiala House Court',
+    'Malai Mandir',
+    'INA Metro Station',
+    'Lajpat Nagar Metro Station',
+    'Jangpura Metro Station',
+    'Nizamuddin Station',
+    'Ashram Chowk Bharat Petrol Pump',
+    'Mahamaya Flyover',
+    'Greater Noida Zero Point',
+    'New Delhi Paharganj',
+];
+
 const DelhiAgraByBus = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedBus, setSelectedBus] = useState(null);
@@ -233,6 +273,8 @@ const DelhiAgraByBus = () => {
                 <BookingModal
                     isOpen={modalOpen}
                     onClose={() => setModalOpen(false)}
+                    pickupOptions={busPickupOptions}
+                    dropOptions={busDropOptions}
                     carDetails={{
                         carName: selectedBus.busType,
                         tourTitle: 'Same Day Delhi to Agra Tour by Bus',

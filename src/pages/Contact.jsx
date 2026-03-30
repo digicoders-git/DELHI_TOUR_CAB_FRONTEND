@@ -283,6 +283,7 @@ const Contact = () => {
               {/* Company Info */}
               <div className="mb-6 p-4 bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl border border-slate-200">
                 <div className="space-y-2">
+                  <p className="text-gray-700"><span className="font-bold text-gray-800">Founder & Managing Director:</span> Shivam Upadhyay</p>
                   <p className="text-gray-700"><span className="font-bold text-gray-800">Company Name:</span> Delhi Tour Cab</p>
                   <p className="text-gray-700"><span className="font-bold text-gray-800">Business Unit:</span> S U Taxi Service</p>
                   <p className="text-gray-700">
