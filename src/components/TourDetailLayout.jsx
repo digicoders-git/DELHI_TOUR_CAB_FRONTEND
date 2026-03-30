@@ -282,7 +282,10 @@ const TourDetailLayout = ({ title, bannerImage, description, highlights, itinera
                     )}
 
                     {/* Optional Add-Ons and Online Tickets moved after Important Notes */}
-                    {(onlineTickets || (slug === 'delhi-local-sightseeing' && optionalAddOns)) && (
+                    {(() => {
+                        const hideTickets = ['delhi-to-haridwar-tour', 'haridwar-rishikesh-local-sightseeing-by-car'].includes(slug);
+                        return (onlineTickets && !hideTickets) || (slug === 'delhi-local-sightseeing' && optionalAddOns);
+                    })() && (
                         <div className="space-y-8">
                             {slug === 'delhi-local-sightseeing' && optionalAddOns && (
                                 <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100 shadow-sm">

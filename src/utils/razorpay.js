@@ -17,6 +17,12 @@ export const getBookingAmount = (carName) => {
 };
 
 export const initiatePayment = (carName, tourTitle, userDetails, onSuccess, onFailure, overrideAmount) => {
+  if (!window.Razorpay) {
+    alert('Payment gateway failed to load. Please refresh the page and try again.');
+    onFailure && onFailure('Razorpay not loaded');
+    return;
+  }
+
   const amount = overrideAmount || getBookingAmount(carName);
   
   const options = {
@@ -43,8 +49,16 @@ export const initiatePayment = (carName, tourTitle, userDetails, onSuccess, onFa
     }
   };
 
-  const rzp = new window.Razorpay(options);
-  rzp.open();
+  try {
+    const rzp = new window.Razorpay(options);
+    rzp.on('payment.failed', function(response) {
+      onFailure && onFailure(response.error.description);
+    });
+    rzp.open();
+  } catch (err) {
+    console.error('Razorpay error:', err);
+    onFailure && onFailure(err.message);
+  }
 };
 
 export const sendWhatsAppConfirmation = (carName, tourTitle, userDetails, paymentId, bookingAmount) => {
