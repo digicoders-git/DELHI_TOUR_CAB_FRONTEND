@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FaTimes, FaCar, FaUser, FaPhone, FaEnvelope, FaCalendarAlt, FaMapMarkerAlt, FaClock, FaUsers, FaChild, FaPlus, FaMinus, FaMoneyBillWave } from 'react-icons/fa';
+import { FaTimes, FaCar, FaUser, FaMapMarkerAlt, FaUsers, FaChild, FaPlus, FaMinus, FaSpinner } from 'react-icons/fa';
 import PhoneInput from './PhoneInput';
+import { initiatePayment, sendWhatsAppConfirmation } from '../utils/razorpay';
+import { useNavigate } from 'react-router-dom';
 
-const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
+const BookingModal = ({ isOpen, onClose, carDetails }) => {
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -16,10 +18,32 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
     children: 0,
     specialRequests: ''
   });
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onBookingConfirm(formData);
+    setLoading(true);
+
+    initiatePayment(
+      carDetails.carName,
+      carDetails.tourTitle,
+      formData,
+      (response) => {
+        setLoading(false);
+        sendWhatsAppConfirmation(
+          carDetails.carName,
+          carDetails.tourTitle,
+          formData,
+          response.razorpay_payment_id,
+          carDetails.bookingAmount
+        );
+        onClose();
+        navigate('/thank-you');
+      },
+      () => { setLoading(false); },
+      carDetails.bookingAmount ? Number(carDetails.bookingAmount) : undefined
+    );
   };
 
   const handleCountChange = (field, type) => {
@@ -54,8 +78,8 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="p-8 space-y-8 max-h-[70vh] overflow-y-auto">
-            
-            {/* Car Details Section */}
+
+            {/* Vehicle Details */}
             <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-6 rounded-2xl border-2 border-orange-200">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 bg-orange-500 rounded-xl flex items-center justify-center">
@@ -87,35 +111,28 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">Personal Details</h3>
               </div>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Full Name</label>
                   <input
-                    type="text"
-                    required
-                    value={formData.name}
+                    type="text" required value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                     placeholder="Enter your full name"
                   />
                 </div>
-
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Contact Number</label>
                   <PhoneInput
-                    required
-                    value={formData.phone}
+                    required value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     placeholder="Enter phone number"
                   />
                 </div>
-
                 <div className="md:col-span-2">
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Email Address</label>
                   <input
-                    type="email"
-                    value={formData.email}
+                    type="email" value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                     placeholder="Enter email address"
@@ -132,59 +149,46 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">Trip Details</h3>
               </div>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Pickup Location</label>
                   <input
-                    type="text"
-                    required
-                    value={formData.pickupLocation}
+                    type="text" required value={formData.pickupLocation}
                     onChange={(e) => setFormData({ ...formData, pickupLocation: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                     placeholder="Enter pickup location"
                   />
                 </div>
-
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Drop Location</label>
                   <input
-                    type="text"
-                    value={formData.dropLocation}
+                    type="text" value={formData.dropLocation}
                     onChange={(e) => setFormData({ ...formData, dropLocation: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                     placeholder="Enter drop location"
                   />
                 </div>
-
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Pickup Date</label>
                   <input
-                    type="date"
-                    required
-                    value={formData.pickupDate}
+                    type="date" required value={formData.pickupDate}
                     onChange={(e) => setFormData({ ...formData, pickupDate: e.target.value })}
                     min={new Date().toISOString().split('T')[0]}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
-                    placeholder="dd/mm/yyyy"
                   />
                 </div>
-
                 <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Pickup Time</label>
                   <input
-                    type="time"
-                    required
-                    value={formData.pickupTime}
+                    type="time" required value={formData.pickupTime}
                     onChange={(e) => setFormData({ ...formData, pickupTime: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
-                    placeholder="--:--"
                   />
                 </div>
               </div>
             </div>
 
-            {/* Passenger Details */}
+            {/* Passengers */}
             <div className="space-y-4">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-purple-500 rounded-xl flex items-center justify-center">
@@ -192,59 +196,29 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
                 </div>
                 <h3 className="text-xl font-bold text-gray-800">Number of Travellers</h3>
               </div>
-              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <label className="text-sm font-bold text-gray-700 mb-3 block flex items-center gap-2">
-                    <FaUsers className="text-purple-500" /> Adults
-                  </label>
-                  <div className="flex items-center gap-4 bg-gradient-to-r from-purple-50 to-pink-50 p-4 rounded-2xl border-2 border-purple-100">
-                    <button
-                      type="button"
-                      onClick={() => handleCountChange('adults', 'dec')}
-                      className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-purple-600 hover:bg-purple-600 hover:text-white transition-all"
-                    >
-                      <FaMinus />
-                    </button>
-                    <div className="flex-1 text-center">
-                      <div className="text-4xl font-black text-purple-600">{formData.adults}</div>
-                      <div className="text-xs text-gray-500 font-semibold mt-1">Passengers</div>
+                {[
+                  { field: 'adults', label: 'Adults', icon: <FaUsers className="text-purple-500" />, color: 'purple' },
+                  { field: 'children', label: 'Children (Below 8)', icon: <FaChild className="text-pink-500" />, color: 'pink' }
+                ].map(({ field, label, icon, color }) => (
+                  <div key={field}>
+                    <label className="text-sm font-bold text-gray-700 mb-3 flex items-center gap-2">{icon} {label}</label>
+                    <div className={`flex items-center gap-4 bg-gradient-to-r from-${color}-50 to-pink-50 p-4 rounded-2xl border-2 border-${color}-100`}>
+                      <button type="button" onClick={() => handleCountChange(field, 'dec')}
+                        className={`w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-${color}-600 hover:bg-${color}-600 hover:text-white transition-all`}>
+                        <FaMinus />
+                      </button>
+                      <div className="flex-1 text-center">
+                        <div className={`text-4xl font-black text-${color}-600`}>{formData[field]}</div>
+                        <div className="text-xs text-gray-500 font-semibold mt-1">{field === 'adults' ? 'Passengers' : 'Kids'}</div>
+                      </div>
+                      <button type="button" onClick={() => handleCountChange(field, 'inc')}
+                        className={`w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-${color}-600 hover:bg-${color}-600 hover:text-white transition-all`}>
+                        <FaPlus />
+                      </button>
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => handleCountChange('adults', 'inc')}
-                      className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-purple-600 hover:bg-purple-600 hover:text-white transition-all"
-                    >
-                      <FaPlus />
-                    </button>
                   </div>
-                </div>
-
-                <div>
-                  <label className="text-sm font-bold text-gray-700 mb-3 block flex items-center gap-2">
-                    <FaChild className="text-pink-500" /> Children (Below 8)
-                  </label>
-                  <div className="flex items-center gap-4 bg-gradient-to-r from-pink-50 to-orange-50 p-4 rounded-2xl border-2 border-pink-100">
-                    <button
-                      type="button"
-                      onClick={() => handleCountChange('children', 'dec')}
-                      className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-pink-600 hover:bg-pink-600 hover:text-white transition-all"
-                    >
-                      <FaMinus />
-                    </button>
-                    <div className="flex-1 text-center">
-                      <div className="text-4xl font-black text-pink-600">{formData.children}</div>
-                      <div className="text-xs text-gray-500 font-semibold mt-1">Kids</div>
-                    </div>
-                    <button
-                      type="button"
-                      onClick={() => handleCountChange('children', 'inc')}
-                      className="w-12 h-12 flex items-center justify-center bg-white rounded-xl shadow text-pink-600 hover:bg-pink-600 hover:text-white transition-all"
-                    >
-                      <FaPlus />
-                    </button>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
@@ -255,25 +229,20 @@ const BookingModal = ({ isOpen, onClose, carDetails, onBookingConfirm }) => {
                 value={formData.specialRequests}
                 onChange={(e) => setFormData({ ...formData, specialRequests: e.target.value })}
                 className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none resize-none"
-                placeholder="Any special requirements, preferences, or notes for your journey..."
-                rows="4"
+                placeholder="Any special requirements or notes..."
+                rows="3"
               />
             </div>
 
             {/* Buttons */}
             <div className="flex gap-4 pt-4">
-              <button
-                type="button"
-                onClick={onClose}
-                className="flex-1 px-6 py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition-all"
-              >
+              <button type="button" onClick={onClose}
+                className="flex-1 px-6 py-4 border-2 border-gray-300 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition-all">
                 Cancel
               </button>
-              <button
-                type="submit"
-                className="flex-1 px-6 py-4 bg-gradient-to-r from-orange-600 to-orange-400 text-white rounded-xl font-bold text-lg hover:from-orange-700 hover:to-orange-500 transition-all shadow-lg"
-              >
-                CONFIRM BOOKING
+              <button type="submit" disabled={loading}
+                className="flex-1 px-6 py-4 bg-gradient-to-r from-orange-600 to-orange-400 text-white rounded-xl font-bold text-lg hover:from-orange-700 hover:to-orange-500 transition-all shadow-lg disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2">
+                {loading ? <><FaSpinner className="animate-spin" /> Processing...</> : 'PROCEED TO PAYMENT'}
               </button>
             </div>
           </form>

@@ -24,6 +24,8 @@ import QuickEnquiry from './components/QuickEnquiry';
 import CallbackForm from './components/CallbackForm';
 import TermsConditions from './pages/TermsConditions';
 import TourDetail from './pages/TourDetail';
+import DelhiAgraByBus from './pages/tours/DelhiAgraByBus';
+import DelhiSightseeingByBus from './pages/tours/DelhiSightseeingByBus';
 import { useState, useEffect } from 'react';
 
 const AppContent = () => {
@@ -52,6 +54,8 @@ const AppContent = () => {
         <Route path="/thank-you" element={<ThankYou />} />
         <Route path="/tour-packages" element={<TourPackages />} />
         <Route path="/tour/:slug" element={<TourDetail />} />
+        <Route path="/tour/delhi-to-agra-by-bus" element={<DelhiAgraByBus />} />
+        <Route path="/tour/budget-delhi-sightseeing-by-bus" element={<DelhiSightseeingByBus />} />
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/terms" element={<TermsConditions />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />

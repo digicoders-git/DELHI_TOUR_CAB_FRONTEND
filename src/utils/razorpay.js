@@ -2,14 +2,22 @@ const RAZORPAY_KEY_ID = 'rzp_live_SMIMlYKZPOKIvd';
 
 export const getBookingAmount = (carName) => {
   const car = carName.toLowerCase();
+  // Bus packages — per person fare
+  if (car.includes('luxury ac deluxe')) return 499;
+  if (car.includes('hi tech') || car.includes('air suspension')) return 599;
+  if (car.includes('tata ac super deluxe')) return 699;
+  // Delhi sightseeing bus fares
+  if (car.includes('volvo') || car.includes('bharat benz')) return 1099;
+  if (car.includes('tata ac luxury super deluxe')) return 1199;
+  // Car packages — advance booking amount
   if (car.includes('wagnor') || car.includes('dzire') || car.includes('ertiga')) return 600;
   if (car.includes('carens') || car.includes('innova') || car.includes('crysta')) return 1000;
   if (car.includes('tempo') || car.includes('traveller') || car.includes('urbania')) return 2000;
   return 600;
 };
 
-export const initiatePayment = (carName, tourTitle, userDetails, onSuccess, onFailure) => {
-  const amount = getBookingAmount(carName);
+export const initiatePayment = (carName, tourTitle, userDetails, onSuccess, onFailure, overrideAmount) => {
+  const amount = overrideAmount || getBookingAmount(carName);
   
   const options = {
     key: RAZORPAY_KEY_ID,

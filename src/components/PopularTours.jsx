@@ -20,8 +20,57 @@ const PopularTours = () => {
         { name: 'Delhi Khatushyam Ji Tour', path: '/tour/delhi-to-khatu-shyam-one-day-tour', image: tourKhatushyam, price: '₹5,500' },
     ];
 
+    const agraItems = Array(6).fill('Same Day Delhi to Agra Tour by Bus – Per Person');
+    const delhiItems = Array(6).fill('Budget Delhi Sightseeing – Bus Tour Per Person');
+
     return (
         <section className="py-16 bg-white border-t border-gray-100">
+            {/* Marquee Banner */}
+            <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 overflow-hidden shadow-md mb-10">
+                {/* Row 1: Left to Right — clickable */}
+                <div className="overflow-hidden py-2 border-b border-orange-400">
+                    <div
+                        className="flex gap-12 whitespace-nowrap cursor-pointer"
+                        style={{ animation: 'marqueeLeft 20s linear infinite' }}
+                        onMouseEnter={e => e.currentTarget.style.animationPlayState = 'paused'}
+                        onMouseLeave={e => e.currentTarget.style.animationPlayState = 'running'}
+                        onClick={() => { navigate('/tour/delhi-to-agra-by-bus'); window.scrollTo(0, 0); }}
+                    >
+                        {agraItems.map((item, i) => (
+                            <span key={i} className="text-white font-semibold text-sm md:text-base tracking-wide select-none hover:text-orange-200 transition-colors">
+                                ✦ {item}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+                {/* Row 2: Right to Left */}
+                <div className="overflow-hidden py-2">
+                    <div
+                        className="flex gap-12 whitespace-nowrap cursor-pointer"
+                        style={{ animation: 'marqueeRight 20s linear infinite' }}
+                        onMouseEnter={e => e.currentTarget.style.animationPlayState = 'paused'}
+                        onMouseLeave={e => e.currentTarget.style.animationPlayState = 'running'}
+                        onClick={() => { navigate('/tour/budget-delhi-sightseeing-by-bus'); window.scrollTo(0, 0); }}
+                    >
+                        {delhiItems.map((item, i) => (
+                            <span key={i} className="text-orange-100 font-semibold text-sm md:text-base tracking-wide select-none hover:text-white transition-colors">
+                                ★ {item}
+                            </span>
+                        ))}
+                    </div>
+                </div>
+                <style>{`
+                    @keyframes marqueeLeft {
+                        0% { transform: translateX(0); }
+                        100% { transform: translateX(-50%); }
+                    }
+                    @keyframes marqueeRight {
+                        0% { transform: translateX(-50%); }
+                        100% { transform: translateX(0); }
+                    }
+                `}</style>
+            </div>
+
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4">
                     <div className="text-center mx-auto">
