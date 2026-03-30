@@ -859,7 +859,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         tourTypes: [
             {
                 title: "Spiritual Family Package",
@@ -981,7 +981,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         tourTypes: [
             {
                 title: "Adventure Discovery Package",
@@ -2471,7 +2471,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the temple closed during afternoon?",
@@ -2581,7 +2581,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "What is the best time to reach the temple?",
@@ -2954,7 +2954,7 @@ export const toursData = {
             { category: "Nature & Views", items: "Mehtab Bagh (Sunset view of Taj Mahal), Taj Nature Walk" },
             { category: "Food & Shopping", items: "Agra Petha Shopping, Local Street Food Tour at Sadar Bazaar" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How far is Fatehpur Sikri from Agra?",
@@ -3082,7 +3082,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How far are Mathura & Vrindavan from Agra?",
@@ -3462,7 +3462,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Which Aarti should we attend?",
@@ -3590,7 +3590,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the ropeway ticket included?",
@@ -3710,7 +3710,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Do outside cars go everywhere in Gulmarg/Sonmarg?",
@@ -3815,7 +3815,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is accommodation included in this price?",
@@ -4157,7 +4157,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the Jeep Safari included?",
@@ -4279,7 +4279,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is the trek very difficult?",
@@ -4401,7 +4401,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is Rohtang Pass included in this fare?",
@@ -4525,7 +4525,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "How much trekking is involved?",
@@ -4789,7 +4789,7 @@ export const toursData = {
             { category: "Museums", items: "National Museum, Rail Museum, Prime Minister Museum, Indira Gandhi Museum, Museum of Illusions, National Gallery of Modern Art" },
             { category: "Nature & Leisure", items: "Lodhi Garden, Sunder Nursery, Delhi Zoo, Dilli Haat-INA" }
         ],
-        onlineTickets: "https://asi.payumoney.com/",
+        // onlineTickets: "https://asi.payumoney.com/",
         faqs: [
             {
                 question: "Is Katra to Vaishno Devi trek included?",
