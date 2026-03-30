@@ -199,14 +199,14 @@ const BookingModal = ({ isOpen, onClose, carDetails, pickupOptions, dropOptions 
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                   />
                 </div>
-                <div>
+                {/* <div>
                   <label className="text-sm font-bold text-gray-700 mb-2 block">Pickup Time</label>
                   <input
                     type="time" required value={formData.pickupTime}
                     onChange={(e) => setFormData({ ...formData, pickupTime: e.target.value })}
                     className="w-full px-4 py-3 bg-gray-50 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none"
                   />
-                </div>
+                </div> */}
               </div>
             </div>
 
